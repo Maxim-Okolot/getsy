@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8"/>
+  <title>Getsy | Главная</title>
+
+  <!-- seo -->
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+
+  <!-- document Favicon in browser tabs -->
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon"/>
+
+  <!-- additional approach to add favicon -->
+  <link rel="apple-touch-icon" sizes="16x16" href="img/favicons/favicon-16x16.png"/>
+  <link rel="apple-touch-icon" sizes="32x32" href="img/favicons/favicon-32x32.png"/>
+  <link rel="apple-touch-icon" sizes="96x96" href="img/favicons/favicon-96x96.png"/>
+
+  <!-- for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <!-- use latest version of IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- additional styles -->
+  <link href="css/swiper.min.css" rel="stylesheet" type="text/css"/>
+  <link href="css/main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<!-- HEADER START -->
+<header class="header">
+
+  <nav class="header-menu">
+    <ul class="header-menu__list">
+      <li class="header-menu__item">
+        <a href="#" class="header-menu__link">Акции</a>
+      </li>
+      <li class="header-menu__item">
+        <a href="#" class="header-menu__link">Юридическим лицам</a>
+      </li>
+      <li class="header-menu__item">
+        <a href="#" class="header-menu__link">Доставка</a>
+      </li>
+      <li class="header-menu__item">
+        <a href="#" class="header-menu__link">Оплата</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="header-bottom">
+
+    <div class="header-panel-left">
+      <button type="button" class="catalog-btn">
+        <svg class="catalog-btn__icon"><use xlink:href="img/sprite.svg#catalog"></use></svg>
+        Каталог
+      </button>
+      <div class="">
+        <button type="button">
+          <svg class="catalog-btn__icon"><use xlink:href="img/sprite.svg#location"></use></svg>
+        </button>
+        <span>Санкт-Петербург</span>
+      </div>
+      <form class="header-search">
+        <span>Поиск:</span>
+        <input type="text" name="header-search" title="Введите название товара"/>
+        <input type="submit" value="Найти" title=""/>
+      </form>
+    </div>
+
+    <a href="#" class="logo-header">
+      <svg class="logo-header__icon"><use xlink:href="img/sprite.svg#logo"></use></svg>
+    </a>
+
+    <div class="header-panel-right">
+      <a href="tel:88009999999">
+        <svg class="logo-header__icon"><use xlink:href="img/sprite.svg#phone"></use></svg>
+        8 800 999-99-99
+      </a>
+      <button type="button">
+      <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.0021 17.275L2.44582 9.3419L2.44426 9.34027C1.52509 8.38393 1 7.06001 1 5.66941C1 4.27893 1.525 2.95512 2.44402 1.99879C3.37344 1.03463 4.60673 0.50271 5.8824 0.50271C7.15782 0.50271 8.39091 1.03441 9.32018 1.99817C9.32046 1.99846 9.32074 1.99875 9.32102 1.99904L9.64038 2.33375L10.0033 2.71407L10.365 2.33262L10.6846 1.99548C11.6101 1.03552 12.8373 0.504101 14.1076 0.500022L10.0021 17.275ZM10.0021 17.275L17.5584 9.3419L17.5596 9.34067C18.4765 8.3846 19 7.06232 19 5.67365C19 4.28498 18.4765 2.96269 17.5596 2.00663L17.5276 1.97326L17.5068 1.94155C16.5801 1.00795 15.3636 0.496163 14.1077 0.500022L10.0021 17.275Z" stroke="white"/>
+      </svg>
+    </button>
+      <button type="button">
+        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.0021 17.275L2.44582 9.3419L2.44426 9.34027C1.52509 8.38393 1 7.06001 1 5.66941C1 4.27893 1.525 2.95512 2.44402 1.99879C3.37344 1.03463 4.60673 0.50271 5.8824 0.50271C7.15782 0.50271 8.39091 1.03441 9.32018 1.99817C9.32046 1.99846 9.32074 1.99875 9.32102 1.99904L9.64038 2.33375L10.0033 2.71407L10.365 2.33262L10.6846 1.99548C11.6101 1.03552 12.8373 0.504101 14.1076 0.500022L10.0021 17.275ZM10.0021 17.275L17.5584 9.3419L17.5596 9.34067C18.4765 8.3846 19 7.06232 19 5.67365C19 4.28498 18.4765 2.96269 17.5596 2.00663L17.5276 1.97326L17.5068 1.94155C16.5801 1.00795 15.3636 0.496163 14.1077 0.500022L10.0021 17.275Z" stroke="white"/>
+        </svg>
+      </button>
+      <button type="button" class="header-panel-right__btn exist">
+        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.43548 6.76923H1.76548C1.11972 6.76923 0.643277 7.37216 0.792575 8.00043L2.51085 15.2312C2.61795 15.6819 3.02054 16 3.48376 16H14.0119C14.4545 16 14.8445 15.709 14.9705 15.2847L17.1184 8.05398C17.3088 7.41293 16.8285 6.76923 16.1598 6.76923H12.5645M5.43548 6.76923L7.62903 1M5.43548 6.76923H11.4677H12.5645M12.5645 6.76923L10.371 1" stroke="white" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <button type="button">
+        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.0021 17.275L2.44582 9.3419L2.44426 9.34027C1.52509 8.38393 1 7.06001 1 5.66941C1 4.27893 1.525 2.95512 2.44402 1.99879C3.37344 1.03463 4.60673 0.50271 5.8824 0.50271C7.15782 0.50271 8.39091 1.03441 9.32018 1.99817C9.32046 1.99846 9.32074 1.99875 9.32102 1.99904L9.64038 2.33375L10.0033 2.71407L10.365 2.33262L10.6846 1.99548C11.6101 1.03552 12.8373 0.504101 14.1076 0.500022L10.0021 17.275ZM10.0021 17.275L17.5584 9.3419L17.5596 9.34067C18.4765 8.3846 19 7.06232 19 5.67365C19 4.28498 18.4765 2.96269 17.5596 2.00663L17.5276 1.97326L17.5068 1.94155C16.5801 1.00795 15.3636 0.496163 14.1077 0.500022L10.0021 17.275Z" stroke="white"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+</header>
+<!-- HEADER END -->
+
+<!-- CONTENT START -->
+<main class="content">
+
+  <!-- SECTION PREVIEW START -->
+  <section class="preview">
+    <div class="preview-slide slider-default swiper">
+      <ul class="banner-slider swiper-wrapper">
+        <li class="banner-slider__item swiper-slide">
+          <img src="img/banners/img-1.jpg" class="banner-slider__img bg-img" loading="lazy" alt="" title=""/>
+        </li>
+        <li class="banner-slider__item swiper-slide">
+          <img src="img/banners/img-2.jpg" class="banner-slider__img" loading="lazy" alt="" title=""/>
+        </li>
+      </ul>
+      <div class="banners-pagination"></div>
+    </div>
+    <div class="preview-banner">
+      <img src="img/banners/img-2.jpg" class="preview-banner__img bg-img" loading="lazy" alt="" title=""/>
+    </div>
+    <div class="preview-banner">
+      <img src="img/banners/img-3.jpg" class="preview-banner__img bg-img" loading="lazy" width="" alt="" title=""/>
+    </div>
+  </section>
+  <!-- SECTION PREVIEW END -->
+
+  <!-- SECTION SALES HITS START -->
+  <section class="sales-hits">
+    <h3 class="sales-hits__title section-title">Хиты продаж</h3>
+    <div class="slider-pagination"></div>
+    <a href="#" class="sales-hits__link link-all">Смотреть все</a>
+
+    <div class="sales-hits-wrapper">
+      <button type="button" class="slider-prev">
+        <svg class="slider-prev__arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+      </button>
+      <button type="button" class="slider-next">
+        <svg class="slider-next__arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+      </button>
+
+      <div class="sales-hits-wrap slider-per-view swiper">
+
+        <ul class="sales-hits-list swiper-wrapper">
+          <li class="sales-hits-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="1">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="sales-hits-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title"> Чехол COMMO Shield Case для
+                iPhone 14 Pro Max</h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="sales-hits-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="2">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max</h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="sales-hits-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="sales-hits-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="sales-hits-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- SECTION PREVIEW END -->
+
+  <!-- SECTION POPULAR CATEGORY START -->
+  <section class="popular-category">
+    <h3 class="popular-category__title section-title">Популярные категории</h3>
+    <a href="#" class="popular-category__link link-all">Смотреть все</a>
+
+    <ul class="popular-category-list">
+      <li class="popular-category-list__item">
+        <a href="#" class="popular-category-list__link">
+          <img src="img/category/img-1.png" class="popular-category-list__img" loading="lazy"
+               alt="Компьютеры и ноутбуки" title="Компьютеры и ноутбуки"/>
+          <span class="popular-category-list__name">Компьютеры и ноутбуки</span>
+        </a>
+      </li>
+      <li class="popular-category-list__item">
+        <a href="#" class="popular-category-list__link">
+          <img src="img/category/img-2.png" class="popular-category-list__img" loading="lazy" alt="Телевизоры"
+               title="Телевизоры"/>
+          <span class="popular-category-list__name">Телевизоры</span>
+        </a>
+      </li>
+      <li class="popular-category-list__item">
+        <a href="#" class="popular-category-list__link">
+          <img src="img/category/img-3.png" class="popular-category-list__img" loading="lazy"
+               alt="Крупная бытовая техника" title="Крупная бытовая техника"/>
+          <span class="popular-category-list__name">Крупная бытовая техника</span>
+        </a>
+      </li>
+      <li class="popular-category-list__item">
+        <a href="#" class="popular-category-list__link">
+          <img src="img/category/img-4.png" class="popular-category-list__img" loading="lazy" alt="Мобильные телефоны"
+               title="Мобильные телефоны"/>
+          <span class="popular-category-list__name">Мобильные телефоны</span>
+        </a>
+      </li>
+      <li class="popular-category-list__item">
+        <a href="#" class="popular-category-list__link">
+          <img src="img/category/img-5.png" class="popular-category-list__img" loading="lazy"
+               alt="Климатическая техника" title="Климатическая техника"/>
+          <span class="popular-category-list__name">Климатическая техника</span>
+        </a>
+      </li>
+      <li class="popular-category-list__item">
+        <a href="#" class="popular-category-list__link">
+          <img src="img/category/img-6.png" class="popular-category-list__img" loading="lazy" alt="Кухонная техника"
+               title="Кухонная техника"/>
+          <span class="popular-category-list__name">Кухонная техника</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <!-- SECTION POPULAR CATEGORY END -->
+
+  <section class="banner-content">
+
+  </section>
+
+  <!-- SECTION NEW PRODUCTS START -->
+  <section class="new-products">
+    <h3 class="new-products__title section-title">Популярные категории</h3>
+    <div class="slider-pagination"></div>
+    <a href="#" class="new-products__link link-all">Смотреть все</a>
+
+    <div class="new-products-wrapper">
+      <button type="button" class="slider-prev">
+        <svg class="slider-prev__arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+      </button>
+      <button type="button" class="slider-next"><svg class="slider-next__arrow"><use xlink:href="img/sprite.svg#arrow"></use>
+        </svg>
+      </button>
+
+      <div class="new-products-wrap slider-per-view swiper">
+        <ul class="new-products-list swiper-wrapper">
+          <li class="new-products-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="new-products-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="new-products-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="new-products-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="new-products-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="new-products-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="new-products-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="new-products-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- SECTION NEW PRODUCTS END -->
+
+  <!-- SECTION BRANDS START -->
+  <section class="brands">
+    <h3 class="brands__title section-title">Популярные бренды</h3>
+    <a href="#" class="brands__link link-all">Смотреть все</a>
+
+    <ul class="brands-list grid-col-6">
+      <li class="brands-list__item">
+        <a href="#" class="brands-list__link">
+          <img src="img/brands/smeg.png" class="brands-list__img" loading="lazy" alt="smeg" title="smeg"/>
+        </a>
+      </li>
+      <li class="brands-list__item">
+        <a href="#" class="brands-list__link">
+          <img src="img/brands/elica.png" class="brands-list__img" loading="lazy" alt="elica" title="elica"/>
+        </a>
+      </li>
+      <li class="brands-list__item">
+        <a href="#" class="brands-list__link">
+          <img src="img/brands/gorenje.png" class="brands-list__img" loading="lazy" alt="gorenje" title="gorenje"/>
+        </a>
+      </li>
+      <li class="brands-list__item">
+        <a href="#" class="brands-list__link">
+          <img src="img/brands/franke.png" class="brands-list__img" loading="lazy" alt="franke" title="franke"/>
+        </a>
+      </li>
+      <li class="brands-list__item">
+        <a href="#" class="brands-list__link">
+          <img src="img/brands/schaub-lorenz.png" class="brands-list__img" loading="lazy" alt="schaub-lorenz"
+               title="schaub-lorenz"/>
+        </a>
+      </li>
+      <li class="brands-list__item">
+        <a href="#" class="brands-list__link">
+          <img src="img/brands/korting.png" class="brands-list__img" loading="lazy" alt="korting" title="korting"/>
+        </a>
+      </li>
+      <li class="brands-list__item">
+        <a href="#" class="brands-list__link">
+          <img src="img/brands/maunfeld.png" class="brands-list__img" loading="lazy" alt="maunfeld" title="maunfeld"/>
+        </a>
+      </li>
+      <li class="brands-list__item">
+        <a href="#" class="brands-list__link">
+          <img src="img/brands/bosch.png" class="brands-list__img" loading="lazy" alt="bosch" title="bosch"/>
+        </a>
+      </li>
+      <li class="brands-list__item">
+        <a href="#" class="brands-list__link">
+          <img src="img/brands/whirlpool.png" class="brands-list__img" loading="lazy" alt="whirlpool"
+               title="whirlpool"/>
+        </a>
+      </li>
+      <li class="brands-list__item">
+        <a href="#" class="brands-list__link">
+          <img src="img/brands/candy.png" class="brands-list__img" loading="lazy" alt="candy" title="candy"/>
+        </a>
+      </li>
+      <li class="brands-list__item">
+        <a href="#" class="brands-list__link">
+          <img src="img/brands/electrolux.png" class="brands-list__img" loading="lazy" alt="electrolux"
+               title="electrolux"/>
+        </a>
+      </li>
+      <li class="brands-list__item">
+        <a href="#" class="brands-list__link">
+          <img src="img/brands/philips.png" class="brands-list__img" loading="lazy" alt="philips" title="philips"/>
+        </a>
+      </li>
+      <li class="brands-list__item">
+        <a href="#" class="brands-list__link">
+          <img src="img/brands/hansa.png" class="brands-list__img" loading="lazy" alt="hansa" title="hansa"/>
+        </a>
+      </li>
+      <li class="brands-list__item">
+        <a href="#" class="brands-list__link">
+          <img src="img/brands/liebherr.png" class="brands-list__img" loading="lazy" alt="liebherr" title="liebherr"/>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <!-- SECTION BRANDS END -->
+
+  <!-- SECTION VIEWED START -->
+  <section class="viewed">
+    <h3 class="viewed__title section-title">Вы смотрели (<span>N</span> кол-во слайдеров)</h3>
+    <div class="slider-pagination"></div>
+    <a href="#" class="viewed__link link-all">Смотреть все</a>
+
+    <div class="viewed-wrapper">
+      <button type="button" class="slider-prev">
+        <svg class="slider-prev__arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+      </button>
+      <button type="button" class="slider-next">
+        <svg class="slider-next__arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+      </button>
+
+      <div class="viewed-wrap slider-per-view swiper">
+        <ul class="viewed-list swiper-wrapper">
+          <li class="viewed-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="viewed-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="viewed-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="viewed-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="viewed-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. Чехол COMMO Shield Case для               iPhone 14 Pro Max</h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="viewed-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. Чехол COMMO Shield Case для               iPhone 14 Pro Max</h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="viewed-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. Чехол COMMO Shield Case для
+                iPhone 14 Pro Max.</h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="viewed-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="viewed-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+          <li class="viewed-list__item swiper-slide">
+
+            <div class="card-preview">
+              <div class="card-preview__img">
+                <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+              </div>
+              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
+              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+            </div>
+
+            <div class="card-info">
+
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="new">Новинка</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                </li>
+                <li class="tags__item">
+                  <a href="#" class="tags__link" data-type="action">Акция</a>
+                </li>
+              </ul>
+
+              <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+              <div class="card-info-price">
+                <div class="card-price">
+                  <span class="card-price__old">51 000 ₽</span>
+                  <span class="card-price__new">95 012 999 ₽</span>
+                </div>
+                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+              </div>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- SECTION VIEWED END -->
+
+  <!-- SECTION DESCRIPTION START -->
+  <section class="description">
+    <p class="description__text">Интернет-магазин бытовой техники и электроники <br/>«GETSY» — сеть магазинов
+      премиальной
+      бытовой техники и электроники. Наша команда уже 30 лет предлагает только самые качественные товары, способные
+      сделать жизнь комфортнее и технологичнее.</p>
+  </section>
+  <!-- SECTION DESCRIPTION END -->
+
+</main>
+<!-- CONTENT END -->
+
+<!-- FOOTER START -->
+<footer class="footer">
+
+  <div class="footer-info">
+    <a href="#" class="logo-footer">
+      <svg class="logo-footer__icon"><use xlink:href="img/sprite.svg#logo"></use></svg>
+    </a>
+    <span class="footer-info__copyright">&copy; 2023 Getsy</span>
+  </div>
+
+  <div class="footer-nav">
+    <nav class="footer-menu">
+      <ul class="footer-menu__list">
+        <li class="footer-menu__item">
+          <a href="#" class="footer-menu__link">О компании</a>
+        </li>
+        <li class="footer-menu__item">
+          <a href="#" class="footer-menu__link">Доставка</a>
+        </li>
+        <li class="footer-menu__item">
+          <a href="#" class="footer-menu__link">Оплата</a>
+        </li>
+        <li class="footer-menu__item">
+          <a href="#" class="footer-menu__link">Юридическим лицам</a>
+        </li>
+        <li class="footer-menu__item">
+          <a href="#" class="footer-menu__link">Вопрос - ответ</a>
+        </li>
+        <li class="footer-menu__item">
+          <a href="#" class="footer-menu__link">Акции</a>
+        </li>
+        <li class="footer-menu__item">
+          <a href="#" class="footer-menu__link">Обмен и возврат</a>
+        </li>
+        <li class="footer-menu__item">
+          <a href="#" class="footer-menu__link">Оферта</a>
+        </li>
+        <li class="footer-menu__item">
+          <a href="#" class="footer-menu__link">Политика обработки персональных данных</a>
+        </li>
+      </ul>
+    </nav>
+
+    <form class="form-mailing">
+      <input type="email" class="form-mailing__input" name="mailing-email" placeholder="Подписаться на рассылку"
+             title="Введите Ваш Email"/>
+      <button type="submit" class="form-mailing__submit">
+        <svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 18L9 9.5L1 1" stroke="#463C88"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <div class="yandex-rating"></div>
+
+  <div class="footer-contacts">
+    <a href="tel:+74959999999" class="footer-contacts__phone">+7 (495) 999-99-99 </a>
+    <span class="footer-contacts__time-job">пн-пт с 10 до 20 / сб-вс с 10 до 18</span>
+    <button type="button" class="footer-contacts__btn">Обратный звонок</button>
+  </div>
+
+</footer>
+<!-- FOOTER END -->
+
+<!-- additional scripts -->
+<script src="js/swiper.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
