@@ -20,15 +20,14 @@
   width: 100%;
 }
 
+.banner-slider__item {
+  box-shadow: var(--lite-shadow);
+}
+
 .preview-banner {
   width: 100%;
   padding-top: 48.5%;
   position: relative;
-}
-
-.banner-slider__img {
-  width: 100%;
-  max-height: 100%;
 }
 
 .banner-slider {
@@ -113,12 +112,26 @@
   top: 36px;
 }
 
-.card-preview__btn-favorites {
-  background-image: url("../img/icons/favorites.svg");
+.card-preview__btn-icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: var(--normal);
+  fill: var(--dark-state-blue);
 }
 
-.card-preview__btn-comparison {
-  background-image: url("../img/icons/comparison.svg");
+.card-preview__btn.active .card-preview__btn-icon:first-child, .card-preview__btn .card-preview__btn-icon:last-child {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -10;
+}
+
+.card-preview__btn.active .card-preview__btn-icon:last-child, .card-preview__btn-icon {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
 }
 
 .card-preview__img {
@@ -131,7 +144,7 @@
   padding: 0 13px 9px 10px;
   height: calc(100% - 167px);
   display: grid;
-  grid-template-rows: repeat(3, auto) 1fr;
+  grid-template-rows: repeat(2, auto) 1fr auto;
 }
 
 .tags {
@@ -178,7 +191,7 @@
 .card-price__add-cart {
   width: 39px;
   height: 29px;
-  background: url("../img/icons/cart.svg") no-repeat center #00A565;
+  background-color: var(--green-haze);
   background-size: 16px;
   border-radius: 30px;
   display: flex;
@@ -187,10 +200,15 @@
   transition: var(--normal);
 }
 
+.card-price__add-cart:hover {
+  background-color: var(--deep-saffron);
+}
+
 .card-info-price {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
+  min-height: 29px;
 }
 
 .card-price {
@@ -198,6 +216,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  height: 100%;
 }
 
 .rating {
@@ -235,6 +254,12 @@
 .card-price__new {
   font: 400 13px/106% var(--font);
   color: var(--black);
+}
+
+.card-price__icon {
+  width: 17px;
+  height: 15px;
+  stroke: var(--white);
 }
 
 /* style section popular category
@@ -344,6 +369,103 @@
   background: var(--dark-state-blue);
   box-shadow: var(--lite-shadow);
   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.banner-logo {
+  width: 637px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #312a5f;
+  overflow: hidden;
+}
+
+.banner-logo:after {
+  content: "";
+  width: 786px;
+  height: 786px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(100% - 20px);
+  background: var(--dark-state-blue);
+  border-radius: 50%;
+}
+
+.banner-logo__icon {
+  width: 260px;
+  height: 75px;
+  fill: var(--white);
+}
+
+.banner-item-advantages {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px 30px;
+}
+
+.banner-content__wrap {
+  width: calc(100% - 637px);
+  height: 100%;
+  margin: 0 70px 0 60px;
+  overflow: hidden;
+  padding-bottom: 41px;
+}
+
+.banner-content__pagination {
+  position: absolute;
+  bottom: 31px;
+  left: 0;
+}
+
+.banner-content__list, .banner-content__item {
+  height: 100%;
+  width: 100%;
+}
+
+.banner-content__item {
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 1px;
+}
+
+.banner-content__item > p {
+  max-width: 583px;
+  font: 300 20px/23px var(--font);
+  color: var(--white);
+}
+
+.banner-content__wrap .swiper-pagination-bullet-active {
+  background-color: var(--suva-grey);
+}
+
+.banner-item-advantages__icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  fill: var(--white);
+  stroke: var(--white);
+}
+
+.banner-item-advantages__text {
+  font: 300 15px/18px var(--font);
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 204px;
+  display: inline-block;
+}
+
+.banner-item-advantages__elem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 /* style page header

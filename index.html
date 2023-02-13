@@ -52,20 +52,31 @@
   <div class="header-bottom">
 
     <div class="header-panel-left">
-      <button type="button" class="catalog-btn">
-        <svg class="catalog-btn__icon"><use xlink:href="img/sprite.svg#catalog"></use></svg>
-        Каталог
-      </button>
-      <div class="">
-        <button type="button">
-          <svg class="catalog-btn__icon"><use xlink:href="img/sprite.svg#location"></use></svg>
+
+      <div class="header-catalog">
+        <button type="button" class="catalog-btn">
+          <svg class="catalog-btn__icon"><use xlink:href="img/sprite.svg#catalog"></use></svg>
+          Каталог
         </button>
-        <span>Санкт-Петербург</span>
+
+        <div class="header-catalog-wrap">
+
+        </div>
+
       </div>
+
+      <div class="header-location">
+        <button type="button" class="location-btn">
+          <svg class="location-btn__icon"><use xlink:href="img/sprite.svg#location"></use></svg>
+        </button>
+        <span class="header-location__place">Санкт-Петербург</span>
+      </div>
+
       <form class="header-search">
-        <span>Поиск:</span>
-        <input type="text" name="header-search" title="Введите название товара"/>
-        <input type="submit" value="Найти" title=""/>
+        <svg class="header-search__icon"><use xlink:href="img/sprite.svg#search"></use></svg>
+        <span class="header-search__text">Поиск:</span>
+        <input type="text" name="header-search" class="header-search__input" placeholder="Телевизор" title="Введите название товара"/>
+        <input type="submit" value="Найти" class="header-search__submit" title=""/>
       </form>
     </div>
 
@@ -74,30 +85,24 @@
     </a>
 
     <div class="header-panel-right">
-      <a href="tel:88009999999">
-        <svg class="logo-header__icon"><use xlink:href="img/sprite.svg#phone"></use></svg>
+      <a href="tel:88009999999" class="header-phone">
+        <svg class="header-phone__icon"><use xlink:href="img/sprite.svg#phone"></use></svg>
         8 800 999-99-99
       </a>
-      <button type="button">
-      <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10.0021 17.275L2.44582 9.3419L2.44426 9.34027C1.52509 8.38393 1 7.06001 1 5.66941C1 4.27893 1.525 2.95512 2.44402 1.99879C3.37344 1.03463 4.60673 0.50271 5.8824 0.50271C7.15782 0.50271 8.39091 1.03441 9.32018 1.99817C9.32046 1.99846 9.32074 1.99875 9.32102 1.99904L9.64038 2.33375L10.0033 2.71407L10.365 2.33262L10.6846 1.99548C11.6101 1.03552 12.8373 0.504101 14.1076 0.500022L10.0021 17.275ZM10.0021 17.275L17.5584 9.3419L17.5596 9.34067C18.4765 8.3846 19 7.06232 19 5.67365C19 4.28498 18.4765 2.96269 17.5596 2.00663L17.5276 1.97326L17.5068 1.94155C16.5801 1.00795 15.3636 0.496163 14.1077 0.500022L10.0021 17.275Z" stroke="white"/>
-      </svg>
-    </button>
-      <button type="button">
-        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10.0021 17.275L2.44582 9.3419L2.44426 9.34027C1.52509 8.38393 1 7.06001 1 5.66941C1 4.27893 1.525 2.95512 2.44402 1.99879C3.37344 1.03463 4.60673 0.50271 5.8824 0.50271C7.15782 0.50271 8.39091 1.03441 9.32018 1.99817C9.32046 1.99846 9.32074 1.99875 9.32102 1.99904L9.64038 2.33375L10.0033 2.71407L10.365 2.33262L10.6846 1.99548C11.6101 1.03552 12.8373 0.504101 14.1076 0.500022L10.0021 17.275ZM10.0021 17.275L17.5584 9.3419L17.5596 9.34067C18.4765 8.3846 19 7.06232 19 5.67365C19 4.28498 18.4765 2.96269 17.5596 2.00663L17.5276 1.97326L17.5068 1.94155C16.5801 1.00795 15.3636 0.496163 14.1077 0.500022L10.0021 17.275Z" stroke="white"/>
-        </svg>
-      </button>
-      <button type="button" class="header-panel-right__btn exist">
-        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5.43548 6.76923H1.76548C1.11972 6.76923 0.643277 7.37216 0.792575 8.00043L2.51085 15.2312C2.61795 15.6819 3.02054 16 3.48376 16H14.0119C14.4545 16 14.8445 15.709 14.9705 15.2847L17.1184 8.05398C17.3088 7.41293 16.8285 6.76923 16.1598 6.76923H12.5645M5.43548 6.76923L7.62903 1M5.43548 6.76923H11.4677H12.5645M12.5645 6.76923L10.371 1" stroke="white" stroke-linecap="round"/>
-        </svg>
-      </button>
-      <button type="button">
-        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10.0021 17.275L2.44582 9.3419L2.44426 9.34027C1.52509 8.38393 1 7.06001 1 5.66941C1 4.27893 1.525 2.95512 2.44402 1.99879C3.37344 1.03463 4.60673 0.50271 5.8824 0.50271C7.15782 0.50271 8.39091 1.03441 9.32018 1.99817C9.32046 1.99846 9.32074 1.99875 9.32102 1.99904L9.64038 2.33375L10.0033 2.71407L10.365 2.33262L10.6846 1.99548C11.6101 1.03552 12.8373 0.504101 14.1076 0.500022L10.0021 17.275ZM10.0021 17.275L17.5584 9.3419L17.5596 9.34067C18.4765 8.3846 19 7.06232 19 5.67365C19 4.28498 18.4765 2.96269 17.5596 2.00663L17.5276 1.97326L17.5068 1.94155C16.5801 1.00795 15.3636 0.496163 14.1077 0.500022L10.0021 17.275Z" stroke="white"/>
-        </svg>
-      </button>
+      <a href="#" class="header-comparison">
+        <svg class="header-comparison__icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+      </a>
+      <a href="#" class="header-favorite notice">
+        <svg class="header-favorite__icon"><use xlink:href="img/sprite.svg#heart"></use></svg>
+      </a>
+      <a href="#" class="header-cart notice">
+        <svg class="header-cart__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+      </a>
+      <div class="header-user">
+        <button type="button" class="header-user__btn">
+          <svg class="header-user__icon"><use xlink:href="img/sprite.svg#user"></use></svg>
+        </button>
+      </div>
     </div>
 
   </div>
@@ -116,7 +121,7 @@
           <img src="img/banners/img-1.jpg" class="banner-slider__img bg-img" loading="lazy" alt="" title=""/>
         </li>
         <li class="banner-slider__item swiper-slide">
-          <img src="img/banners/img-2.jpg" class="banner-slider__img" loading="lazy" alt="" title=""/>
+          <img src="img/banners/img-2.jpg" class="banner-slider__img bg-img" loading="lazy" alt="" title=""/>
         </li>
       </ul>
       <div class="banners-pagination"></div>
@@ -153,8 +158,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -186,7 +197,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -197,8 +210,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -223,15 +242,10 @@
                 </li>
               </ul>
 
-              <h4 class="card-info__title"> Чехол COMMO Shield Case для
-                iPhone 14 Pro Max</h4>
+              <h4 class="card-info__title"> Чехол COMMO Shield Case для iPhone 14 Pro Max</h4>
 
               <div class="card-info-price">
-                <div class="card-price">
-                  <span class="card-price__old">51 000 ₽</span>
-                  <span class="card-price__new">95 012 999 ₽</span>
-                </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <span class="card-price__new">Нет в наличии</span>
               </div>
 
             </div>
@@ -242,8 +256,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -275,7 +295,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -286,8 +308,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -319,7 +347,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -330,8 +360,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -363,7 +399,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -374,8 +412,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -407,7 +451,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -473,6 +519,39 @@
   <!-- SECTION POPULAR CATEGORY END -->
 
   <section class="banner-content">
+    <div class="banner-logo">
+      <svg class="banner-logo__icon"><use xlink:href="img/sprite.svg#logo"></use></svg>
+    </div>
+
+    <div class="banner-content__wrap swiper">
+      <ul class="banner-content__list swiper-wrapper">
+        <li class="banner-content__item swiper-slide">
+          <p>Сообщество, участники которого получают доступ <br/>к эксклюзивным предложениям и премиальным продуктам
+            <br/>с доставкой на дом или в офис.</p>
+        </li>
+        <li class="banner-content__item swiper-slide">
+          <ul class="banner-item-advantages">
+            <li class="banner-item-advantages__elem">
+              <svg class="banner-item-advantages__icon"><use xlink:href="img/sprite.svg#support"></use></svg>
+              <span class="banner-item-advantages__text">Поддержка покупателей, рекомендации по заказам.</span>
+            </li>
+            <li class="banner-item-advantages__elem">
+              <svg class="banner-item-advantages__icon"><use xlink:href="img/sprite.svg#percent"></use></svg>
+              <span class="banner-item-advantages__text">Персональные предложения для каждого покупателя.</span>
+            </li>
+            <li class="banner-item-advantages__elem">
+              <svg class="banner-item-advantages__icon"><use xlink:href="img/sprite.svg#car"></use></svg>
+              <span class="banner-item-advantages__text">Удобная и быстрая доставка в городах присутствия.</span>
+            </li>
+            <li class="banner-item-advantages__elem">
+              <svg class="banner-item-advantages__icon"><use xlink:href="img/sprite.svg#stars"></use></svg>
+              <span class="banner-item-advantages__text">Высокие оценки магазина и сервиса.</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="banner-content__pagination"></div>
+    </div>
 
   </section>
 
@@ -498,8 +577,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -531,7 +616,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -542,8 +629,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -575,7 +668,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -586,8 +681,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -619,7 +720,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -630,8 +733,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -663,7 +772,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -674,8 +785,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -707,7 +824,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -718,8 +837,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -751,7 +876,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -762,8 +889,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -795,7 +928,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -806,8 +941,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -839,7 +980,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -957,8 +1100,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -990,7 +1139,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -1001,8 +1152,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -1034,7 +1191,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -1045,8 +1204,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -1078,7 +1243,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -1089,8 +1256,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -1122,7 +1295,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -1133,8 +1308,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -1166,7 +1347,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -1177,8 +1360,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -1210,7 +1399,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -1221,8 +1412,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -1255,7 +1452,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -1266,8 +1465,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -1299,7 +1504,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -1310,8 +1517,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -1343,7 +1556,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>
@@ -1354,8 +1569,14 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn card-preview__btn-favorites" title="В избранное"></button>
-              <button class="card-preview__btn card-preview__btn-comparison" title="В сравнение"></button>
+              <button class="card-preview__btn" title="В избранное">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+              </button>
+              <button class="card-preview__btn" title="В сравнение">
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+              </button>
             </div>
 
             <div class="card-info">
@@ -1387,7 +1608,9 @@
                   <span class="card-price__old">51 000 ₽</span>
                   <span class="card-price__new">95 012 999 ₽</span>
                 </div>
-                <button type="button" class="card-price__add-cart" title="В корзину"></button>
+                <a href="#" class="card-price__add-cart" title="В корзину">
+                  <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                </a>
               </div>
 
             </div>

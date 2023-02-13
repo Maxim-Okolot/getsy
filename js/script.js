@@ -38,6 +38,35 @@
         });
       }
     }
+
+    //слайдер баннера преимуществ
+    let bannerСontent = document.querySelector('.banner-content__wrap');
+
+    if (bannerСontent) {
+      let swiper = new Swiper(bannerСontent, {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        pagination: {
+          el: '.banner-content__pagination',
+          clickable: true,
+        }
+      });
+    }
   })
+
+  //смена иконок "в избранное" и "в сравнение" в каталогах
+  let cardPreviewBtn = document.getElementsByClassName('card-preview__btn');
+
+  if (cardPreviewBtn[0]) {
+    for (let btn of cardPreviewBtn) {
+      btn.addEventListener('click', function () {
+        btn.classList.toggle('active');
+      })
+    }
+  }
+
+
+
+
 
 })();
