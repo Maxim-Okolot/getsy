@@ -291,20 +291,47 @@
         <button type="button" class="location-btn btn-open">
           <svg class="location-btn__icon"><use xlink:href="img/sprite.svg#location"></use></svg>
         </button>
-        <span class="header-location__place">Санкт-Петербург</span>
+        <span class="header-location__place current-city">Санкт-Петербург</span>
 
+        <!-- Блок локации (уточняющий) -->
         <div class="header-location-confirm">
-          <span class="header-location-confirm__title">Ваш город: <mark>Москва</mark></span>
+          <span class="header-location-confirm__title">Ваш город: <mark class="current-city">Москва</mark></span>
 
-          <div class="header-location-confirm__select">
-            <button type="button" class="header-location-confirm__btn-true">Все верно</button>
+          <div class="header-location-confirm__buttons-select">
+            <button type="button" class="header-location-confirm__btn-true close-location">Все верно</button>
             <button type="button" class="header-location-confirm__btn-false">Выбрать город</button>
           </div>
 
           <p class="header-location-confirm__text">Эта информация требуется для правильного отображения наличия товара,
             времени и способов доставки</p>
         </div>
+
+        <!-- Блок выбора локации -->
+        <div class="header-location-confirm__select">
+          <button type="button" class="header-location-confirm__select-close close-location">
+            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0.707107" y1="1.55566" x2="14" y2="14.8486" stroke="#888888" stroke-linecap="round"/>
+              <line x1="14" y1="0.707107" x2="0.707107" y2="14" stroke="#888888" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+          <h4 class="header-location-confirm__select-title">Выбрать город:</h4>
+
+          <input type="text" class="header-location-confirm__select-input" id="input-change-location"
+                 placeholder="Ввести город вручную" title="Введите название своего города"/>
+
+          <ul class="header-location-confirm__select-list">
+            <li class="header-location-confirm__select-item">Москва</li>
+            <li class="header-location-confirm__select-item">Санкт-Петербург</li>
+          </ul>
+
+          <button type="button" class="header-location-confirm__select-true" id="btn-change-location">Все верно</button>
+
+          <p class="header-location-confirm__select-text">Эта информация требуется для правильного отображения наличия
+            товара, времени и способов доставки</p>
+        </div>
       </div>
+
 
       <!-- Выпадающий блок поиска -->
       <form class="header-search">
