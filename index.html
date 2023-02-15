@@ -282,18 +282,31 @@
             </a>
 
           </div>
-
         </div>
-
       </div>
 
+
+      <!-- Выпадающий блок локации -->
       <div class="header-location">
-        <button type="button" class="location-btn">
+        <button type="button" class="location-btn btn-open">
           <svg class="location-btn__icon"><use xlink:href="img/sprite.svg#location"></use></svg>
         </button>
         <span class="header-location__place">Санкт-Петербург</span>
+
+        <div class="header-location-confirm">
+          <span class="header-location-confirm__title">Ваш город: <mark>Москва</mark></span>
+
+          <div class="header-location-confirm__select">
+            <button type="button" class="header-location-confirm__btn-true">Все верно</button>
+            <button type="button" class="header-location-confirm__btn-false">Выбрать город</button>
+          </div>
+
+          <p class="header-location-confirm__text">Эта информация требуется для правильного отображения наличия товара,
+            времени и способов доставки</p>
+        </div>
       </div>
 
+      <!-- Выпадающий блок поиска -->
       <form class="header-search">
         <svg class="header-search__icon"><use xlink:href="img/sprite.svg#search"></use></svg>
         <span class="header-search__text">Поиск:</span>

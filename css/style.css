@@ -48,12 +48,15 @@ li {
 }
 
 button {
-    background-color: transparent;
     cursor: pointer;
 }
 
 input[type="radio"], input[type="checkbox"], input[type="file"] {
     display: none;
+}
+
+mark, button {
+    background: transparent;
 }
 
 section {
@@ -148,6 +151,7 @@ section {
     display: none;
 }
 
+
 /* style header
 -----------------*/
 .header {
@@ -209,6 +213,7 @@ section {
     background-color: var(--white);
     color: var(--dark-state-blue);
     padding: 0 11px 0 9px;
+    z-index: 20;
 }
 
 .catalog-btn {
@@ -220,11 +225,11 @@ section {
     height: 100%;
     border-radius: 5px 5px 0 0;
     transition: var(--normal);
-    z-index: 150;
+    z-index: 5;
     position: relative;
 }
 
-.header-catalog.active .catalog-btn__icon, .location-btn:hover .location-btn__icon {
+.header-catalog.active .catalog-btn__icon, .header-location.active .location-btn__icon {
     stroke: var(--dark-state-blue);
 }
 
@@ -263,6 +268,22 @@ section {
     align-items: center;
     margin-left: 21px;
     height: 100%;
+    transition: var(--normal);
+    position: relative;
+}
+
+.header-location.active .location-btn {
+    padding: 0 15px 0 14px;
+    background-color: var(--white);
+    z-index: 20;
+}
+
+.location-btn {
+    height: 100%;
+    transition: var(--normal);
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    z-index: 5;
 }
 
 .location-btn__icon {
@@ -275,6 +296,78 @@ section {
     font: 400 14px/16px var(--font);
     color: rgba(255, 255, 255, 0.6);
     margin-left: 10px;
+}
+
+.header-location.active:before {
+    content: "";
+}
+
+.header-location-confirm {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px 25px 18px 40px;
+    background-color: var(--white);
+    border-radius: 0 0 10px 10px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -5;
+    transition: var(--normal);
+    width: 370px;
+}
+
+.header-location.active .header-location-confirm {
+    z-index: 20;
+    visibility: visible;
+    opacity: 1;
+}
+
+.header-location-confirm__title {
+    color: var(--black);
+}
+
+.header-location-confirm__title > mark, .header-location-confirm__title {
+    font: 400 20px/23px var(--font);
+}
+
+.header-location-confirm__title > mark {
+    color: var(--dark-state-blue);
+    margin-left: 10px;
+}
+
+.header-location-confirm__select, .header-location-confirm__title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-location-confirm__select {
+    margin-top: 16px;
+}
+
+.header-location-confirm__text {
+    margin-top: 18px;
+    font: 400 14px/1.5 var(--font);
+    color: var(--suva-grey);
+}
+
+.header-location-confirm__btn-true, .header-location-confirm__btn-false {
+    padding: 8px 20px;
+    border-radius: 20px;
+    font: 400 16px/19px var(--font);
+    transition: var(--normal);
+}
+
+.header-location-confirm__btn-true {
+    background-color: var(--dark-state-blue);
+    color: var(--white);
+}
+
+.header-location-confirm__btn-false {
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--alto);
+    margin-left: 14px;
 }
 
 .header-search {
@@ -318,17 +411,6 @@ section {
     display: none;
 }
 
-.location-btn {
-    border-radius: 5px 5px 0 0;
-    height: 100%;
-    transition: var(--normal);
-}
-
-.location-btn:hover {
-    background-color: var(--white);
-    padding: 0 15px 0 14px;
-}
-
 .header-catalog {
     height: 100%;
     position: relative;
@@ -363,16 +445,23 @@ section {
     grid-gap: 25px;
 }
 
+.header-catalog:before {
+    top: 32px;
+}
+
 .header-catalog:before, .header-location:before {
     content: none;
-    position: fixed;
     width: 100%;
     height: 100vh;
     background: rgba(33, 27, 69, 0.7);
     backdrop-filter: blur(4.5px);
     z-index: 10;
-    top: 32px;
     left: 0;
+    position: fixed;
+}
+
+.header-location:before {
+    top: 87px;
 }
 
 .header-catalog-list {
@@ -469,7 +558,7 @@ section {
     content: "";
     width: 5px;
     height: 5px;
-    background-color: #D9D9D9;
+    background-color: var(--alto);
     border-radius: 50%;
     position: absolute;
     left: 0;
