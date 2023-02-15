@@ -114,14 +114,28 @@
   }
 
 
-  //открытие каталога при клике на кнопку "каталог" в header-e
+  //открытие выпадающих окон в header-e
   let btnOpen = document.querySelectorAll('.btn-open');
 
   if (btnOpen[0]) {
     for (let btn of btnOpen) {
       btn.addEventListener('click', function () {
-        btn.parentElement.classList.toggle('active');
-        document.body.classList.toggle('fix');
+        let res;
+
+        btn.parentElement.classList.contains('active') ? res = true : res = false;
+
+        for (let i = 0; i < btnOpen.length; i++) {
+          btnOpen[i].parentElement.classList.remove('active');
+        }
+
+        if (res) {
+          btn.parentElement.classList.remove('active');
+          document.body.classList.remove('fix');
+        } else {
+          btn.parentElement.classList.add('active');
+          document.body.classList.add('fix');
+
+        }
       })
     }
   }
@@ -203,7 +217,6 @@
 
     addEventItems(selectsItemLocation);
 
-
     // Отслеживаем изменение сортированных городов в блоке выбора локации
     let listLocationObserver = new MutationObserver(function(mutations) {
 
@@ -218,10 +231,33 @@
     };
 
     listLocationObserver.observe(listLocation,  locationObserverConfig);
+  }
+
+
+  let headerSearch = document.querySelector('.header-search');
+  let headerSearchInput = document.querySelector('.header-search__input');
+  let headerBottom = document.querySelector('.header-bottom');
+  let btnCloseSearch = document.querySelector('.header-search__close');
+
+
+
+  if (headerSearch) {
+
+    headerSearchInput.addEventListener('focus', function () {
+      headerSearch.classList.add('active');
+      headerBottom.classList.add('open-search');
+      document.body.classList.add('fix');
+    })
+
+    btnCloseSearch.addEventListener('click', function () {
+      headerSearch.classList.remove('active');
+      headerBottom.classList.remove('open-search');
+      document.body.classList.remove('fix');
+      headerSearchInput.value = '';
+    })
 
 
   }
-
 
 
 

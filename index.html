@@ -338,7 +338,200 @@
         <svg class="header-search__icon"><use xlink:href="img/sprite.svg#search"></use></svg>
         <span class="header-search__text">Поиск:</span>
         <input type="text" name="header-search" class="header-search__input" placeholder="Телевизор" title="Введите название товара"/>
-        <input type="submit" value="Найти" class="header-search__submit" title=""/>
+        <button type="submit" class="header-search__submit">
+          <svg class="header-search__submit-icon"><use xlink:href="img/sprite.svg#arrow-thin"></use></svg>
+        </button>
+        <button type="button" class="header-search__close">
+          <svg class="header-search__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg>
+        </button>
+
+        <div class="header-search-result">
+
+          <ul class="header-search-result__list">
+            <li class="header-search-result__items">
+              <a href="#" class="header-search-result__link"><mark>Тел</mark>евизоры</a>
+              <svg class="header-search-result__icon"><use xlink:href="img/sprite.svg#arrow-thin"></use></svg>
+            </li>
+            <li class="header-search-result__items">
+              <a href="#" class="header-search-result__link"><mark>Тел</mark>ефоны</a>
+              <svg class="header-search-result__icon"><use xlink:href="img/sprite.svg#arrow-thin"></use></svg>
+            </li>
+            <li class="header-search-result__items">
+              <a href="#" class="header-search-result__link"><mark>Тел</mark>еобъективы</a>
+              <svg class="header-search-result__icon"><use xlink:href="img/sprite.svg#arrow-thin"></use></svg>
+            </li>
+            <li class="header-search-result__items">
+              <a href="#" class="header-search-result__link">Обогрева<mark>тел</mark>и</a>
+              <svg class="header-search-result__icon"><use xlink:href="img/sprite.svg#arrow-thin"></use></svg>
+            </li>
+          </ul>
+
+          <ul class="header-search-result__cards">
+            <li class="header-search-result__cards-item">
+
+              <div class="card-preview">
+                <div class="card-preview__img">
+                  <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+                </div>
+                <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+                  <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                  <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+                </button>
+                <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+                  <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                  <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+                </button>
+              </div>
+
+              <div class="card-info">
+
+                <!-- число в атрибуте data-rating указывает на рейтинг товара-->
+                <!-- числа меньше 1 и больше 5 закрасят все звезды в серый цвет-->
+                <ul class="rating" data-rating="1">
+                  <li class="rating__item"></li>
+                  <li class="rating__item"></li>
+                  <li class="rating__item"></li>
+                  <li class="rating__item"></li>
+                  <li class="rating__item"></li>
+                </ul>
+
+                <ul class="tags">
+                  <li class="tags__item">
+                    <a href="#" class="tags__link" data-type="new">Новинка</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="#" class="tags__link" data-type="action">Акция</a>
+                  </li>
+                </ul>
+
+                <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+                <div class="card-info-price">
+                  <div class="card-price">
+                    <span class="card-price__old">51 000 ₽</span>
+                    <span class="card-price__new">95 012 999 ₽</span>
+                  </div>
+                  <a href="#" class="card-price__add-cart" title="В корзину">
+                    <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                  </a>
+                </div>
+
+              </div>
+            </li>
+            <li class="header-search-result__cards-item">
+
+              <div class="card-preview">
+                <div class="card-preview__img">
+                  <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+                </div>
+                <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+                  <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                  <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+                </button>
+                <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+                  <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                  <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+                </button>
+              </div>
+
+              <div class="card-info">
+
+                <!-- число в атрибуте data-rating указывает на рейтинг товара-->
+                <!-- числа меньше 1 и больше 5 закрасят все звезды в серый цвет-->
+                <ul class="rating" data-rating="1">
+                  <li class="rating__item"></li>
+                  <li class="rating__item"></li>
+                  <li class="rating__item"></li>
+                  <li class="rating__item"></li>
+                  <li class="rating__item"></li>
+                </ul>
+
+                <ul class="tags">
+                  <li class="tags__item">
+                    <a href="#" class="tags__link" data-type="new">Новинка</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="#" class="tags__link" data-type="action">Акция</a>
+                  </li>
+                </ul>
+
+                <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+                <div class="card-info-price">
+                  <div class="card-price">
+                    <span class="card-price__old">51 000 ₽</span>
+                    <span class="card-price__new">95 012 999 ₽</span>
+                  </div>
+                  <a href="#" class="card-price__add-cart" title="В корзину">
+                    <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                  </a>
+                </div>
+
+              </div>
+            </li>
+            <li class="header-search-result__cards-item">
+
+              <div class="card-preview">
+                <div class="card-preview__img">
+                  <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+                </div>
+                <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+                  <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                  <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+                </button>
+                <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+                  <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                  <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+                </button>
+              </div>
+
+              <div class="card-info">
+
+                <!-- число в атрибуте data-rating указывает на рейтинг товара-->
+                <!-- числа меньше 1 и больше 5 закрасят все звезды в серый цвет-->
+                <ul class="rating" data-rating="1">
+                  <li class="rating__item"></li>
+                  <li class="rating__item"></li>
+                  <li class="rating__item"></li>
+                  <li class="rating__item"></li>
+                  <li class="rating__item"></li>
+                </ul>
+
+                <ul class="tags">
+                  <li class="tags__item">
+                    <a href="#" class="tags__link" data-type="new">Новинка</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="#" class="tags__link" data-type="credit">Кредит</a>
+                  </li>
+                  <li class="tags__item">
+                    <a href="#" class="tags__link" data-type="action">Акция</a>
+                  </li>
+                </ul>
+
+                <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+                <div class="card-info-price">
+                  <div class="card-price">
+                    <span class="card-price__old">51 000 ₽</span>
+                    <span class="card-price__new">95 012 999 ₽</span>
+                  </div>
+                  <a href="#" class="card-price__add-cart" title="В корзину">
+                    <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                  </a>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+        </div>
       </form>
     </div>
 
@@ -484,11 +677,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -538,11 +731,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -584,11 +777,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -636,11 +829,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -688,11 +881,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -740,11 +933,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -905,11 +1098,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -957,11 +1150,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1009,11 +1202,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1061,11 +1254,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1113,11 +1306,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1165,11 +1358,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1217,11 +1410,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1269,11 +1462,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1428,11 +1621,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1480,11 +1673,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1532,11 +1725,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1584,11 +1777,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1636,11 +1829,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1688,11 +1881,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1740,11 +1933,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1793,11 +1986,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1845,11 +2038,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1897,11 +2090,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn btn-favorites" title="В избранное">
+              <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn btn-comparison" title="В избранное">
+              <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
