@@ -141,6 +141,17 @@
   }
 
 
+  let headerCatalogPreview = document.querySelector('.header-catalog-preview-wrap');
+  let headerCatalogList = document.querySelector('.header-catalog-list');
+
+  //скрываем слайдер при наведении на категории меню
+  headerCatalogList.addEventListener('mouseover', function () {
+    if (!headerCatalogPreview.classList.contains('focus')) {
+      headerCatalogPreview.classList.add('focus');
+    }
+  })
+
+
   //открытие блока локации
   let headerLocation = document.querySelector('.header-location');
   let headerLocationConfirm = document.querySelector('.header-location-confirm');
@@ -239,28 +250,26 @@
   let headerBottom = document.querySelector('.header-bottom');
   let btnCloseSearch = document.querySelector('.header-search__close');
 
-
-
+  // Открытие формы поиска в header-e
   if (headerSearch) {
 
+    // Открываем при фокусе поля ввода поиска
     headerSearchInput.addEventListener('focus', function () {
       headerSearch.classList.add('active');
       headerBottom.classList.add('open-search');
       document.body.classList.add('fix');
     })
 
+    // Закрываем при клике на крестик
     btnCloseSearch.addEventListener('click', function () {
       headerSearch.classList.remove('active');
       headerBottom.classList.remove('open-search');
       document.body.classList.remove('fix');
+
+      // Чистим после ввода
       headerSearchInput.value = '';
     })
-
-
   }
-
-
-
 
 
 

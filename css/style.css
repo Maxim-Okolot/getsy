@@ -556,7 +556,6 @@ section {
 
 .header-catalog-wrap {
     width: 1400px;
-    height: 596px;
     background-color: var(--white);
     position: absolute;
     transition: var(--normal);
@@ -630,7 +629,6 @@ section {
 .header-search.active .header-search-result {
     display: block;
 }
-
 
 .header-search-result {
     position: absolute;
@@ -733,13 +731,25 @@ section {
 }
 
 .header-catalog-preview-wrap {
-    display: grid;
+    display: block;
     grid-template-columns: 1fr 220px;
     grid-column-gap: 40px;
 }
 
+.header-catalog-preview-wrap.focus {
+    display: grid;
+}
+
 .header-catalog-preview__banner-img, .header-catalog-preview__banner-link {
     width: 100%;
+}
+
+.header-catalog-preview__banner-link {
+    display: none;
+}
+
+.header-catalog-preview-wrap.focus .header-catalog-preview-slider {
+    display: none;
 }
 
 .header-catalog-preview-wrap, .header-catalog-preview-slider, .header-catalog-preview-slider__item,
@@ -764,9 +774,18 @@ section {
     height: 100%;
     padding: 16px 0 0;
     max-width: 545px;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(2, 1fr);
 }
+
+.header-catalog-preview-wrap.focus .header-catalog-preview {
+    display: grid;
+}
+
+.header-catalog-preview-wrap.focus .header-catalog-preview__banner-link {
+    display: block;
+}
+
 
 .header-catalog-preview__title {
     font: 400 16px/19px var(--font);
@@ -880,6 +899,7 @@ section {
     width: 19px;
     height: 18px;
     stroke: var(--white);
+    fill: var(--white);
     z-index: 50;
 }
 
@@ -890,12 +910,12 @@ section {
 .header-user__icon {
     width: 15px;
     height: 18px;
-    stroke: var(--white);
+    fill: var(--white);
     transition: var(--normal);
 }
 
 .header-user.active .header-user__icon {
-    stroke: var(--dark-state-blue);
+    fill: var(--dark-state-blue);
 }
 
 .header-user {
@@ -1013,7 +1033,7 @@ section {
     width: 42px;
     height: 53px;
     margin: auto;
-    stroke: rgba(70, 60, 136, 0.4);
+    fill: rgba(70, 60, 136, 0.4);
 }
 
 .login-menu__user-name, .login-menu__user-phone {
