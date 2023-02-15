@@ -53,13 +53,235 @@
 
     <div class="header-panel-left">
 
-      <div class="header-catalog">
+      <div class="header-catalog active"> <!-- active -->
         <button type="button" class="catalog-btn">
           <svg class="catalog-btn__icon"><use xlink:href="img/sprite.svg#catalog"></use></svg>
           Каталог
         </button>
 
+        <!-- Выпадающий блок каталога -->
         <div class="header-catalog-wrap">
+
+          <!-- Список основных категорий -->
+          <ul class="header-catalog-list">
+            <li class="header-catalog-list__item">
+              <a href="#" class="header-catalog-list__link">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.4867 0.922324C10.847 0.156805 11.9359 0.156805 12.2962 0.922324L14.7233 6.07888C14.8688 6.38798 15.162 6.60142 15.5009 6.64489L21.1436 7.36871C21.9804 7.47606 22.3164 8.50774 21.7032 9.08732L17.5574 13.0059C17.31 13.2398 17.1986 13.5834 17.2616 13.9179L18.3199 19.53C18.4765 20.3606 17.5961 20.9988 16.8554 20.5916L11.8732 17.8524C11.5732 17.6874 11.2097 17.6874 10.9097 17.8524L5.92749 20.5916C5.18686 20.9988 4.3064 20.3606 4.46302 19.53L5.52128 13.9179C5.58437 13.5834 5.47292 13.2398 5.22551 13.0059L1.07968 9.08732C0.466494 8.50774 0.802469 7.47606 1.63936 7.36871L7.28206 6.64489C7.62091 6.60142 7.91413 6.38798 8.05961 6.07888L10.4867 0.922324Z" fill="#F79502"/>
+                </svg>
+                Акции
+              </a>
+            </li>
+            <li class="header-catalog-list__item">
+              <a href="#" class="header-catalog-list__link">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.4867 0.922324C10.847 0.156805 11.9359 0.156805 12.2962 0.922324L14.7233 6.07888C14.8688 6.38798 15.162 6.60142 15.5009 6.64489L21.1436 7.36871C21.9804 7.47606 22.3164 8.50774 21.7032 9.08732L17.5574 13.0059C17.31 13.2398 17.1986 13.5834 17.2616 13.9179L18.3199 19.53C18.4765 20.3606 17.5961 20.9988 16.8554 20.5916L11.8732 17.8524C11.5732 17.6874 11.2097 17.6874 10.9097 17.8524L5.92749 20.5916C5.18686 20.9988 4.3064 20.3606 4.46302 19.53L5.52128 13.9179C5.58437 13.5834 5.47292 13.2398 5.22551 13.0059L1.07968 9.08732C0.466494 8.50774 0.802469 7.47606 1.63936 7.36871L7.28206 6.64489C7.62091 6.60142 7.91413 6.38798 8.05961 6.07888L10.4867 0.922324Z" fill="#F79502"/>
+                </svg>
+                Телевизоры, аудио и видео
+              </a>
+            </li>
+            <li class="header-catalog-list__item">
+              <a href="#" class="header-catalog-list__link">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.4867 0.922324C10.847 0.156805 11.9359 0.156805 12.2962 0.922324L14.7233 6.07888C14.8688 6.38798 15.162 6.60142 15.5009 6.64489L21.1436 7.36871C21.9804 7.47606 22.3164 8.50774 21.7032 9.08732L17.5574 13.0059C17.31 13.2398 17.1986 13.5834 17.2616 13.9179L18.3199 19.53C18.4765 20.3606 17.5961 20.9988 16.8554 20.5916L11.8732 17.8524C11.5732 17.6874 11.2097 17.6874 10.9097 17.8524L5.92749 20.5916C5.18686 20.9988 4.3064 20.3606 4.46302 19.53L5.52128 13.9179C5.58437 13.5834 5.47292 13.2398 5.22551 13.0059L1.07968 9.08732C0.466494 8.50774 0.802469 7.47606 1.63936 7.36871L7.28206 6.64489C7.62091 6.60142 7.91413 6.38798 8.05961 6.07888L10.4867 0.922324Z" fill="#F79502"/>
+                </svg>
+                Смартфоны, гаджеты
+              </a>
+            </li>
+            <li class="header-catalog-list__item">
+              <a href="#" class="header-catalog-list__link">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.4867 0.922324C10.847 0.156805 11.9359 0.156805 12.2962 0.922324L14.7233 6.07888C14.8688 6.38798 15.162 6.60142 15.5009 6.64489L21.1436 7.36871C21.9804 7.47606 22.3164 8.50774 21.7032 9.08732L17.5574 13.0059C17.31 13.2398 17.1986 13.5834 17.2616 13.9179L18.3199 19.53C18.4765 20.3606 17.5961 20.9988 16.8554 20.5916L11.8732 17.8524C11.5732 17.6874 11.2097 17.6874 10.9097 17.8524L5.92749 20.5916C5.18686 20.9988 4.3064 20.3606 4.46302 19.53L5.52128 13.9179C5.58437 13.5834 5.47292 13.2398 5.22551 13.0059L1.07968 9.08732C0.466494 8.50774 0.802469 7.47606 1.63936 7.36871L7.28206 6.64489C7.62091 6.60142 7.91413 6.38798 8.05961 6.07888L10.4867 0.922324Z" fill="#F79502"/>
+                </svg>
+                Компьютеры, комплектующие
+              </a>
+            </li>
+            <li class="header-catalog-list__item">
+              <a href="#" class="header-catalog-list__link">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.4867 0.922324C10.847 0.156805 11.9359 0.156805 12.2962 0.922324L14.7233 6.07888C14.8688 6.38798 15.162 6.60142 15.5009 6.64489L21.1436 7.36871C21.9804 7.47606 22.3164 8.50774 21.7032 9.08732L17.5574 13.0059C17.31 13.2398 17.1986 13.5834 17.2616 13.9179L18.3199 19.53C18.4765 20.3606 17.5961 20.9988 16.8554 20.5916L11.8732 17.8524C11.5732 17.6874 11.2097 17.6874 10.9097 17.8524L5.92749 20.5916C5.18686 20.9988 4.3064 20.3606 4.46302 19.53L5.52128 13.9179C5.58437 13.5834 5.47292 13.2398 5.22551 13.0059L1.07968 9.08732C0.466494 8.50774 0.802469 7.47606 1.63936 7.36871L7.28206 6.64489C7.62091 6.60142 7.91413 6.38798 8.05961 6.07888L10.4867 0.922324Z" fill="#F79502"/>
+                </svg>
+                Техника для кухни
+              </a>
+            </li>
+            <li class="header-catalog-list__item">
+              <a href="#" class="header-catalog-list__link">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.4867 0.922324C10.847 0.156805 11.9359 0.156805 12.2962 0.922324L14.7233 6.07888C14.8688 6.38798 15.162 6.60142 15.5009 6.64489L21.1436 7.36871C21.9804 7.47606 22.3164 8.50774 21.7032 9.08732L17.5574 13.0059C17.31 13.2398 17.1986 13.5834 17.2616 13.9179L18.3199 19.53C18.4765 20.3606 17.5961 20.9988 16.8554 20.5916L11.8732 17.8524C11.5732 17.6874 11.2097 17.6874 10.9097 17.8524L5.92749 20.5916C5.18686 20.9988 4.3064 20.3606 4.46302 19.53L5.52128 13.9179C5.58437 13.5834 5.47292 13.2398 5.22551 13.0059L1.07968 9.08732C0.466494 8.50774 0.802469 7.47606 1.63936 7.36871L7.28206 6.64489C7.62091 6.60142 7.91413 6.38798 8.05961 6.07888L10.4867 0.922324Z" fill="#F79502"/>
+                </svg>
+                Техника для дома
+              </a>
+            </li>
+            <li class="header-catalog-list__item">
+              <a href="#" class="header-catalog-list__link">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.4867 0.922324C10.847 0.156805 11.9359 0.156805 12.2962 0.922324L14.7233 6.07888C14.8688 6.38798 15.162 6.60142 15.5009 6.64489L21.1436 7.36871C21.9804 7.47606 22.3164 8.50774 21.7032 9.08732L17.5574 13.0059C17.31 13.2398 17.1986 13.5834 17.2616 13.9179L18.3199 19.53C18.4765 20.3606 17.5961 20.9988 16.8554 20.5916L11.8732 17.8524C11.5732 17.6874 11.2097 17.6874 10.9097 17.8524L5.92749 20.5916C5.18686 20.9988 4.3064 20.3606 4.46302 19.53L5.52128 13.9179C5.58437 13.5834 5.47292 13.2398 5.22551 13.0059L1.07968 9.08732C0.466494 8.50774 0.802469 7.47606 1.63936 7.36871L7.28206 6.64489C7.62091 6.60142 7.91413 6.38798 8.05961 6.07888L10.4867 0.922324Z" fill="#F79502"/>
+                </svg>
+                Умный дом <br/>и системы безопасности
+              </a>
+            </li>
+            <li class="header-catalog-list__item">
+              <a href="#" class="header-catalog-list__link">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.4867 0.922324C10.847 0.156805 11.9359 0.156805 12.2962 0.922324L14.7233 6.07888C14.8688 6.38798 15.162 6.60142 15.5009 6.64489L21.1436 7.36871C21.9804 7.47606 22.3164 8.50774 21.7032 9.08732L17.5574 13.0059C17.31 13.2398 17.1986 13.5834 17.2616 13.9179L18.3199 19.53C18.4765 20.3606 17.5961 20.9988 16.8554 20.5916L11.8732 17.8524C11.5732 17.6874 11.2097 17.6874 10.9097 17.8524L5.92749 20.5916C5.18686 20.9988 4.3064 20.3606 4.46302 19.53L5.52128 13.9179C5.58437 13.5834 5.47292 13.2398 5.22551 13.0059L1.07968 9.08732C0.466494 8.50774 0.802469 7.47606 1.63936 7.36871L7.28206 6.64489C7.62091 6.60142 7.91413 6.38798 8.05961 6.07888L10.4867 0.922324Z" fill="#F79502"/>
+                </svg>
+                Спорт и отдых
+              </a>
+            </li>
+            <li class="header-catalog-list__item">
+              <a href="#" class="header-catalog-list__link">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.4867 0.922324C10.847 0.156805 11.9359 0.156805 12.2962 0.922324L14.7233 6.07888C14.8688 6.38798 15.162 6.60142 15.5009 6.64489L21.1436 7.36871C21.9804 7.47606 22.3164 8.50774 21.7032 9.08732L17.5574 13.0059C17.31 13.2398 17.1986 13.5834 17.2616 13.9179L18.3199 19.53C18.4765 20.3606 17.5961 20.9988 16.8554 20.5916L11.8732 17.8524C11.5732 17.6874 11.2097 17.6874 10.9097 17.8524L5.92749 20.5916C5.18686 20.9988 4.3064 20.3606 4.46302 19.53L5.52128 13.9179C5.58437 13.5834 5.47292 13.2398 5.22551 13.0059L1.07968 9.08732C0.466494 8.50774 0.802469 7.47606 1.63936 7.36871L7.28206 6.64489C7.62091 6.60142 7.91413 6.38798 8.05961 6.07888L10.4867 0.922324Z" fill="#F79502"/>
+                </svg>
+                Красота и здоровье
+              </a>
+            </li>
+            <li class="header-catalog-list__item">
+              <a href="#" class="header-catalog-list__link">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.4867 0.922324C10.847 0.156805 11.9359 0.156805 12.2962 0.922324L14.7233 6.07888C14.8688 6.38798 15.162 6.60142 15.5009 6.64489L21.1436 7.36871C21.9804 7.47606 22.3164 8.50774 21.7032 9.08732L17.5574 13.0059C17.31 13.2398 17.1986 13.5834 17.2616 13.9179L18.3199 19.53C18.4765 20.3606 17.5961 20.9988 16.8554 20.5916L11.8732 17.8524C11.5732 17.6874 11.2097 17.6874 10.9097 17.8524L5.92749 20.5916C5.18686 20.9988 4.3064 20.3606 4.46302 19.53L5.52128 13.9179C5.58437 13.5834 5.47292 13.2398 5.22551 13.0059L1.07968 9.08732C0.466494 8.50774 0.802469 7.47606 1.63936 7.36871L7.28206 6.64489C7.62091 6.60142 7.91413 6.38798 8.05961 6.07888L10.4867 0.922324Z" fill="#F79502"/>
+                </svg>
+                Детские товары
+              </a>
+            </li>
+            <li class="header-catalog-list__item">
+              <a href="#" class="header-catalog-list__link">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.4867 0.922324C10.847 0.156805 11.9359 0.156805 12.2962 0.922324L14.7233 6.07888C14.8688 6.38798 15.162 6.60142 15.5009 6.64489L21.1436 7.36871C21.9804 7.47606 22.3164 8.50774 21.7032 9.08732L17.5574 13.0059C17.31 13.2398 17.1986 13.5834 17.2616 13.9179L18.3199 19.53C18.4765 20.3606 17.5961 20.9988 16.8554 20.5916L11.8732 17.8524C11.5732 17.6874 11.2097 17.6874 10.9097 17.8524L5.92749 20.5916C5.18686 20.9988 4.3064 20.3606 4.46302 19.53L5.52128 13.9179C5.58437 13.5834 5.47292 13.2398 5.22551 13.0059L1.07968 9.08732C0.466494 8.50774 0.802469 7.47606 1.63936 7.36871L7.28206 6.64489C7.62091 6.60142 7.91413 6.38798 8.05961 6.07888L10.4867 0.922324Z" fill="#F79502"/>
+                </svg>
+                Строительство и ремонт
+              </a>
+            </li>
+            <li class="header-catalog-list__item">
+              <a href="#" class="header-catalog-list__link">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.4867 0.922324C10.847 0.156805 11.9359 0.156805 12.2962 0.922324L14.7233 6.07888C14.8688 6.38798 15.162 6.60142 15.5009 6.64489L21.1436 7.36871C21.9804 7.47606 22.3164 8.50774 21.7032 9.08732L17.5574 13.0059C17.31 13.2398 17.1986 13.5834 17.2616 13.9179L18.3199 19.53C18.4765 20.3606 17.5961 20.9988 16.8554 20.5916L11.8732 17.8524C11.5732 17.6874 11.2097 17.6874 10.9097 17.8524L5.92749 20.5916C5.18686 20.9988 4.3064 20.3606 4.46302 19.53L5.52128 13.9179C5.58437 13.5834 5.47292 13.2398 5.22551 13.0059L1.07968 9.08732C0.466494 8.50774 0.802469 7.47606 1.63936 7.36871L7.28206 6.64489C7.62091 6.60142 7.91413 6.38798 8.05961 6.07888L10.4867 0.922324Z" fill="#F79502"/>
+                </svg>
+                Все для офиса
+              </a>
+            </li>
+            <li class="header-catalog-list__item">
+              <a href="#" class="header-catalog-list__link">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.4867 0.922324C10.847 0.156805 11.9359 0.156805 12.2962 0.922324L14.7233 6.07888C14.8688 6.38798 15.162 6.60142 15.5009 6.64489L21.1436 7.36871C21.9804 7.47606 22.3164 8.50774 21.7032 9.08732L17.5574 13.0059C17.31 13.2398 17.1986 13.5834 17.2616 13.9179L18.3199 19.53C18.4765 20.3606 17.5961 20.9988 16.8554 20.5916L11.8732 17.8524C11.5732 17.6874 11.2097 17.6874 10.9097 17.8524L5.92749 20.5916C5.18686 20.9988 4.3064 20.3606 4.46302 19.53L5.52128 13.9179C5.58437 13.5834 5.47292 13.2398 5.22551 13.0059L1.07968 9.08732C0.466494 8.50774 0.802469 7.47606 1.63936 7.36871L7.28206 6.64489C7.62091 6.60142 7.91413 6.38798 8.05961 6.07888L10.4867 0.922324Z" fill="#F79502"/>
+                </svg>
+                Все для офиса
+              </a>
+            </li>
+            <li class="header-catalog-list__item">
+              <a href="#" class="header-catalog-list__link">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.4867 0.922324C10.847 0.156805 11.9359 0.156805 12.2962 0.922324L14.7233 6.07888C14.8688 6.38798 15.162 6.60142 15.5009 6.64489L21.1436 7.36871C21.9804 7.47606 22.3164 8.50774 21.7032 9.08732L17.5574 13.0059C17.31 13.2398 17.1986 13.5834 17.2616 13.9179L18.3199 19.53C18.4765 20.3606 17.5961 20.9988 16.8554 20.5916L11.8732 17.8524C11.5732 17.6874 11.2097 17.6874 10.9097 17.8524L5.92749 20.5916C5.18686 20.9988 4.3064 20.3606 4.46302 19.53L5.52128 13.9179C5.58437 13.5834 5.47292 13.2398 5.22551 13.0059L1.07968 9.08732C0.466494 8.50774 0.802469 7.47606 1.63936 7.36871L7.28206 6.64489C7.62091 6.60142 7.91413 6.38798 8.05961 6.07888L10.4867 0.922324Z" fill="#F79502"/>
+                </svg>
+                Авто-товары
+              </a>
+            </li>
+          </ul>
+
+          <!-- Блок с баннером и подкатегориями -->
+          <div class="header-catalog-preview-wrap">
+
+            <!-- Баннер -->
+            <div class="header-catalog-preview-slider" style="display: none">
+              <ul class="header-catalog-preview-slider__list">
+                <li class="header-catalog-preview-slider__item">
+                  <img src="img/banners/img-2.jpg" class="bg-img" alt="" title=""/>
+                </li>
+              </ul>
+            </div>
+
+            <!-- При наведении на список основных категорий - слайдер прячем, а этот показываем -->
+            <!-- Блок подкатегорий -->
+            <div class="header-catalog-preview">
+              <div class="header-catalog-preview__bottom-menu">
+                <h4 class="header-catalog-preview__title">Ноутбуки и компьютеры</h4>
+
+                <ul class="header-catalog-preview__list">
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Ноутбуки</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Аксессуары для ноутбуков</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Планшеты</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Аксессуары для планшетов</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Графические планшеты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header-catalog-preview__bottom-menu">
+                <h4 class="header-catalog-preview__title">Программное обеспечение</h4>
+
+                <ul class="header-catalog-preview__list">
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Все программы</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Игры для приставок и ПК</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Операционные системы</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Офисные программы</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header-catalog-preview__bottom-menu">
+                <h4 class="header-catalog-preview__title">Мониторы и аксессуары</h4>
+
+                <ul class="header-catalog-preview__list">
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Мониторы</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Кабели, разъемы, переходники</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Кронштейны, держатели и подставки</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Чистящие принадлежности</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Очки для компьютера</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Оргтехника и расходные материалы</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Принтеры, сканеры, копиры</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Очки для компьютера</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Ламинаторы, брошюровщики, резаки</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Уничтожители бумаг (шредеры)</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Аксессуары и запчасти</a>
+                  </li>
+                  <li class="header-catalog-preview__item">
+                    <a href="#" class="header-catalog-preview__link">Оборудование для связи</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Мелкий угловой баннер -->
+            <a href="#" class="header-catalog-preview__banner-link">
+              <img src="img/menu-catalog/banner-1.jpg" class="header-catalog-preview__banner-img" alt="" title=""/>
+            </a>
+
+          </div>
 
         </div>
 
@@ -89,19 +311,79 @@
         <svg class="header-phone__icon"><use xlink:href="img/sprite.svg#phone"></use></svg>
         8 800 999-99-99
       </a>
+
       <a href="#" class="header-comparison">
         <svg class="header-comparison__icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
       </a>
-      <a href="#" class="header-favorite notice">
+
+      <a href="#" class="header-favorite">
         <svg class="header-favorite__icon"><use xlink:href="img/sprite.svg#heart"></use></svg>
       </a>
+
+      <!-- класс "notice" показывает наличие уведомления -->
       <a href="#" class="header-cart notice">
         <svg class="header-cart__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
       </a>
+
       <div class="header-user">
         <button type="button" class="header-user__btn">
           <svg class="header-user__icon"><use xlink:href="img/sprite.svg#user"></use></svg>
+          <!-- <span class="header-user__name">Екатерина</span> -->
         </button>
+        <div class="login-menu-wrap">
+
+          <!-- блок входа, если пользователь не зарегистрирован -->
+          <div class="login-wrap">
+            <p class="login-wrap__text">Войдите в аккаунт или зарегистрируйтесь, чтобы получать кэшбэк от покупок и
+              участвовать в закрытых распродажах</p>
+            <a href="#" class="login-wrap__link">Вход / Регистрация</a>
+          </div>
+
+          <div class="login-menu">
+            <div class="login-menu__preview">
+              <svg class="login-menu__user-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+              <span class="login-menu__user-name">Екатерина</span>
+              <span class="login-menu__user-phone">8 (999) 123-45-67</span>
+            </div>
+            <ul class="login-menu__list">
+              <li class="login-menu__item">
+                <a href="#" class="login-menu__link">
+                  <svg class="login-menu__icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                  <span class="header-user__text">Личный кабинет</span>
+                  <span class="header-user__number">3</span>
+                </a>
+              </li>
+              <li class="login-menu__item">
+                <a href="#" class="login-menu__link">
+                  <svg class="login-menu__icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                  <span class="header-user__text">Корзина</span>
+                  <span class="header-user__number">6</span>
+                </a>
+              </li>
+              <li class="login-menu__item">
+                <a href="#" class="login-menu__link">
+                  <svg class="login-menu__icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                  <span class="header-user__text">Заказы</span>
+                </a>
+              </li>
+              <li class="login-menu__item">
+                <a href="#" class="login-menu__link">
+                  <svg class="login-menu__icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                  <span class="header-user__text">Избранное</span>
+                  <span class="header-user__number">2</span>
+                </a>
+              </li>
+              <li class="login-menu__item">
+                <a href="#" class="login-menu__link">
+                  <svg class="login-menu__icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                  <span class="header-user__text">Сравнение</span>
+                  <span class="header-user__number">15</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
       </div>
     </div>
 
@@ -158,11 +440,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -170,6 +452,8 @@
 
             <div class="card-info">
 
+              <!-- число в атрибуте data-rating указывает на рейтинг товара-->
+              <!-- числа меньше 1 и больше 5 закрасят все звезды в серый цвет-->
               <ul class="rating" data-rating="1">
                 <li class="rating__item"></li>
                 <li class="rating__item"></li>
@@ -210,11 +494,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -256,11 +540,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -308,11 +592,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -360,11 +644,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -412,11 +696,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -577,11 +861,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -629,11 +913,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -681,11 +965,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -733,11 +1017,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -785,11 +1069,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -837,11 +1121,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -889,11 +1173,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -941,11 +1225,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1100,11 +1384,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1152,11 +1436,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1204,11 +1488,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1256,11 +1540,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1308,11 +1592,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1360,11 +1644,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1412,11 +1696,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1465,11 +1749,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1517,11 +1801,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
@@ -1569,11 +1853,11 @@
               <div class="card-preview__img">
                 <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
               </div>
-              <button class="card-preview__btn" title="В избранное">
+              <button class="card-preview__btn btn-favorites" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
               </button>
-              <button class="card-preview__btn" title="В сравнение">
+              <button class="card-preview__btn btn-comparison" title="В избранное">
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
                 <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
               </button>
