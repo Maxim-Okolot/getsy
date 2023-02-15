@@ -114,13 +114,18 @@
   }
 
 
-  let btnHeaderCatalog = document.querySelector('.catalog-btn');
+  //открытие каталога при клике на кнопку "каталог" в header-e
+  let btnOpen = document.querySelectorAll('.btn-open');
 
-  if (btnHeaderCatalog) {
-    btnHeaderCatalog.addEventListener('click', function () {
-      btnHeaderCatalog.parentElement.classList.toggle('active');
-    })
+  if (btnOpen[0]) {
+    for (let btn of btnOpen) {
+      btn.addEventListener('click', function () {
+        btn.parentElement.classList.toggle('active');
+      })
+    }
   }
+
+
 
 
 

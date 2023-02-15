@@ -53,8 +53,8 @@
 
     <div class="header-panel-left">
 
-      <div class="header-catalog active"> <!-- active -->
-        <button type="button" class="catalog-btn">
+      <div class="header-catalog">
+        <button type="button" class="catalog-btn btn-open">
           <svg class="catalog-btn__icon"><use xlink:href="img/sprite.svg#catalog"></use></svg>
           Каталог
         </button>
@@ -326,9 +326,12 @@
       </a>
 
       <div class="header-user">
-        <button type="button" class="header-user__btn">
+        <button type="button" class="header-user__btn btn-open">
           <svg class="header-user__icon"><use xlink:href="img/sprite.svg#user"></use></svg>
-          <!-- <span class="header-user__name">Екатерина</span> -->
+
+          <!-- имя пользователя при авторизации -->
+          <!-- убрать класс dpl-none для отображения -->
+          <span class="header-user__name dpl-none">Екатерина</span>
         </button>
         <div class="login-menu-wrap">
 
@@ -339,6 +342,7 @@
             <a href="#" class="login-wrap__link">Вход / Регистрация</a>
           </div>
 
+          <!-- окно пользователя если зарегистрирован -->
           <div class="login-menu">
             <div class="login-menu__preview">
               <svg class="login-menu__user-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>

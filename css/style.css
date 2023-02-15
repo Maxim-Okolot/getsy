@@ -144,6 +144,10 @@ section {
     grid-template-columns: repeat(6, 1fr);
 }
 
+.dpl-none {
+    display: none;
+}
+
 /* style header
 -----------------*/
 .header {
@@ -555,14 +559,29 @@ section {
 .header-user__icon {
     width: 15px;
     height: 18px;
-    fill: var(--white);
     stroke: var(--white);
+    transition: var(--normal);
+}
+
+.header-user.active .header-user__icon {
+    stroke: var(--dark-state-blue);
 }
 
 .header-user {
     margin-left: 24px;
     height: 100%;
     position: relative;
+    transition: var(--normal);
+}
+
+.header-user.active {
+    background-color: var(--white);
+    padding: 0 13px;
+    border-radius: 5px 5px 0 0;
+}
+
+.header-user.active .header-user__name {
+    color: var(--dark-state-blue);
 }
 
 .header-user__btn {
@@ -602,6 +621,7 @@ section {
 
 .header-user.active:before {
     content: "";
+    z-index: 10;
 }
 
 .header-user.active .login-menu-wrap {
@@ -646,6 +666,7 @@ section {
 
 .login-menu {
     width: 355px;
+    display: none;
 }
 
 .login-menu__preview {
