@@ -122,12 +122,15 @@
       btn.addEventListener('click', function () {
         let res;
 
+        //проверяем наличие уже активного окна
         btn.parentElement.classList.contains('active') ? res = true : res = false;
 
+        //закрываем закрытое окно
         for (let i = 0; i < btnOpen.length; i++) {
           btnOpen[i].parentElement.classList.remove('active');
         }
 
+        //закрываем или открываем окно по клику
         if (res) {
           btn.parentElement.classList.remove('active');
           document.body.classList.remove('fix');

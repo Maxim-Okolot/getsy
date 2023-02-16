@@ -504,6 +504,23 @@
 
 .breadcrumbs__item {
   padding-right: 29px;
+  position: relative;
+}
+
+.breadcrumbs__item:after {
+  content: "";
+  width: 3px;
+  height: 7px;
+  background: url("../img/icons/arrow-lite.svg") no-repeat center;
+  background-size: cover;
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.breadcrumbs__item:last-child:after {
+  content: none;
 }
 
 .breadcrumbs__link {
