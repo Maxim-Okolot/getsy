@@ -206,7 +206,15 @@
   transition: var(--normal);
 }
 
-.card-price__add-cart:hover {
+.card-price__add-cart[data-cart="true"] .card-price__icon:first-child,
+.card-price__add-cart[data-cart="false"] .card-price__icon:last-child {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.card-price__add-cart:hover, .card-price__add-cart[data-cart="true"] {
   background-color: var(--deep-saffron);
 }
 
@@ -266,6 +274,10 @@
   width: 17px;
   height: 15px;
   stroke: var(--white);
+  transition: var(--normal);
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
 }
 
 /* style section popular category
