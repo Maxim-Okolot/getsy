@@ -130,9 +130,12 @@
         <path d="M5.5 1H1.5C0.947715 1 0.5 1.44772 0.5 2V13.5C0.5 14.0523 0.947715 14.5 1.5 14.5H8.75H16C16.5523 14.5 17 14.0523 17 13.5V2C17 1.44772 16.5523 1 16 1H12M5.5 1V3.5C5.5 4.05228 5.94772 4.5 6.5 4.5H11C11.5523 4.5 12 4.05228 12 3.5V1M5.5 1H12"></path>
     </symbol>
 
-    <symbol  id="check" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 10">
+    <symbol id="check" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 10">
         <path d="M0.5 5.5L5 9.5L12.5 0.5" stroke-linecap="round" stroke-linejoin="round"></path>
     </symbol>
 
-
+    <symbol id="in-cart"  fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+        <path d="M5.93548 6.76923H2.26548C1.61972 6.76923 1.14328 7.37216 1.29257 8.00043L3.01085 15.2312C3.11795 15.6819 3.52054 16 3.98376 16H14.5119C14.9545 16 15.3445 15.709 15.4705 15.2847L17.6184 8.05398C17.8088 7.41293 17.3285 6.76923 16.6598 6.76923H13.0645M5.93548 6.76923L8.12903 1M5.93548 6.76923H11.9677H13.0645M13.0645 6.76923L10.871 1" stroke-linecap="round"></path>
+        <path d="M6 11L8 13.5L12.5 9" stroke-linecap="round" stroke-linejoin="round"></path>
+    </symbol>
 </svg>

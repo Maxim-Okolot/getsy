@@ -1,6 +1,19 @@
 (function () {
+  MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
 
-  window.addEventListener('load', function () {
+  //маска поля ввода номера телефона
+  let maskPhone = document.querySelectorAll('.mask-phone');
+
+  if (maskPhone[0]) {
+
+    for (let phoneInput of maskPhone) {
+      let phoneMask = IMask(phoneInput, {
+        mask: '+7(000)000-00-00'
+      });
+    }
+  }
+
+  window.addEventListener('load', () => {
     //слайдеры карточек
     let sliderPerView = document.querySelectorAll('.slider-per-view');
 
@@ -75,7 +88,7 @@
 
   if (cardPreviewBtn[0]) {
     for (let btn of cardPreviewBtn) {
-      btn.addEventListener('click', function () {
+      btn.addEventListener('click', () => {
         btn.classList.toggle('active');
 
         if (btn.classList.contains('btn-favorites')) {
@@ -119,7 +132,7 @@
 
   if (btnOpen[0]) {
     for (let btn of btnOpen) {
-      btn.addEventListener('click', function () {
+      btn.addEventListener('click', () => {
         let res;
 
         //проверяем наличие уже активного окна
@@ -148,7 +161,7 @@
   let headerCatalogList = document.querySelector('.header-catalog-list');
 
   //скрываем слайдер при наведении на категории меню
-  headerCatalogList.addEventListener('mouseover', function () {
+  headerCatalogList.addEventListener('mouseover', () => {
     if (!headerCatalogPreview.classList.contains('focus')) {
       headerCatalogPreview.classList.add('focus');
     }
@@ -164,7 +177,7 @@
   if (headerLocation) {
 
     //открытие блока выбора локации
-    btnOpenSelectLocation.addEventListener('click', function () {
+    btnOpenSelectLocation.addEventListener('click', () => {
       headerLocationConfirm.classList.add('hide');
       headerLocation.classList.add('change-location');
     });
@@ -194,7 +207,7 @@
     }
 
     // Показываем|скрываем кнопку "Все верно" при совпадении введенного названия со списком отсортированных городов
-    inputChangeLocation.addEventListener('input', function () {
+    inputChangeLocation.addEventListener('input', () => {
 
       for (let item of selectsItemLocation) {
         if (inputChangeLocation.value.toLocaleLowerCase() === item.innerText.toLocaleLowerCase()) {
@@ -208,7 +221,7 @@
 
 
     //закрытие всего блока локации
-    btnChangeLocation.addEventListener('click', function () {
+    btnChangeLocation.addEventListener('click', () => {
       let newLocation = inputChangeLocation.value[0].toUpperCase() + inputChangeLocation.value.slice(1);
 
       for (let city of currentCity) {
@@ -257,14 +270,14 @@
   if (headerSearch) {
 
     // Открываем при фокусе поля ввода поиска
-    headerSearchInput.addEventListener('focus', function () {
+    headerSearchInput.addEventListener('focus', () => {
       headerSearch.classList.add('active');
       headerBottom.classList.add('open-search');
       document.body.classList.add('fix');
     })
 
     // Закрываем при клике на крестик
-    btnCloseSearch.addEventListener('click', function () {
+    btnCloseSearch.addEventListener('click', () => {
       headerSearch.classList.remove('active');
       headerBottom.classList.remove('open-search');
       document.body.classList.remove('fix');
@@ -275,5 +288,162 @@
   }
 
 
+//форма авторизации и регистрации
+  let btnOpenFormAuthorization = document.querySelector('.login-wrap__link'),
+    authorization = document.querySelector('#authorization-wrap'),
+    btnAuthorizationClose = document.querySelector('.authorization__close'),
+    headerUser = document.querySelector('.header-user');
+
+  if (authorization) {
+    let formAuth = document.querySelector('#form-auth'),
+      formText = document.querySelector('#form-login-text'),
+      formAuthorizationSubmit = document.querySelector('.form-authorization__submit'),
+      formAuthorizationBtn = document.querySelector('.form-authorization__btn'),
+      formRegistrationBtn = document.querySelector('.form-registration__btn'),
+      btnChangeFormAuth = document.querySelector('.registration-user__btn-form-auth'),
+      inputFocus = document.querySelectorAll('.input-focus'),
+      registrationForm = document.querySelector('.registration-from'),
+      authorizationForm = document.querySelector('.form-authorization');
+
+
+
+    registrationForm.addEventListener('submit', (event) => {
+         let inputs = registrationForm.querySelectorAll('.reg');
+
+         if (!validation(inputs)) {
+           event.preventDefault();
+         }
+    })
+
+    authorizationForm.addEventListener('submit', (event) => {
+      let inputs = authorizationForm.querySelectorAll('.reg');
+
+      if (!validation(inputs)) {
+        event.preventDefault();
+      }
+    })
+
+
+
+    for (let input of inputFocus) {
+      input.addEventListener('focus', () => {
+        if (!input.classList.contains('focus')) {
+          input.classList.add('focus');
+        }
+      });
+
+      input.addEventListener('blur', () => {
+        if (input.value === '' && input.classList.contains('focus')) {
+          input.classList.remove('focus');
+        }
+      });
+    }
+
+    formAuthorizationBtn.addEventListener('click', () => {
+      formAuth.dataset.statusForm = 'pass';
+      formAuthorizationSubmit.innerHTML = 'Войти';
+    })
+
+    btnOpenFormAuthorization.addEventListener('click', () => {
+      authorization.classList.remove('hide');
+      headerUser.classList.remove('active');
+      headerUser.classList.add('open-auth');
+    })
+
+    btnAuthorizationClose.addEventListener('click',  () => {
+      authorization.classList.add('hide');
+      headerUser.classList.remove('open-auth');
+    })
+
+
+    let deleteNoValidInputs = (elems) => {
+      for (let elem of elems) {
+        elem.classList.remove('no-valid');
+      }
+    }
+
+    // наблюдение за изменением атрибута data-status-form
+    let observer = new MutationObserver(mutationRecords => {
+      let statusForm = formAuth.dataset.statusForm;
+
+
+      switch (statusForm) {
+        // первоначальное состояние формы. Показываем первое окно авторизации с полем телефона
+        case 'default':
+          // текст сообщения в форме
+          formText.innerHTML = 'Мы отправим СМС с кодом подтверждения';
+          deleteNoValidInputs(document.querySelectorAll('.no-valid'));
+          break;
+
+        case 'phone-not-found':
+          formText.innerHTML = 'Мы не нашли аккаунт с таким номером телефона. Зарегистрируйтесь, чтобы продолжить покупки.';
+          break;
+
+        case 'pass':
+          formText.innerHTML = 'Введите телефон и пароль';
+          deleteNoValidInputs(document.querySelectorAll('.no-valid'));
+
+      }
+
+      btnChangeFormAuth.addEventListener('click', () => {
+        formAuth.dataset.statusForm = 'default';
+        authorization.classList.remove('registration');
+        authorization.classList.add('authorization');
+
+      })
+
+      formRegistrationBtn.addEventListener('click', () => {
+        formAuth.dataset.statusForm = 'hide';
+        authorization.classList.remove('authorization');
+        authorization.classList.add('registration');
+      })
+
+    });
+
+    observer.observe(formAuth , {
+      attributes: true
+    });
+
+  }
+
+
+  //Валидация полей форм
+  function validation(items) {
+
+    let inputStatusValidate = [];
+
+    for (let item of items) {
+
+      if (item.value === '') {
+
+        if (!item.parentElement.classList.contains('no-valid')) {
+          item.parentElement.classList.add('no-valid');
+        }
+
+        inputStatusValidate.push(false);
+
+      } else {
+        inputStatusValidate.push(true);
+
+        if (item.parentElement.classList.contains('no-valid')) {
+          item.parentElement.classList.remove('no-valid');
+        }
+      }
+    }
+
+    // true - canceled sending
+    if (inputStatusValidate.includes(false)) {
+      return false;
+    }
+  }
+
+
+
+
+
+
 
 })();
+
+
+

@@ -214,8 +214,12 @@
   z-index: -1;
 }
 
-.card-price__add-cart:hover, .card-price__add-cart[data-cart="true"] {
+.card-price__add-cart:hover {
   background-color: var(--deep-saffron);
+}
+
+.card-price__add-cart[data-cart="true"] {
+  background-color: transparent;
 }
 
 .card-info-price {
