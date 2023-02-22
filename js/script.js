@@ -364,6 +364,7 @@
       authorization.classList.remove('registration');
       authorization.classList.add('authorization');
       document.body.classList.remove('fix');
+      document.querySelector('.sms-error-text').remove();
     })
 
 
@@ -436,6 +437,8 @@
           break;
 
         case 'sms':
+          document.querySelector('.sms-error-text').remove();
+
           formTitle.innerHTML = 'Код из СМС';
           timerCode = setTimeout(tick, 1000);
 
