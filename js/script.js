@@ -305,8 +305,8 @@
       btnChangeFormAuth = document.querySelector('.registration-user__btn-form-auth'),
       inputFocus = document.querySelectorAll('.input-focus'),
       registrationForm = document.querySelector('.registration-from'),
-      authorizationForm = document.querySelector('.form-authorization');
-
+      authorizationForm = document.querySelector('.form-authorization'),
+      formTitle = document.querySelector('#form-login-title');
 
     //отправка формы регистрации
     registrationForm.addEventListener('submit', (event) => {
@@ -325,7 +325,6 @@
         event.preventDefault();
       }
     })
-
 
     //анимация placeholder-a при фокусе
     for (let input of inputFocus) {
@@ -373,7 +372,35 @@
       for (let elem of elems) {
         elem.classList.remove('no-valid');
       }
+
+      //очищаем поля формы
+      authorizationForm.reset();
+      registrationForm.reset();
     }
+
+    let timer = document.querySelector('#form-sms-auth__timer');
+    let timerStart = 59;
+    let btnRepeatCode = document.querySelector('.form-sms-auth__repeat-code');
+    let timerText = document.querySelector('.form-sms-auth__text');
+    let timerCode;
+    function tick() {
+      if (timerStart < 11) {
+        timer.innerHTML = `0${--timerStart}`;
+      } else {
+        timer.innerHTML = --timerStart;
+      }
+
+      if (timerStart <= 0) {
+        timer.innerHTML = timerStart = 59;
+        btnRepeatCode.removeAttribute('disabled');
+        timerText.classList.add('dpl-none');
+        clearTimeout();
+        return false;
+      } else {
+        timerCode = setTimeout(tick, 1000);
+      }
+    }
+
 
     // наблюдение за изменением атрибута data-status-form
     let observer = new MutationObserver(mutationRecords => {
@@ -383,7 +410,9 @@
       switch (statusForm) {
         // первоначальное состояние формы. Показываем первое окно авторизации с полем телефона
         case 'default':
+          clearTimeout(timerCode);
           // текст сообщения в форме
+          formTitle.innerHTML = 'Введите номер телефона';
           formText.innerHTML = 'Мы отправим СМС с кодом подтверждения';
           deleteNoValidInputs(document.querySelectorAll('.no-valid'));
           break;
@@ -395,10 +424,51 @@
 
         //Статус формы при открытии формы входа по паролю
         case 'pass':
-          formText.innerHTML = 'Введите телефон и пароль';
+          clearTimeout(timerCode);
+          formTitle.innerHTML = 'Введите телефон и пароль';
           deleteNoValidInputs(document.querySelectorAll('.no-valid'));
+          break;
+
+        //Статус формы при ошибке ввода логина или пароля
+        case 'pass-not-found':
+          formText.innerHTML = 'Мы не нашли аккаунт с таким номером телефона. Либо пароль неверный. Зарегистрируйтесь, ' +
+            'чтобы продолжить покупки.';
+          break;
+
+        case 'sms':
+          formTitle.innerHTML = 'Код из СМС';
+          timerCode = setTimeout(tick, 1000);
+
+          let inputPhone = document.querySelector('#form-auth-phone');
+
+          formText.innerHTML = `Мы отправили код на номер ${inputPhone.value} (<button type="button" class="bnt-change-phone">изменить</button>)`;
+
+          let bntChangePhone = document.querySelector('.bnt-change-phone');
+
+          bntChangePhone.addEventListener('click', () => {
+            formAuth.dataset.statusForm = 'default';
+            clearTimeout(timerCode);
+            timer.innerHTML = timerStart = 59;
+            inputPhone.focus();
+          })
+
+
+          btnRepeatCode.setAttribute('disabled', 'disabled');
+          timerText.classList.remove('dpl-none');
+
+          btnRepeatCode.addEventListener('click', () => {
+            timerCode = setTimeout(tick, 1000);
+            btnRepeatCode.setAttribute('disabled', 'disabled');
+            timerText.classList.remove('dpl-none');
+          })
+
+          break;
+
+        case 'sms-error':
+          formText.insertAdjacentHTML('afterend','<span class="sms-error-text">Код введен неверно. Попробуйте еще раз</span>');
 
       }
+
 
       //клик по кнопке регистрация
       btnChangeFormAuth.addEventListener('click', () => {

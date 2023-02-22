@@ -611,12 +611,12 @@
             <!-- для валидации бэка -->
             <!-- not-found - телефон не найден при входе по номеру -->
             <div class="authorization__login-phone" id="form-auth" data-status-form="default">
-              <span class="authorization__title">Введите номер телефона</span>
+              <span class="authorization__title" id="form-login-title">Введите номер телефона</span>
               <p class="authorization__text" id="form-login-text">Мы отправим СМС с кодом подтверждения</p>
 
               <form class="form-authorization">
                 <label class="form-authorization__label">
-                  <input type="tel" name="authorization-phone" class="form-authorization__input input-focus mask-phone reg"/>
+                  <input type="tel" name="authorization-phone" id="form-auth-phone" class="form-authorization__input input-focus mask-phone reg"/>
                   <span class="form-authorization__placeholder">Номер телефона</span>
                 </label>
 
@@ -692,6 +692,19 @@
               </div>
 
             </div>
+
+            <form class="form-sms-auth" id="sms-auth">
+              <label class="form-sms-auth__label">
+                <input type="text" name="authorization-code" class="form-sms-auth__input input-focus reg"/>
+                <span class="form-sms-auth__placeholder">Введите код</span>
+              </label>
+
+              <button type="submit" class="form-sms-auth__repeat-code btn" disabled>Код повторно</button>
+
+              <p class="form-sms-auth__text dpl-none">Получить код повторно через 00:<span id="form-sms-auth__timer">59</span></p>
+            </form>
+
+
           </div>
 
 

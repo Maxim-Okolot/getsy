@@ -1172,28 +1172,99 @@ section {
 }
 
 [data-status-form="phone-not-found"] .authorization__text {
-    color: var(--red);
     max-width: 290px;
 }
 
-[data-status-form="phone-not-found"] .form-authorization__label {
+[data-status-form="phone-not-found"] .authorization__text, [data-status-form="pass-not-found"] .authorization__text {
+    color: var(--red);
+}
+
+[data-status-form="pass-not-found"] .authorization__text {
+    max-width: 351px;
+}
+
+[data-status-form="phone-not-found"] .form-authorization__label,
+[data-status-form="pass-not-found"] .form-authorization__label,
+[data-status-form="sms-error"] .form-authorization__label, [data-status-form="sms-error"] ~ .form-sms-auth .form-sms-auth__label {
     border-color: var(--red);
 }
 
 [data-status-form="phone-not-found"] .form-authorization__submit, [data-status-form="hide"],
 [data-status-form="phone-not-found"] .form-authorization__btn, [data-status-form="phone-not-found"] .form-authorization__submit,
 [data-status-form="default"] .form-registration__btn, [data-status-form="pass"] .form-authorization__btn,
-.form-authorization__check:not([data-status-form="pass"] .form-authorization__check) {
+.form-authorization__check:not([data-status-form="pass"] .form-authorization__check),
+[data-status-form="pass"] .authorization__text, [data-status-form="pass-not-found"] .form-authorization__btn,
+.sms-error-text, [data-status-form="sms"] .form-authorization, [data-status-form="sms"] .form-authorization__btn,
+[data-status-form="sms"] .form-registration__btn, .form-sms-auth, [data-status-form="sms-error"] .form-registration__btn,
+[data-status-form="sms-error"] .form-authorization__btn, [data-status-form="sms-error"] .form-authorization {
     display: none;
 }
 
+[data-status-form="sms"] ~ .form-sms-auth, [data-status-form="sms-error"] ~ .form-sms-auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: max-content;
+}
+
+[data-status-form="sms-error"] .sms-error-text {
+    display: inline-block;
+    margin-bottom: 22px;
+    color: var(--red);
+    font: var(--text-normal);
+}
+
+.form-sms-auth .form-sms-auth__label {
+    width: 238px;
+}
+
+.bnt-change-phone {
+    font: 700 14px/16px var(--font);
+    color: var(--dark-state-blue);
+}
+
+[data-status-form="sms"] .authorization__text, [data-status-form="sms-error"] .authorization__text {
+    font: var(--text-normal);
+    color: var(--black);
+    max-width: 100%;
+    margin-bottom: 58px;
+}
+
+[data-status-form="sms-error"] .authorization__text {
+    margin-bottom: 15px;
+}
+
+[data-status-form="pass"] .authorization__title {
+    margin-bottom: 28px;
+}
+
+[data-status-form="sms-error"] .sms-error-text {
+    display: inline-block;
+    font: var(--text-normal);
+    color: var(--red);
+    margin-bottom: 22px;
+}
+
+
 .form-registration__btn {
-    background-color: var(--dark-state-blue);
-    color: var(--white);
     margin: 15px 0;
 }
 
-.form-authorization__label, .registration-from__label {
+.form-sms-auth__repeat-code, .form-registration__btn {
+    background-color: var(--dark-state-blue);
+    color: var(--white);
+}
+
+.form-sms-auth__repeat-code:disabled {
+   opacity: .6;
+}
+
+.form-sms-auth__repeat-code {
+    margin-bottom: 24px;
+}
+
+.form-authorization__label, .registration-from__label, .form-sms-auth__label {
     width: 238px;
     border: 1px solid var(--alto);
     border-radius: 26px;
@@ -1205,7 +1276,8 @@ section {
     margin-bottom: 12px;
 }
 
-.form-authorization__label:last-of-type:not([data-status-form="pass"] .form-authorization__label) {
+.form-authorization__label:last-of-type:not([data-status-form="pass"] .form-authorization__label,
+ [data-status-form="pass-not-found"] .form-authorization__label) {
     display: none;
 }
 
@@ -1213,7 +1285,7 @@ section {
     width: 100%;
 }
 
-.form-authorization__placeholder, .registration-from__placeholder {
+.form-authorization__placeholder, .registration-from__placeholder, .form-sms-auth__placeholder {
     color: var(--suva-grey);
     position: absolute;
     left: 16px;
@@ -1223,11 +1295,12 @@ section {
     cursor: text;
 }
 
-.form-authorization__placeholder, .form-authorization__input, .registration-from__placeholder, .registration-from__input {
+.form-authorization__placeholder, .form-authorization__input, .registration-from__placeholder, .registration-from__input,
+.form-sms-auth__placeholder, .form-sms-auth__input  {
     font: 400 16px/18px var(--font);
 }
 
-.form-authorization__input, .registration-from__input {
+.form-authorization__input, .registration-from__input, .form-sms-auth__input {
     width: 100%;
     height: 20px;
     background-color: transparent;
@@ -1235,16 +1308,17 @@ section {
 }
 
 .form-authorization__input.focus + .form-authorization__placeholder,
-.registration-from__input.focus + .registration-from__placeholder {
+.registration-from__input.focus + .registration-from__placeholder,
+.form-sms-auth__input.focus + .form-sms-auth__placeholder {
     transform: translateY(0);
     top: 5px;
     font: 400 8px/9px var(--font);
 }
 
 .authorization__title {
+    margin-bottom: 12px;
     font: 400 20px/23px var(--font);
     color: var(--black);
-    margin-bottom: 12px;
 }
 
 .authorization__text {
@@ -1295,7 +1369,7 @@ section {
     margin-bottom: 3px;
 }
 
-.registration-advantages__item-text, .registration-user__btn-form-auth {
+.registration-advantages__item-text, .registration-user__btn-form-auth, .form-sms-auth__text {
     font: var(--text-normal);
     color: var(--black);
 }
