@@ -263,7 +263,6 @@
     listLocationObserver.observe(listLocation,  locationObserverConfig);
   }
 
-
   let headerSearch = document.querySelector('.header-search');
   let headerSearchInput = document.querySelector('.header-search__input');
   let headerBottom = document.querySelector('.header-bottom');
@@ -365,6 +364,7 @@
       formAuth.dataset.statusForm = 'default';
       authorization.classList.remove('registration');
       authorization.classList.add('authorization');
+      document.body.classList.remove('fix');
     })
 
 
