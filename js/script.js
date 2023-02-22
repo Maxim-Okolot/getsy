@@ -144,12 +144,15 @@
         }
 
         //закрываем или открываем окно по клику
-        if (res) {
+        if (res && !headerUser.classList.contains('open-auth')) {
           btn.parentElement.classList.remove('active');
           document.body.classList.remove('fix');
         } else {
-          btn.parentElement.classList.add('active');
-          document.body.classList.add('fix');
+
+          if (!headerUser.classList.contains('open-auth')) {
+            btn.parentElement.classList.add('active');
+            document.body.classList.add('fix');
+          }
 
         }
       })
@@ -306,7 +309,7 @@
       authorizationForm = document.querySelector('.form-authorization');
 
 
-
+    //отправка формы регистрации
     registrationForm.addEventListener('submit', (event) => {
          let inputs = registrationForm.querySelectorAll('.reg');
 
@@ -315,6 +318,7 @@
          }
     })
 
+    //отправка формы авторизации
     authorizationForm.addEventListener('submit', (event) => {
       let inputs = authorizationForm.querySelectorAll('.reg');
 
@@ -324,7 +328,7 @@
     })
 
 
-
+    //анимация placeholder-a при фокусе
     for (let input of inputFocus) {
       input.addEventListener('focus', () => {
         if (!input.classList.contains('focus')) {
@@ -332,6 +336,7 @@
         }
       });
 
+      //анимация placeholder-a при смене фокуса
       input.addEventListener('blur', () => {
         if (input.value === '' && input.classList.contains('focus')) {
           input.classList.remove('focus');
@@ -339,23 +344,31 @@
       });
     }
 
+    //клик по кнопке "вход по паролю"
     formAuthorizationBtn.addEventListener('click', () => {
       formAuth.dataset.statusForm = 'pass';
       formAuthorizationSubmit.innerHTML = 'Войти';
     })
 
+    //открытие формы авторизации
     btnOpenFormAuthorization.addEventListener('click', () => {
       authorization.classList.remove('hide');
       headerUser.classList.remove('active');
       headerUser.classList.add('open-auth');
     })
 
+    //закрытие формы авторизации
     btnAuthorizationClose.addEventListener('click',  () => {
+      headerUser.classList.remove('active', 'open-auth');
       authorization.classList.add('hide');
       headerUser.classList.remove('open-auth');
+      formAuth.dataset.statusForm = 'default';
+      authorization.classList.remove('registration');
+      authorization.classList.add('authorization');
     })
 
 
+    //убираем красную обводку у невалидных полей при смене формы
     let deleteNoValidInputs = (elems) => {
       for (let elem of elems) {
         elem.classList.remove('no-valid');
@@ -364,8 +377,8 @@
 
     // наблюдение за изменением атрибута data-status-form
     let observer = new MutationObserver(mutationRecords => {
-      let statusForm = formAuth.dataset.statusForm;
 
+      let statusForm = formAuth.dataset.statusForm;
 
       switch (statusForm) {
         // первоначальное состояние формы. Показываем первое окно авторизации с полем телефона
@@ -375,16 +388,19 @@
           deleteNoValidInputs(document.querySelectorAll('.no-valid'));
           break;
 
+        //Статус формы при отсутствии номера в базе
         case 'phone-not-found':
           formText.innerHTML = 'Мы не нашли аккаунт с таким номером телефона. Зарегистрируйтесь, чтобы продолжить покупки.';
           break;
 
+        //Статус формы при открытии формы входа по паролю
         case 'pass':
           formText.innerHTML = 'Введите телефон и пароль';
           deleteNoValidInputs(document.querySelectorAll('.no-valid'));
 
       }
 
+      //клик по кнопке регистрация
       btnChangeFormAuth.addEventListener('click', () => {
         formAuth.dataset.statusForm = 'default';
         authorization.classList.remove('registration');
@@ -392,6 +408,7 @@
 
       })
 
+      //клик по кнопке "уже зарегистрированы?"
       formRegistrationBtn.addEventListener('click', () => {
         formAuth.dataset.statusForm = 'hide';
         authorization.classList.remove('authorization');
@@ -410,28 +427,33 @@
   //Валидация полей форм
   function validation(items) {
 
+    //массив с результатами проверки
     let inputStatusValidate = [];
 
     for (let item of items) {
 
       if (item.value === '') {
 
+        //при отсутствии у родителя класса no-valid - добавялем его ему
         if (!item.parentElement.classList.contains('no-valid')) {
           item.parentElement.classList.add('no-valid');
         }
 
+        //добавляем в массив значение false
         inputStatusValidate.push(false);
 
       } else {
+        //добавляем в массив значение true, так как поле не пустое
         inputStatusValidate.push(true);
 
+        //удаляем при наличии класс у родителя
         if (item.parentElement.classList.contains('no-valid')) {
           item.parentElement.classList.remove('no-valid');
         }
       }
     }
 
-    // true - canceled sending
+    // проверяем наличие значения false в массиве
     if (inputStatusValidate.includes(false)) {
       return false;
     }
@@ -444,6 +466,3 @@
 
 
 })();
-
-
-

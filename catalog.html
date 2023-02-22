@@ -270,8 +270,8 @@
           <span class="header-location-confirm__title">Ваш город: <mark class="current-city">Москва</mark></span>
 
           <div class="header-location-confirm__buttons-select">
-            <button type="button" class="header-location-confirm__btn-true close-location">Все верно</button>
-            <button type="button" class="header-location-confirm__btn-false">Выбрать город</button>
+            <button type="button" class="header-location-confirm__btn-true btn close-location">Все верно</button>
+            <button type="button" class="header-location-confirm__btn-false btn">Выбрать город</button>
           </div>
 
           <p class="header-location-confirm__text">Эта информация требуется для правильного отображения наличия товара,
@@ -545,7 +545,7 @@
           <div class="login-wrap">
             <p class="login-wrap__text">Войдите в аккаунт или зарегистрируйтесь, чтобы получать кэшбэк от покупок и
               участвовать в закрытых распродажах</p>
-            <a href="#" class="login-wrap__link">Вход / Регистрация</a>
+            <button  type="button" class="login-wrap__link btn">Вход / Регистрация</button>
           </div>
 
           <!-- окно пользователя если зарегистрирован -->
@@ -594,25 +594,106 @@
           </div>
 
           <!-- авторизация пользователя -->
-          <div class="authorization" style="display: none">
+          <div class="authorization hide" id="authorization-wrap">
+            <button type="button" class="authorization__close">
+              <svg class="authorization__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg>
+            </button>
+
             <svg class="authorization__logo"><use xlink:href="img/sprite.svg#logo"></use></svg>
 
-            <div class="authorization__login-phone">
-              <span>Введите номер телефона</span>
-              <p>Мы отправим СМС с кодом подтверждения</p>
+            <!-- атрибут data-status-form отвечает за состояние формы авторизации -->
 
-              <form class="">
-                <div class="">
-                  <span>Номер телефона</span>
-                  <input type="phone" name="" >
-                </div>
+            <!-- состояния формы -->
+            <!-- default - первоначальное состояние -->
+            <!-- hide - прячем форму -->
+            <!-- pass - показываем форму входа по паролю -->
 
-                <button type="button" class="">Получить код</button>
+            <!-- для валидации бэка -->
+            <!-- not-found - телефон не найден при входе по номеру -->
+            <div class="authorization__login-phone" id="form-auth" data-status-form="default">
+              <span class="authorization__title">Введите номер телефона</span>
+              <p class="authorization__text" id="form-login-text">Мы отправим СМС с кодом подтверждения</p>
+
+              <form class="form-authorization">
+                <label class="form-authorization__label">
+                  <input type="tel" name="authorization-phone" class="form-authorization__input input-focus mask-phone reg"/>
+                  <span class="form-authorization__placeholder">Номер телефона</span>
+                </label>
+
+                <label class="form-authorization__label">
+                  <input type="password" name="authorization-password" class="form-authorization__input input-focus reg"/>
+                  <span class="form-authorization__placeholder">Пароль</span>
+                </label>
+
+                <button type="submit" class="form-authorization__submit btn">Получить код</button>
               </form>
 
-              <button type="button" class="">Войти с паролем</button>
+              <button type="button" class="form-authorization__btn btn">Войти с паролем</button>
+              <button type="button" class="form-registration__btn btn">Регистрация</button>
+              <label class="form-authorization__check">
+                <input type="checkbox" class="form-authorization__check-input"/>
+                <span class="form-authorization__check-text">Запомнить на этом компьютере</span>
+              </label>
+            </div>
+
+
+            <div class="registration-user" id="form-reg">
+
+              <div class="registration-user-wrap">
+                <h4 class="registration-user__title">Регистрация</h4>
+
+                <form class="registration-from">
+                  <label class="registration-from__label">
+                    <input type="text" name="registration-name" class="registration-from__input input-focus reg"/>
+                    <span class="registration-from__placeholder">Имя</span>
+                  </label>
+                  <label class="registration-from__label">
+                    <input type="email" name="registration-email" class="registration-from__input input-focus reg"/>
+                    <span class="registration-from__placeholder">E-mail</span>
+                  </label>
+                  <label class="registration-from__label">
+                    <input type="tel" name="registration-phone" class="registration-from__input input-focus mask-phone reg"/>
+                    <span class="registration-from__placeholder">Телефон</span>
+                  </label>
+                  <label class="registration-form__check">
+                    <input type="checkbox"/>
+                    <span class="registration-form__check-text">Подписаться на рассылку магазина</span>
+                  </label>
+
+                  <input type="submit" class="registration-form__submit btn" value="Отправить"/>
+                </form>
+
+                <p class="registration-user__text">Нажимая кнопку “Регистрация”, Вы подтверждаете свое совершеннолетие,
+                  соглашаетесь на <a href="#">обработку персональных данных</a> в соответствии с
+                  <a href="#">Условиями продажи</a></p>
+
+                <button type="button" class="registration-user__btn-form-auth">Уже зарегистрировались?</button>
+
+              </div>
+
+              <div class="registration-advantages">
+                <h4 class="registration-advantages__title">Что дает регистрация</h4>
+
+                <ul class="registration-advantages__list">
+                  <li class="registration-advantages__item">
+                    <span class="registration-advantages__item-title">до 15%</span>
+                    <span class="registration-advantages__item-text">Кэшбэк от покупок</span>
+                  </li>
+                  <li class="registration-advantages__item">
+                    <span class="registration-advantages__item-title">Подарки</span>
+                    <span class="registration-advantages__item-text">От производителей</span>
+                  </li>
+                  <li class="registration-advantages__item">
+                    <span class="registration-advantages__item-title">Распродажи</span>
+                    <span class="registration-advantages__item-text">Только для участников</span>
+                  </li>
+                </ul>
+
+              </div>
+
             </div>
           </div>
+
 
         </div>
       </div>
