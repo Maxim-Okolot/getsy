@@ -281,10 +281,7 @@
         <!-- Блок выбора локации -->
         <div class="header-location-confirm__select">
           <button type="button" class="header-location-confirm__select-close close-location">
-            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line x1="0.707107" y1="1.55566" x2="14" y2="14.8486" stroke="#888888" stroke-linecap="round"/>
-              <line x1="14" y1="0.707107" x2="0.707107" y2="14" stroke="#888888" stroke-linecap="round"/>
-            </svg>
+            <svg class="header-location-confirm__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg>
           </button>
 
           <h4 class="header-location-confirm__select-title">Выбрать город:</h4>
@@ -727,6 +724,563 @@
   </div>
   <!-- PAGE HEADER END -->
 
+  <section class="subcategory">
+    <form class="subcategory-sort">
+      <div class="subcategory-sort__wrap">
+        <h4 class="subcategory-sort__title">Показано 250 товаров</h4>
+
+        <div class="active-filter">
+
+          <ul class="active-filter__list">
+            <li class="active-filter__item">
+              <span>Цена 500-1000</span>
+              <button type="button" class="active-filter__delete">
+                <svg class="active-filter__delete-icon"><use xlink:href="img/sprite.svg#close"></use></svg>
+              </button>
+            </li>
+            <li class="active-filter__item">
+              <span>В продаже</span>
+              <button type="button" class="active-filter__delete">
+                <svg class="active-filter__delete-icon"><use xlink:href="img/sprite.svg#close"></use></svg>
+              </button>
+            </li>
+            <li class="active-filter__item">
+              <span>Цвет синий, белый</span>
+              <button type="button" class="active-filter__delete">
+                <svg class="active-filter__delete-icon"><use xlink:href="img/sprite.svg#close"></use></svg>
+              </button>
+            </li>
+          </ul>
+
+          <input type="reset" value="Сбросить все фильтры" class="active-filter__reset btn"/>
+
+        </div>
+
+      </div>
+
+      <div class="subcategory-sort__wrap">
+        <h4 class="subcategory-sort__title">Производители</h4>
+
+        <div class="subcategory-sort__checkbox-wrap">
+          <label class="subcategory-sort__checkbox">
+            <input type="checkbox" value="Bosch" name="sort-brand"/>
+            <span>Bosch</span>
+          </label>
+          <label class="subcategory-sort__checkbox">
+            <input type="checkbox" value="Smeg" name="sort-brand"/>
+            <span>Smeg</span>
+          </label>
+          <label class="subcategory-sort__checkbox">
+            <input type="checkbox" value="Bamix" name="sort-brand"/>
+            <span>Bamix</span>
+          </label>
+          <label class="subcategory-sort__checkbox">
+            <input type="checkbox" value="Samsung" name="sort-brand"/>
+            <span>Samsung</span>
+          </label>
+          <label class="subcategory-sort__checkbox">
+            <input type="checkbox" value="Polaris" name="sort-brand"/>
+            <span>Polaris</span>
+          </label>
+          <label class="subcategory-sort__checkbox">
+            <input type="checkbox" value="Vitec" name="sort-brand"/>
+            <span>Vitec</span>
+          </label>
+          <label class="subcategory-sort__checkbox">
+            <input type="checkbox" value="Morphi Richards" name="sort-brand"/>
+            <span>Morphi Richards</span>
+          </label>
+          <label class="subcategory-sort__checkbox">
+            <input type="checkbox" value="Panasonic" name="sort-brand"/>
+            <span>Panasonic</span>
+          </label>
+          <label class="subcategory-sort__checkbox">
+            <input type="checkbox" value="Electrolux" name="sort-brand"/>
+            <span>Electrolux</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="subcategory-sort__wrap">
+        <h4 class="subcategory-sort__title">Цена</h4>
+
+        <div class="subcategory-sort__checkbox-wrap">
+          <label class="subcategory-sort__checkbox">
+            <input type="checkbox" value="100-5000" name="sort-price"/>
+            <span>100 - 5 000</span>
+          </label>
+          <label class="subcategory-sort__checkbox">
+            <input type="checkbox" value="5000-10000" name="sort-price"/>
+            <span>5 000 - 10 000</span>
+          </label>
+          <label class="subcategory-sort__checkbox">
+            <input type="checkbox" value="10000-25000" name="sort-price"/>
+            <span>10 000 - 25 000</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="subcategory-sort__wrap">
+        <h4 class="subcategory-sort__title">Цвет</h4>
+
+        <div class="subcategory-sort__color-wrap">
+          <label class="subcategory-sort__color">
+            <input type="radio" value="orange" name="sort-color"/>
+            <span data-color="#FF7A00"></span>
+          </label>
+          <label class="subcategory-sort__color">
+            <input type="radio" value="orange" name="sort-color"/>
+            <span data-color="#FF0000"></span>
+          </label>
+          <label class="subcategory-sort__color">
+            <input type="radio" value="orange" name="sort-color"/>
+            <span data-color="#A40000"></span>
+          </label>
+          <label class="subcategory-sort__color">
+            <input type="radio" value="orange" name="sort-color"/>
+            <span data-color="#00C2FF"></span>
+          </label>
+          <label class="subcategory-sort__color">
+            <input type="radio" value="orange" name="sort-color"/>
+            <span data-color="#0066FF"></span>
+          </label>
+          <label class="subcategory-sort__color">
+            <input type="radio" value="orange" name="sort-color"/>
+            <span data-color="#8F00FF"></span>
+          </label>
+          <label class="subcategory-sort__color">
+            <input type="radio" value="orange" name="sort-color"/>
+            <span data-color="#42FF00"></span>
+          </label>
+          <label class="subcategory-sort__color">
+            <input type="radio" value="orange" name="sort-color"/>
+            <span data-color="#FF8A00"></span>
+          </label>
+          <label class="subcategory-sort__color">
+            <input type="radio" value="orange" name="sort-color"/>
+            <span data-color="#0B9619"></span>
+          </label>
+          <label class="subcategory-sort__color">
+            <input type="radio" value="orange" name="sort-color"/>
+            <span data-color="#000000"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="subcategory-sort__wrap">
+        <h4 class="subcategory-sort__title">Часто ищут</h4>
+
+        <div class="subcategory-sort__popular-requests">
+          <a href="#">CD и сетевые проигрыватели</a>
+          <a href="#">Акустические системы</a>
+          <a href="#">Ресиверы и усилители</a>
+          <a href="#">Проигрыватели виниловых пластинок</a>
+          <a href="#">Виниловые пластинки</a>
+          <a href="#">Фонокорректоры</a>
+          <a href="#">Аксессуары для виниловых проигрывателей</a>
+          <a href="#">Аксессуары для Hi-Fi</a>
+        </div>
+      </div>
+    </form>
+
+    <div class="subcategory-content">
+
+      <div class="subcategory-options">
+        <div class="subcategory-options__sort">
+          <span class="subcategory-options__title">Сортировка по</span>
+          <div class=""></div>
+        </div>
+
+        <div>
+          <span>Вид каталога</span>
+          <label>
+            <input type="radio" class="" name=""/>
+          </label>
+          <label>
+            <input type="radio" class="" name=""/>
+          </label>
+        </div>
+      </div>
+
+      <div class="subcategory-options">
+
+      </div>
+
+      <ul class="subcategory-products">
+        <li class="subcategory-products__item">
+
+          <div class="card-preview">
+            <div class="card-preview__img">
+              <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+            </div>
+            <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+            </button>
+            <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+            </button>
+          </div>
+
+          <div class="card-info">
+
+            <ul class="rating" data-rating="3">
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+            </ul>
+
+            <ul class="tags">
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="new">Новинка</a>
+              </li>
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="credit">Кредит</a>
+              </li>
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="action">Акция</a>
+              </li>
+            </ul>
+
+            <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+            <div class="card-info-price">
+              <div class="card-price">
+                <span class="card-price__old">51 000 ₽</span>
+                <span class="card-price__new">95 012 999 ₽</span>
+              </div>
+              <a href="#" class="card-price__add-cart" title="В корзину">
+                <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+              </a>
+            </div>
+
+          </div>
+        </li>
+        <li class="subcategory-products__item">
+
+          <div class="card-preview">
+            <div class="card-preview__img">
+              <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+            </div>
+            <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+            </button>
+            <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+            </button>
+          </div>
+
+          <div class="card-info">
+
+            <ul class="rating" data-rating="3">
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+            </ul>
+
+            <ul class="tags">
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="new">Новинка</a>
+              </li>
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="credit">Кредит</a>
+              </li>
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="action">Акция</a>
+              </li>
+            </ul>
+
+            <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+            <div class="card-info-price">
+              <div class="card-price">
+                <span class="card-price__old">51 000 ₽</span>
+                <span class="card-price__new">95 012 999 ₽</span>
+              </div>
+              <a href="#" class="card-price__add-cart" title="В корзину">
+                <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+              </a>
+            </div>
+
+          </div>
+        </li>
+        <li class="subcategory-products__item">
+
+          <div class="card-preview">
+            <div class="card-preview__img">
+              <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+            </div>
+            <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+            </button>
+            <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+            </button>
+          </div>
+
+          <div class="card-info">
+
+            <ul class="rating" data-rating="3">
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+            </ul>
+
+            <ul class="tags">
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="new">Новинка</a>
+              </li>
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="credit">Кредит</a>
+              </li>
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="action">Акция</a>
+              </li>
+            </ul>
+
+            <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+            <div class="card-info-price">
+              <div class="card-price">
+                <span class="card-price__old">51 000 ₽</span>
+                <span class="card-price__new">95 012 999 ₽</span>
+              </div>
+              <a href="#" class="card-price__add-cart" title="В корзину">
+                <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+              </a>
+            </div>
+
+          </div>
+        </li>
+        <li class="subcategory-products__item">
+
+          <div class="card-preview">
+            <div class="card-preview__img">
+              <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+            </div>
+            <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+            </button>
+            <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+            </button>
+          </div>
+
+          <div class="card-info">
+
+            <ul class="rating" data-rating="3">
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+            </ul>
+
+            <ul class="tags">
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="new">Новинка</a>
+              </li>
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="credit">Кредит</a>
+              </li>
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="action">Акция</a>
+              </li>
+            </ul>
+
+            <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+            <div class="card-info-price">
+              <div class="card-price">
+                <span class="card-price__old">51 000 ₽</span>
+                <span class="card-price__new">95 012 999 ₽</span>
+              </div>
+              <a href="#" class="card-price__add-cart" title="В корзину">
+                <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+              </a>
+            </div>
+
+          </div>
+        </li>
+        <li class="subcategory-products__item">
+
+          <div class="card-preview">
+            <div class="card-preview__img">
+              <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+            </div>
+            <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+            </button>
+            <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+            </button>
+          </div>
+
+          <div class="card-info">
+
+            <ul class="rating" data-rating="3">
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+            </ul>
+
+            <ul class="tags">
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="new">Новинка</a>
+              </li>
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="credit">Кредит</a>
+              </li>
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="action">Акция</a>
+              </li>
+            </ul>
+
+            <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+            <div class="card-info-price">
+              <div class="card-price">
+                <span class="card-price__old">51 000 ₽</span>
+                <span class="card-price__new">95 012 999 ₽</span>
+              </div>
+              <a href="#" class="card-price__add-cart" title="В корзину">
+                <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+              </a>
+            </div>
+
+          </div>
+        </li>
+        <li class="subcategory-products__item">
+
+          <div class="card-preview">
+            <div class="card-preview__img">
+              <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+            </div>
+            <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+            </button>
+            <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+            </button>
+          </div>
+
+          <div class="card-info">
+
+            <ul class="rating" data-rating="3">
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+            </ul>
+
+            <ul class="tags">
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="new">Новинка</a>
+              </li>
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="credit">Кредит</a>
+              </li>
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="action">Акция</a>
+              </li>
+            </ul>
+
+            <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+            <div class="card-info-price">
+              <div class="card-price">
+                <span class="card-price__old">51 000 ₽</span>
+                <span class="card-price__new">95 012 999 ₽</span>
+              </div>
+              <a href="#" class="card-price__add-cart" title="В корзину">
+                <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+              </a>
+            </div>
+
+          </div>
+        </li>
+        <li class="subcategory-products__item">
+
+          <div class="card-preview">
+            <div class="card-preview__img">
+              <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title=""/>
+            </div>
+            <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+            </button>
+            <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+            </button>
+          </div>
+
+          <div class="card-info">
+
+            <ul class="rating" data-rating="3">
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+              <li class="rating__item"></li>
+            </ul>
+
+            <ul class="tags">
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="new">Новинка</a>
+              </li>
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="credit">Кредит</a>
+              </li>
+              <li class="tags__item">
+                <a href="#" class="tags__link" data-type="action">Акция</a>
+              </li>
+            </ul>
+
+            <h4 class="card-info__title">Чехол COMMO Shield Case для iPhone 14 Pro Max. </h4>
+
+            <div class="card-info-price">
+              <div class="card-price">
+                <span class="card-price__old">51 000 ₽</span>
+                <span class="card-price__new">95 012 999 ₽</span>
+              </div>
+              <a href="#" class="card-price__add-cart" title="В корзину">
+                <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+              </a>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+
+
+    </div>
+
+
+
+
+  </section>
+
 
 </main>
 <!-- CONTENT END -->
@@ -798,6 +1352,7 @@
 
 <!-- additional scripts -->
 <script src="js/swiper.min.js"></script>
+<script src="js/mask.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

@@ -47,7 +47,6 @@
           },
         });
       }
-
     }
 
     //слайдеры баннеров
@@ -455,7 +454,6 @@
             inputPhone.focus();
           })
 
-
           btnRepeatCode.setAttribute('disabled', 'disabled');
           timerText.classList.remove('dpl-none');
 
@@ -493,7 +491,6 @@
     observer.observe(formAuth , {
       attributes: true
     });
-
   }
 
 
@@ -533,6 +530,55 @@
   }
 
 
+  let subcategorySortTitle = document.querySelectorAll('.subcategory-sort__title');
+
+  if (subcategorySortTitle[1]) {
+
+    for (let i = 1; i < subcategorySortTitle.length; i++) {
+      subcategorySortTitle[i].addEventListener('click', () => {
+        subcategorySortTitle[i].parentElement.classList.toggle('hide');
+      })
+    }
+  }
+
+
+  let activeFilter = document.querySelector('.active-filter');
+
+  if (activeFilter) {
+
+    let addListener = (elems) => {
+      for (let el of elems) {
+        el.addEventListener('click', () => {
+          el.parentElement.remove();
+        })
+      }
+    }
+
+    let filterDeleteBtn = document.querySelectorAll('.active-filter__delete');
+
+    if (filterDeleteBtn[0]) {
+      addListener(filterDeleteBtn);
+    }
+
+    let observer = new MutationObserver(mutationRecords => {
+      filterDeleteBtn = document.querySelectorAll('.active-filter__delete');
+
+      if (filterDeleteBtn[0]) {
+        addListener(filterDeleteBtn);
+        console.log(1);
+      } else {
+        let activeFilterList = document.querySelector('.active-filter__list');
+        activeFilterList.classList.add('active-filter__list_empty');
+        console.log(2);
+      }
+    });
+
+    observer.observe(activeFilter , {
+      childList: true
+    });
+
+
+  }
 
 
 

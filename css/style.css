@@ -440,6 +440,12 @@ section {
     right: 35px;
 }
 
+.header-location-confirm__close-icon {
+    width: 15px;
+    height: 16px;
+    stroke: var(--suva-grey);
+}
+
 .header-location-confirm__select-list {
     margin-top: 14px;
     min-height: 100px;
