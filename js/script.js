@@ -65,6 +65,16 @@
       }
     }
 
+    //слайдеры баннеров на страницах
+    let pageBanner = document.querySelector('.page-banner-wrap');
+
+    if (pageBanner) {
+      let swiper = new Swiper(pageBanner, {
+        slidesPerView: 1,
+        spaceBetween: 0
+      });
+    }
+
     //слайдер баннера преимуществ
     let bannerСontent = document.querySelector('.banner-content__wrap');
 
@@ -569,12 +579,13 @@
       } else {
         let activeFilterList = document.querySelector('.active-filter__list');
         activeFilterList.classList.add('active-filter__list_empty');
-        console.log(2);
+
       }
     });
 
     observer.observe(activeFilter , {
-      childList: true
+      childList: true,
+      subtree: true
     });
 
 

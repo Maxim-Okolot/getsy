@@ -138,4 +138,18 @@
         <path d="M5.93548 6.76923H2.26548C1.61972 6.76923 1.14328 7.37216 1.29257 8.00043L3.01085 15.2312C3.11795 15.6819 3.52054 16 3.98376 16H14.5119C14.9545 16 15.3445 15.709 15.4705 15.2847L17.6184 8.05398C17.8088 7.41293 17.3285 6.76923 16.6598 6.76923H13.0645M5.93548 6.76923L8.12903 1M5.93548 6.76923H11.9677H13.0645M13.0645 6.76923L10.871 1" stroke-linecap="round"></path>
         <path d="M6 11L8 13.5L12.5 9" stroke-linecap="round" stroke-linejoin="round"></path>
     </symbol>
+
+    <symbol id="rows" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+        <rect x="0.5" y="0.5" width="16" height="7" rx="1.5"></rect>
+        <rect x="0.5" y="9.5" width="16" height="7" rx="1.5"></rect>
+    </symbol>
+
+    <symbol id="grid"  fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+        <rect x="0.5" y="0.5" width="4" height="7" rx="1.5"></rect>
+        <rect x="6.5" y="0.5" width="4" height="7" rx="1.5"></rect>
+        <rect x="12.5" y="0.5" width="4" height="7" rx="1.5"></rect>
+        <rect x="0.5" y="9.5" width="4" height="7" rx="1.5"></rect>
+        <rect x="6.5" y="9.5" width="4" height="7" rx="1.5"></rect>
+        <rect x="12.5" y="9.5" width="4" height="7" rx="1.5"></rect>
+    </symbol>
 </svg>
