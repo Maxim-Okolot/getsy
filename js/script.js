@@ -604,6 +604,37 @@
   }
 
 
+  let exchangeNavItem = document.querySelectorAll('.exchange-nav__item');
+
+  if (exchangeNavItem[0]) {
+    let exchangeItem = document.querySelectorAll('.exchange-content__item');
+
+    for (let x = 0; x < exchangeNavItem.length; x++) {
+      exchangeNavItem[x].addEventListener('click', () => {
+
+        if (!exchangeNavItem[x].classList.contains('active')) {
+
+          for (let i = 0; i < exchangeNavItem.length; i++) {
+
+            if (exchangeNavItem[i].classList.contains('active')) {
+              exchangeNavItem[i].classList.remove('active');
+              exchangeItem[i].classList.add('hide');
+            }
+          }
+
+          exchangeNavItem[x].classList.add('active');
+          exchangeItem[x].classList.remove('hide');
+        }
+
+
+
+
+
+      })
+    }
+  }
+
+
 
 
 

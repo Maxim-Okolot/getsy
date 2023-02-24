@@ -907,8 +907,7 @@
 .subcategory-options__icon {
   width: 17px;
   height: 17px;
-  stroke: red;
-
+  stroke: var(--red);
 }
 
 /* style faq
@@ -957,7 +956,7 @@
   overflow: hidden;
 }
 
-.faq-list__content p, .faq-list__content ul {
+.faq-list__content p, .faq-list__content ul, .faq-list__content ol {
   font: 400 16px/19px var(--font);
   color: rgba(0, 0, 0, 0.7);
   margin-bottom: 12px;
@@ -990,6 +989,107 @@
 
 .faq-list__item.hide .faq-list__title-wrap {
   margin: 0;
+}
+
+/* style exchange
+--------------------*/
+.page-exchange-banner {
+  margin-bottom: 0;
+}
+
+.exchange-nav {
+  background-color: var(--white);
+  padding: 24px 22px 18px;
+  border-radius: 10px;
+  box-shadow: var(--lite-shadow);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.exchange-nav__item {
+  padding: 8px 20px;
+  border: 1px solid var(--alto);
+  border-radius: 20px;
+  font: 400 16px/19px var(--font);
+  color: var(--black);
+  margin: 0 15px 15px 0;
+  transition: var(--normal);
+  cursor: pointer;
+}
+
+.exchange-nav__item.active {
+  background-color: var(--dark-state-blue);
+  color: var(--white);
+}
+
+.exchange-content__wrap {
+  padding: 40px 100px;
+  box-shadow: var(--lite-shadow);
+  border-radius: 10px;
+  background-color: var(--white);
+  margin-top: 15px;
+}
+
+.exchange-content__wrap h1, .exchange-content__wrap h2, .exchange-content__wrap h3, .exchange-content__wrap h4,
+.exchange-content__wrap h5, .exchange-content__wrap h6 {
+  font: 400 20px/23px var(--font);
+  color: var(--black);
+  margin-bottom: 30px;
+}
+
+.exchange-content__wrap li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 3px;
+}
+
+.exchange-content__wrap li:before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  border-radius: 50%;
+}
+
+.exchange-content__wrap p, .exchange-content__wrap ul, .exchange-content__wrap ol {
+  margin-bottom: 30px;
+}
+
+.exchange-content__wrap p br + span {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.exchange-content__wrap p a, .exchange-content__wrap li a, .exchange-content__wrap p, .exchange-content__wrap ul,
+.exchange-content__wrap ol {
+  font: 400 16px/19px var(--font);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.exchange-content {
+  position: relative;
+}
+
+.exchange-content__item {
+  transition: var(--normal);
+}
+
+.exchange-content__item.hide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -15;
 }
 
 /* style @media
