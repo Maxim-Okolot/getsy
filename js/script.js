@@ -58,7 +58,7 @@
           slidesPerView: 5,
           spaceBetween: 20,
           pagination: {
-            el: slider.closest('section').querySelector('.slider-pagination'),
+            el: slider.closest('.catalog-slider').querySelector('.slider-pagination'),
             clickable: true,
           },
           navigation: {
