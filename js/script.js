@@ -604,38 +604,43 @@
   }
 
 
+  let eventChangeTab = (navs, items) => {
+
+    for (let x = 0; x < navs.length; x++) {
+      navs[x].addEventListener('click', () => {
+
+        if (!navs[x].classList.contains('active')) {
+
+          for (let i = 0; i < navs.length; i++) {
+
+            if (navs[i].classList.contains('active')) {
+              navs[i].classList.remove('active');
+              items[i].classList.add('hide');
+            }
+          }
+
+          navs[x].classList.add('active');
+          items[x].classList.remove('hide');
+        }
+      })
+    }
+
+  }
+
+
   let exchangeNavItem = document.querySelectorAll('.exchange-nav__item');
+  let payNavItem = document.querySelectorAll('.pay-nav__item');
 
   if (exchangeNavItem[0]) {
     let exchangeItem = document.querySelectorAll('.exchange-content__item');
 
-    for (let x = 0; x < exchangeNavItem.length; x++) {
-      exchangeNavItem[x].addEventListener('click', () => {
-
-        if (!exchangeNavItem[x].classList.contains('active')) {
-
-          for (let i = 0; i < exchangeNavItem.length; i++) {
-
-            if (exchangeNavItem[i].classList.contains('active')) {
-              exchangeNavItem[i].classList.remove('active');
-              exchangeItem[i].classList.add('hide');
-            }
-          }
-
-          exchangeNavItem[x].classList.add('active');
-          exchangeItem[x].classList.remove('hide');
-        }
-
-
-
-
-
-      })
-    }
+    eventChangeTab(exchangeNavItem, exchangeItem);
   }
 
+  if (payNavItem[0]) {
+    let payItem = document.querySelectorAll('.pay-content__item');
 
-
-
+    eventChangeTab(payNavItem, payItem);
+  }
 
 })();
