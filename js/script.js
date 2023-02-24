@@ -49,6 +49,40 @@
       }
     }
 
+    let catalogSlider = document.querySelectorAll('.catalog-slider-wrap');
+
+    if (catalogSlider[0]) {
+
+      for (let slider of catalogSlider) {
+        let swiper = new Swiper(slider, {
+          slidesPerView: 5,
+          spaceBetween: 20,
+          pagination: {
+            el: slider.closest('section').querySelector('.slider-pagination'),
+            clickable: true,
+          },
+          navigation: {
+            nextEl: slider.parentElement.querySelector('.slider-next'),
+            prevEl: slider.parentElement.querySelector('.slider-prev'),
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1280: {
+              slidesPerView: 4,
+            },
+            1470: {
+              slidesPerView: 5,
+            },
+          },
+        });
+      }
+    }
+
     //слайдеры баннеров
     let sliderDefault = document.querySelectorAll('.slider-default');
 

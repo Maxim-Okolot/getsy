@@ -163,6 +163,10 @@ section {
     border-color: var(--red) !important;
 }
 
+.over-hide {
+    overflow: hidden;
+}
+
 /* style header
 -----------------*/
 .header {
