@@ -549,6 +549,15 @@
   grid-column-gap: 20px;
 }
 
+.catalog-content {
+  width: 100%;
+  overflow: hidden;
+}
+
+.catalog-content .page-banner-wrap {
+  margin-bottom: 40px;
+}
+
 .catalog-sort-wrap {
   width: 100%;
   box-shadow: var(--lite-shadow);
