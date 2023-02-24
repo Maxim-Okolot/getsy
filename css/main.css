@@ -945,6 +945,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  overflow: hidden;
 }
 
 .faq-list__content p, .faq-list__content ul {
@@ -965,6 +966,21 @@
   padding: 7px 15px;
   border: 1px solid var(--alto);
   border-radius: 20px;
+  transition: var(--normal);
+  background-color: var(--white);
+}
+
+.faq-list__view-btn:hover {
+  background-color: var(--dark-state-blue);
+  color: var(--white);
+}
+
+.faq-list__item.hide .faq-list__content {
+  height: 0;
+}
+
+.faq-list__item.hide .faq-list__title-wrap {
+  margin: 0;
 }
 
 /* style @media

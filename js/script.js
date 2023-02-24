@@ -540,10 +540,11 @@
   }
 
 
+  // фильтр подкатегории
   let subcategorySortTitle = document.querySelectorAll('.subcategory-sort__title');
 
   if (subcategorySortTitle[1]) {
-
+    // скрытие блока подраздела фильтра
     for (let i = 1; i < subcategorySortTitle.length; i++) {
       subcategorySortTitle[i].addEventListener('click', () => {
         subcategorySortTitle[i].parentElement.classList.toggle('hide');
@@ -556,6 +557,7 @@
 
   if (activeFilter) {
 
+    // событие удаления выбранного фильтра
     let addListener = (elems) => {
       for (let el of elems) {
         el.addEventListener('click', () => {
@@ -570,16 +572,15 @@
       addListener(filterDeleteBtn);
     }
 
+    // отслеживание добавления \ удаления выбранного фильтра
     let observer = new MutationObserver(mutationRecords => {
       filterDeleteBtn = document.querySelectorAll('.active-filter__delete');
 
       if (filterDeleteBtn[0]) {
         addListener(filterDeleteBtn);
-        console.log(1);
       } else {
         let activeFilterList = document.querySelector('.active-filter__list');
         activeFilterList.classList.add('active-filter__list_empty');
-
       }
     });
 
@@ -587,8 +588,19 @@
       childList: true,
       subtree: true
     });
+  }
 
 
+  let viewBtn = document.querySelectorAll('.faq-list__view-btn');
+
+  if (viewBtn[0]) {
+    for (let btn of viewBtn) {
+      btn.addEventListener('click', () => {
+        btn.closest('.faq-list__item').classList.toggle('hide');
+        btn.closest('.faq-list__item').classList.contains('hide') ? btn.innerText = 'Показать' :
+          btn.innerText = 'Скрыть';
+      })
+    }
   }
 
 
