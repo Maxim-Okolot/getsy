@@ -232,7 +232,6 @@ section {
 .header-catalog.active .catalog-btn {
     background-color: var(--white);
     color: var(--dark-state-blue);
-    padding: 0 11px 0 9px;
     z-index: 20;
 }
 
@@ -247,6 +246,7 @@ section {
     transition: var(--normal);
     z-index: 5;
     position: relative;
+    padding: 0 11px 0 9px;
 }
 
 .header-catalog.active .catalog-btn__icon, .header-location.active .location-btn__icon {

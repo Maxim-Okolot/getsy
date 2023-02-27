@@ -105,7 +105,21 @@
     if (pageBanner) {
       let swiper = new Swiper(pageBanner, {
         slidesPerView: 1,
-        spaceBetween: 0
+        spaceBetween: 0,
+      });
+    }
+
+    //слайдеры бренда
+    let brand = document.querySelector('.brand-slider');
+
+    if (brand) {
+      let swiper = new Swiper(brand, {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        pagination: {
+          el: '.pagination-brand',
+          clickable: true,
+        }
       });
     }
 
@@ -685,5 +699,18 @@
 
     eventChangeTab(payNavItem, payItem);
   }
+
+
+  let btnExpand = document.querySelectorAll('.promo-list-wrap__expand');
+
+  if (btnExpand[0]) {
+    for (let btn of btnExpand) {
+      btn.addEventListener('click', () => {
+        btn.parentElement.classList.contains('hide') ? btn.innerText = 'Свернуть' : btn.innerText = 'Правила проведения';
+        btn.parentElement.classList.toggle('hide');
+      })
+    }
+  }
+
 
 })();
