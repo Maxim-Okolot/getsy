@@ -407,7 +407,12 @@
       authorization.classList.remove('registration');
       authorization.classList.add('authorization');
       document.body.classList.remove('fix');
-      document.querySelector('.sms-error-text').remove();
+
+      let smsErrorText = document.querySelector('.sms-error-text');
+
+      if (smsErrorText) {
+        document.querySelector('.sms-error-text').remove();
+      }
     })
 
 
