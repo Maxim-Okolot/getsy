@@ -406,7 +406,7 @@ section {
 }
 
 .header-location-confirm__select {
-    transition: var(--white);
+    transition: var(--normal);
     padding: 27px 30px 26px;
     background-color: var(--white);
     border-radius: 10px;
