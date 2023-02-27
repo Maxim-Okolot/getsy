@@ -459,26 +459,27 @@
         case 'default':
           clearTimeout(timerCode);
           // текст сообщения в форме
-          formTitle.innerHTML = 'Введите номер телефона';
-          formText.innerHTML = 'Мы отправим СМС с кодом подтверждения';
+          formTitle.innerText = 'Введите номер телефона';
+          formText.innerText = 'Мы отправим СМС с кодом подтверждения';
+          formAuthorizationSubmit.innerText = 'Получить код';
           deleteNoValidInputs(document.querySelectorAll('.no-valid'));
           break;
 
         //Статус формы при отсутствии номера в базе
         case 'phone-not-found':
-          formText.innerHTML = 'Мы не нашли аккаунт с таким номером телефона. Зарегистрируйтесь, чтобы продолжить покупки.';
+          formText.innerText = 'Мы не нашли аккаунт с таким номером телефона. Зарегистрируйтесь, чтобы продолжить покупки.';
           break;
 
         //Статус формы при открытии формы входа по паролю
         case 'pass':
           clearTimeout(timerCode);
-          formTitle.innerHTML = 'Введите телефон и пароль';
+          formTitle.innerText = 'Введите телефон и пароль';
           deleteNoValidInputs(document.querySelectorAll('.no-valid'));
           break;
 
         //Статус формы при ошибке ввода логина или пароля
         case 'pass-not-found':
-          formText.innerHTML = 'Мы не нашли аккаунт с таким номером телефона. Либо пароль неверный. Зарегистрируйтесь, ' +
+          formText.innerText = 'Мы не нашли аккаунт с таким номером телефона. Либо пароль неверный. Зарегистрируйтесь, ' +
             'чтобы продолжить покупки.';
           break;
 
@@ -487,7 +488,7 @@
             document.querySelector('.sms-error-text').remove();
           }
 
-          formTitle.innerHTML = 'Код из СМС';
+          formTitle.innerText = 'Код из СМС';
           timerCode = setTimeout(tick, 1000);
 
           let inputPhone = document.querySelector('#form-auth-phone');
