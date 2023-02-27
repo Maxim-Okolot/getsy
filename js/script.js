@@ -372,16 +372,20 @@
     //анимация placeholder-a при фокусе
     for (let input of inputFocus) {
       input.addEventListener('focus', () => {
+
         if (!input.classList.contains('focus')) {
           input.classList.add('focus');
         }
+
       });
 
       //анимация placeholder-a при смене фокуса
       input.addEventListener('blur', () => {
+
         if (input.value === '' && input.classList.contains('focus')) {
           input.classList.remove('focus');
         }
+
       });
     }
 
@@ -479,8 +483,7 @@
 
         //Статус формы при ошибке ввода логина или пароля
         case 'pass-not-found':
-          formText.innerText = 'Мы не нашли аккаунт с таким номером телефона. Либо пароль неверный. Зарегистрируйтесь, ' +
-            'чтобы продолжить покупки.';
+          formText.innerText = 'Мы не нашли аккаунт с таким номером телефона. Либо пароль неверный. Зарегистрируйтесь, чтобы продолжить покупки.';
           break;
 
         case 'sms':
@@ -545,7 +548,7 @@
 
 
   //Валидация полей форм
-  function validation(items) {
+  let validation = (items) => {
 
     //массив с результатами проверки
     let inputStatusValidate = [];
