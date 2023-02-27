@@ -528,13 +528,15 @@
         <svg class="header-cart__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
       </a>
 
-      <div class="header-user">
+      <!-- атрибут data-auth со значение true - если пользователь авторизован  -->
+      <!-- атрибут data-auth со значение false - не авторизован  -->
+      <div class="header-user" data-auth="true">
         <button type="button" class="header-user__btn btn-open">
           <svg class="header-user__icon"><use xlink:href="img/sprite.svg#user"></use></svg>
 
           <!-- имя пользователя при авторизации -->
           <!-- убрать класс dpl-none для отображения -->
-          <span class="header-user__name dpl-none">Екатерина</span>
+          <span class="header-user__name">Екатерина</span>
         </button>
         <div class="login-menu-wrap">
 
@@ -787,9 +789,7 @@
       <input type="email" class="form-mailing__input" name="mailing-email" placeholder="Подписаться на рассылку"
              title="Введите Ваш Email">
       <button type="submit" class="form-mailing__submit">
-        <svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 18L9 9.5L1 1" stroke="#463C88">
-        </svg>
+        <svg class="form-mailing__icon"><use xlink:href="img/sprite.svg#arrow-footer"></use></svg>
       </button>
     </form>
   </div>
@@ -807,6 +807,7 @@
 
 <!-- additional scripts -->
 <script src="js/swiper.min.js"></script>
+<script src="js/mask.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

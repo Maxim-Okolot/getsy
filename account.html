@@ -528,13 +528,15 @@
         <svg class="header-cart__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
       </a>
 
-      <div class="header-user">
+      <!-- атрибут data-auth со значение true - если пользователь авторизован  -->
+      <!-- атрибут data-auth со значение false - не авторизован  -->
+      <div class="header-user" data-auth="true">
         <button type="button" class="header-user__btn btn-open">
           <svg class="header-user__icon"><use xlink:href="img/sprite.svg#user"></use></svg>
 
           <!-- имя пользователя при авторизации -->
           <!-- убрать класс dpl-none для отображения -->
-          <span class="header-user__name dpl-none">Екатерина</span>
+          <span class="header-user__name">Екатерина</span>
         </button>
         <div class="login-menu-wrap">
 
@@ -790,6 +792,7 @@
 
 <!-- additional scripts -->
 <script src="js/swiper.min.js"></script>
+<script src="js/mask.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

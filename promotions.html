@@ -528,13 +528,15 @@
         <svg class="header-cart__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
       </a>
 
-      <div class="header-user">
+      <!-- атрибут data-auth со значение true - если пользователь авторизован  -->
+      <!-- атрибут data-auth со значение false - не авторизован  -->
+      <div class="header-user" data-auth="true">
         <button type="button" class="header-user__btn btn-open">
           <svg class="header-user__icon"><use xlink:href="img/sprite.svg#user"></use></svg>
 
           <!-- имя пользователя при авторизации -->
           <!-- убрать класс dpl-none для отображения -->
-          <span class="header-user__name dpl-none">Екатерина</span>
+          <span class="header-user__name">Екатерина</span>
         </button>
         <div class="login-menu-wrap">
 
@@ -737,25 +739,78 @@
   </section>
   <!-- PAGE HEADER END -->
 
+  <!-- PAGE PROMOTIONS END -->
   <section class="promotions">
     <ul class="promo">
       <li class="promo__item">
         <div class="promo__img">
-          <img src="img/banners/catalog/img-1.jpg"  alt="" title="">
+          <img src="img/banners/catalog/img-1.jpg" class="bg-img" alt="" title="">
         </div>
-        <h3 class="">Название акции</h3>
-        <p class="">Краткое описание акции</p>
-        <div class="">
-          <span class="">АКЦИЯ ДЕЙСТВУЕТ С 29 НОЯБРЯ 2022 Г. ПО 12 ДЕКАБРЯ 2022 Г.</span>
-          <a href="#" class=""></a>
+        <h3 class="promo__title">Название акции</h3>
+        <p class="promo__desc">Участвуйте в новогодней акции “Тайный санта”! При покупке товаров с этим шильдиком вы
+          получите случайный подарок при доставке!</p>
+        <div class="promo__info">
+          <span class="promo__period">акция действует с 29 ноября 2022 г. по 12 декабря 2022 г.</span>
+          <a href="#" class="period__link btn">Подробнее</a>
+        </div>
+      </li>
+      <li class="promo__item">
+        <div class="promo__img">
+          <img src="img/banners/catalog/img-1.jpg" class="bg-img" alt="" title="">
+        </div>
+        <h3 class="promo__title">Название акции</h3>
+        <p class="promo__desc">Участвуйте в новогодней акции “Тайный санта”! При покупке товаров с этим шильдиком вы
+          получите случайный подарок при доставке!</p>
+        <div class="promo__info">
+          <span class="promo__period">акция действует с 29 ноября 2022 г. по 12 декабря 2022 г.</span>
+          <a href="#" class="period__link btn">Подробнее</a>
+        </div>
+      </li>
+      <li class="promo__item">
+        <div class="promo__img">
+          <img src="img/banners/catalog/img-1.jpg" class="bg-img" alt="" title="">
+        </div>
+        <h3 class="promo__title">Название акции</h3>
+        <p class="promo__desc">Участвуйте в новогодней акции “Тайный санта”! При покупке товаров с этим шильдиком вы
+          получите случайный подарок при доставке!</p>
+        <div class="promo__info">
+          <span class="promo__period">акция действует с 29 ноября 2022 г. по 12 декабря 2022 г.</span>
+          <a href="#" class="period__link btn">Подробнее</a>
+        </div>
+      </li>
+    </ul>
+
+    <h4 class="promotions__title">Акции в архиве</h4>
+
+    <ul class="promo promo_disable">
+      <li class="promo__item">
+        <div class="promo__img">
+          <img src="img/banners/catalog/img-1.jpg" class="bg-img" alt="" title="">
+        </div>
+        <h3 class="promo__title">Название акции</h3>
+        <p class="promo__desc">Участвуйте в новогодней акции “Тайный санта”! При покупке товаров с этим шильдиком вы
+          получите случайный подарок при доставке!</p>
+        <div class="promo__info">
+          <span class="promo__period">акция действует с 29 ноября 2022 г. по 12 декабря 2022 г.</span>
+          <a href="#" class="period__link btn">Подробнее</a>
+        </div>
+      </li>
+      <li class="promo__item">
+        <div class="promo__img">
+          <img src="img/banners/catalog/img-1.jpg" class="bg-img" alt="" title="">
+        </div>
+        <h3 class="promo__title">Название акции</h3>
+        <p class="promo__desc">Участвуйте в новогодней акции “Тайный санта”! При покупке товаров с этим шильдиком вы
+          получите случайный подарок при доставке!</p>
+        <div class="promo__info">
+          <span class="promo__period">акция действует с 29 ноября 2022 г. по 12 декабря 2022 г.</span>
+          <a href="#" class="period__link btn">Подробнее</a>
         </div>
       </li>
     </ul>
 
   </section>
-
-
-
+  <!-- PAGE PROMOTIONS END -->
 
 </main>
 <!-- CONTENT END -->
