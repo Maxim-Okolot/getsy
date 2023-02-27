@@ -408,9 +408,7 @@
       authorization.classList.add('authorization');
       document.body.classList.remove('fix');
 
-      let smsErrorText = document.querySelector('.sms-error-text');
-
-      if (smsErrorText) {
+      if (document.querySelector('.sms-error-text')) {
         document.querySelector('.sms-error-text').remove();
       }
     })
@@ -485,7 +483,9 @@
           break;
 
         case 'sms':
-          document.querySelector('.sms-error-text').remove();
+          if (document.querySelector('.sms-error-text')) {
+            document.querySelector('.sms-error-text').remove();
+          }
 
           formTitle.innerHTML = 'Код из СМС';
           timerCode = setTimeout(tick, 1000);
