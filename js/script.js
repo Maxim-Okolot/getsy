@@ -533,8 +533,10 @@
           break;
 
         case 'sms-error':
-          formText.insertAdjacentHTML('afterend','<span class="sms-error-text">Код введен неверно. Попробуйте еще раз</span>');
 
+          if (!document.querySelector('.sms-error-text')) {
+            formText.insertAdjacentHTML('afterend','<span class="sms-error-text">Код введен неверно. Попробуйте еще раз</span>');
+          }
       }
 
 
