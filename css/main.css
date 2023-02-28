@@ -599,6 +599,10 @@
 
 /* style promo
 --------------------------------*/
+.promo {
+  margin-bottom: 20px;
+}
+
 .promo-banner {
   width: 100%;
   padding-top: 28.3%;
@@ -700,6 +704,35 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+.promo-category {
+  width: 100%;
+  border-radius: 67px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 11px 0 10px;
+}
+
+.promo-category__item {
+  border: 1px solid var(--alto);
+  margin-right: 10px;
+  transition: var(--normal);
+  cursor: pointer;
+  font: 400 16px/19px var(--font);
+  color: var(--black);
+}
+
+.promo-category__item:last-child {
+  margin-right: 0;
+}
+
+.promo-category__item.current, .promo-category__item:hover {
+  background-color: var(--dark-state-blue);
+  color: var(--white);
 }
 
 /* style brands

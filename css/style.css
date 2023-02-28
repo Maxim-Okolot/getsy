@@ -1023,6 +1023,7 @@ section {
     width: 350px;
     padding: 23px 13px;
     align-items: center;
+    display: flex;
 }
 
 .login-wrap__text {

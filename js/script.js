@@ -715,4 +715,23 @@
   }
 
 
+  let promoCategory = document.querySelectorAll('.promo-category__item');
+
+  if (promoCategory[0]) {
+    for (let btn of promoCategory) {
+      btn.addEventListener('click', () => {
+
+        if (!btn.classList.contains('current')) {
+
+          for (let items of promoCategory) {
+            items.classList.remove('current');
+          }
+
+          btn.classList.add('current');
+        }
+      })
+    }
+  }
+
+
 })();
