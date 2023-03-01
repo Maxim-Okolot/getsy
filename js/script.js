@@ -109,6 +109,19 @@
       });
     }
 
+    let subcategoryTags = document.querySelector('.subcategory-tags');
+
+    if (subcategoryTags) {
+      let swiper = new Swiper(subcategoryTags, {
+        slidesPerView: "auto",
+        spaceBetween: 12,
+        navigation: {
+          nextEl: '.subcategory-tags__btn_left',
+          prevEl: '.subcategory-tags__btn_right',
+        },
+      });
+    }
+
     //слайдеры бренда
     let brand = document.querySelector('.brand-slider');
 
@@ -626,9 +639,18 @@
     }
 
     let filterDeleteBtn = document.querySelectorAll('.active-filter__delete');
+    let filterReset = document.querySelector('.active-filter__reset');
 
     if (filterDeleteBtn[0]) {
       addListener(filterDeleteBtn);
+
+      filterReset.addEventListener('click', () => {
+        let activeFilterList = document.querySelector('.active-filter__list');
+
+        while (activeFilterList.firstChild) {
+          activeFilterList.removeChild(activeFilterList.firstChild);
+        }
+      })
     }
 
     // отслеживание добавления \ удаления выбранного фильтра
@@ -731,6 +753,59 @@
         }
       })
     }
+  }
+
+
+  let selectsOutput = document.querySelectorAll('.select__output');
+
+  if (selectsOutput[0]) {
+
+    for (let output of selectsOutput) {
+      output.addEventListener('click', () => {
+        output.parentElement.classList.toggle('active');
+      })
+    }
+
+    let selectItems = document.querySelectorAll('.select-menu__item');
+
+    for (let item of selectItems) {
+      item.addEventListener('click', () => {
+        let itemValue = item.innerText;
+
+        item.closest('.select').querySelector('.select__output').innerText = itemValue;
+        item.closest('.select').classList.remove('active');
+      })
+    }
+
+    window.addEventListener('click', (event) => {
+      if (!event.target.closest('.select')) {
+
+        for (let output of selectsOutput) {
+          if (output.parentElement.classList.contains('active')) {
+            output.parentElement.classList.remove('active');
+          }
+        }
+      }
+     })
+
+    let catalogViewBtn = document.querySelectorAll('.catalog-view__btn');
+
+    for (let btn of catalogViewBtn) {
+      btn.addEventListener('click', () => {
+        if (!btn.classList.contains('active')) {
+
+          for (let i = 0; i < catalogViewBtn.length; i++) {
+            if (catalogViewBtn[i].classList.contains('active')) {
+              catalogViewBtn[i].classList.remove('active');
+            }
+          }
+
+          btn.classList.add('active');
+
+        }
+      })
+    }
+
   }
 
 
