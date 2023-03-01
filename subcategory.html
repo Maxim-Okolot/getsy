@@ -770,7 +770,7 @@
             </li>
           </ul>
 
-          <input type="reset" value="Сбросить все фильтры" class="active-filter__reset btn">
+          <button type="reset" class="active-filter__reset btn">Сбросить все фильтры</button>
 
         </div>
 
@@ -822,6 +822,11 @@
       <div class="subcategory-sort__wrap">
         <h4 class="subcategory-sort__title">Цена</h4>
 
+        <div class="filter-cost">
+          <input type="text" class="filter-cost__input input-num" placeholder="от">
+          <input type="text" class="filter-cost__input input-num" placeholder="до">
+        </div>
+
         <div class="subcategory-sort__checkbox-wrap">
           <label class="subcategory-sort__checkbox">
             <input type="checkbox" value="100-5000" name="sort-price">
@@ -839,47 +844,53 @@
       </div>
 
       <div class="subcategory-sort__wrap">
+
+        <div class="found-products">
+          <span class="found-products__title">Найдено 250 товаров</span>
+          <button type="submit" class="found-products__submit btn">Показать</button>
+        </div>
+
         <h4 class="subcategory-sort__title">Цвет</h4>
 
         <div class="subcategory-sort__color-wrap">
           <label class="subcategory-sort__color">
-            <input type="radio" value="orange" name="sort-color">
+            <input type="checkbox" value="orange" name="sort-color">
             <span data-color="#FF7A00"></span>
           </label>
           <label class="subcategory-sort__color">
-            <input type="radio" value="orange" name="sort-color">
+            <input type="checkbox" value="orange" name="sort-color">
             <span data-color="#FF0000"></span>
           </label>
           <label class="subcategory-sort__color">
-            <input type="radio" value="orange" name="sort-color">
+            <input type="checkbox" value="orange" name="sort-color">
             <span data-color="#A40000"></span>
           </label>
           <label class="subcategory-sort__color">
-            <input type="radio" value="orange" name="sort-color">
+            <input type="checkbox" value="orange" name="sort-color">
             <span data-color="#00C2FF"></span>
           </label>
           <label class="subcategory-sort__color">
-            <input type="radio" value="orange" name="sort-color">
+            <input type="checkbox" value="orange" name="sort-color">
             <span data-color="#0066FF"></span>
           </label>
           <label class="subcategory-sort__color">
-            <input type="radio" value="orange" name="sort-color">
+            <input type="checkbox" value="orange" name="sort-color">
             <span data-color="#8F00FF"></span>
           </label>
           <label class="subcategory-sort__color">
-            <input type="radio" value="orange" name="sort-color">
+            <input type="checkbox" value="orange" name="sort-color">
             <span data-color="#42FF00"></span>
           </label>
           <label class="subcategory-sort__color">
-            <input type="radio" value="orange" name="sort-color">
+            <input type="checkbox" value="orange" name="sort-color">
             <span data-color="#FF8A00"></span>
           </label>
           <label class="subcategory-sort__color">
-            <input type="radio" value="orange" name="sort-color">
+            <input type="checkbox" value="orange" name="sort-color">
             <span data-color="#0B9619"></span>
           </label>
           <label class="subcategory-sort__color">
-            <input type="radio" value="orange" name="sort-color">
+            <input type="checkbox" value="orange" name="sort-color">
             <span data-color="#000000"></span>
           </label>
         </div>

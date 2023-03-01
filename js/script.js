@@ -1,6 +1,23 @@
 (function () {
   MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
 
+  //Запрет ввода символов, кроме чисел
+  let validate = (evt) => {
+    let theEvent = evt || window.event;
+    let key = theEvent.keyCode || theEvent.which;
+
+    key = String.fromCharCode(key);
+    let regex = /[0-9]/;
+
+    if (!regex.test(key)) {
+      theEvent.returnValue = false;
+
+      if (theEvent.preventDefault) {
+        theEvent.preventDefault();
+      }
+    }
+  }
+
   //маска поля ввода номера телефона
   let maskPhone = document.querySelectorAll('.mask-phone');
 
@@ -622,6 +639,38 @@
         subcategorySortTitle[i].parentElement.classList.toggle('hide');
       })
     }
+
+
+
+    let inputCheckboxSort = document.querySelectorAll('.subcategory-sort input[type="checkbox"]');
+    let inputRadioSort = document.querySelectorAll('.subcategory-sort input[type="radio"]');
+    let foundProducts = document.querySelector('.found-products');
+
+    let inputSortElems = [...inputCheckboxSort, ...inputRadioSort];
+
+    for (let input of inputSortElems) {
+      input.addEventListener('input', () => {
+
+        if (input.checked) {
+          input.closest('.subcategory-sort__wrap').classList.add('active');
+          input.closest('.subcategory-sort__wrap').prepend(foundProducts);
+        } else {
+
+          for (let i = 0; i < inputSortElems.length; i++) {
+
+            if (inputSortElems[i].checked) {
+              break;
+            } else {
+              input.closest('.subcategory-sort__wrap').classList.remove('active');
+            }
+
+          }
+        }
+
+
+
+      })
+    }
   }
 
 
@@ -646,9 +695,14 @@
 
       filterReset.addEventListener('click', () => {
         let activeFilterList = document.querySelector('.active-filter__list');
+        let subcategorySort = document.querySelectorAll('.subcategory-sort__wrap');
 
         while (activeFilterList.firstChild) {
           activeFilterList.removeChild(activeFilterList.firstChild);
+        }
+
+        for (let el of subcategorySort) {
+          el.classList.remove('active');
         }
       })
     }
@@ -804,6 +858,16 @@
 
         }
       })
+    }
+
+    let inputNum = document.querySelectorAll('.input-num');
+
+    if (inputNum[0]) {
+      validate(inputNum);
+
+      for (let input of inputNum) {
+        input.onkeypress = validate;
+      }
     }
 
   }

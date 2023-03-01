@@ -985,6 +985,62 @@
 .subcategory-sort__wrap {
   justify-content: flex-start;
   margin-bottom: 16px;
+  position: relative;
+}
+
+.found-products {
+  background-color: var(--white);
+  position: absolute;
+  transform: translateY(-30px);
+  padding: 15px 25px;
+  left: calc(100% + 5px);
+  border: 2px solid var(--dark-state-blue);
+  box-shadow: var(--lite-shadow);
+  border-radius: 10px;
+  z-index: -5;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--normal);
+}
+
+.subcategory-sort__wrap.active .found-products {
+  z-index: 100;
+  visibility: visible;
+  opacity: 1;
+}
+
+.found-products::before {
+  content: "";
+  border: 20px solid transparent;
+  border-right: 20px solid var(--dark-state-blue);
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.found-products::after {
+  content: "";
+  border: 19px solid transparent;
+  border-right: 19px solid var(--white);
+  right: calc(100% - 1px);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.found-products__title {
+  white-space: nowrap;
+  font: 400 15px/106% var(--font);
+  color: var(--dark-state-blue);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.found-products__submit {
+  background-color: var(--dark-state-blue);
+  color: var(--white);
+  font: var(--text-normal);
 }
 
 .subcategory-sort__title {
