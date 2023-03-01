@@ -841,6 +841,7 @@
   padding: 26px 15px 30px;
   border-radius: 10px;
   box-shadow: var(--lite-shadow);
+  background-color: var(--white);
 }
 
 .catalog-menu__icon {
@@ -852,8 +853,15 @@
   font: 400 19px/22px var(--font);
   color: var(--black);
   text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.catalog-menu__text-focus {
+  color: #F79502;
+}
 
 .catalog {
   width: 100%;
