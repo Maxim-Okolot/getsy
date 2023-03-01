@@ -834,14 +834,18 @@
 }
 
 .catalog-menu__item {
+  border-radius: 10px;
+  box-shadow: var(--lite-shadow);
+  background-color: var(--white);
+}
+
+.catalog-menu__link {
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding: 26px 15px 30px;
-  border-radius: 10px;
-  box-shadow: var(--lite-shadow);
-  background-color: var(--white);
 }
 
 .catalog-menu__icon {
