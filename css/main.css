@@ -286,6 +286,37 @@
   z-index: 1;
 }
 
+/* style catalog mini menu
+--------------------------------*/
+.catalog-mini__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px 15px;
+}
+
+.catalog-mini__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--white);
+  box-shadow: var(--lite-shadow);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 10px;
+}
+
+.catalog-mini__img {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.catalog-mini__text {
+  font: 500 20px/23px var(--font);
+  color: var(--dark-state-blue);
+}
+
 /* style section popular category
 --------------------------------*/
 .popular-category {

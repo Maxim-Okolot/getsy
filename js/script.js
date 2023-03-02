@@ -640,8 +640,6 @@
       })
     }
 
-
-
     let inputCheckboxSort = document.querySelectorAll('.subcategory-sort input[type="checkbox"]');
     let inputRadioSort = document.querySelectorAll('.subcategory-sort input[type="radio"]');
     let foundProducts = document.querySelector('.found-products');
@@ -656,19 +654,21 @@
           input.closest('.subcategory-sort__wrap').prepend(foundProducts);
         } else {
 
+          let activeInput = false;
+
           for (let i = 0; i < inputSortElems.length; i++) {
 
             if (inputSortElems[i].checked) {
+              activeInput = true;
               break;
-            } else {
-              input.closest('.subcategory-sort__wrap').classList.remove('active');
             }
 
           }
+
+          if (activeInput === false) {
+            foundProducts.parentElement.classList.remove('active');
+          }
         }
-
-
-
       })
     }
   }
@@ -759,7 +759,6 @@
         }
       })
     }
-
   }
 
 
@@ -777,7 +776,6 @@
 
     eventChangeTab(payNavItem, payItem);
   }
-
 
   let btnExpand = document.querySelectorAll('.promo-list-wrap__expand');
 
@@ -810,6 +808,7 @@
   }
 
 
+  let selects = document.querySelectorAll('.select');
   let selectsOutput = document.querySelectorAll('.select__output');
 
   if (selectsOutput[0]) {
@@ -834,12 +833,26 @@
     window.addEventListener('click', (event) => {
       if (!event.target.closest('.select')) {
 
-        for (let output of selectsOutput) {
-          if (output.parentElement.classList.contains('active')) {
-            output.parentElement.classList.remove('active');
+        for (let select of selects) {
+          if (select.classList.contains('active')) {
+            select.classList.remove('active');
           }
         }
       }
+
+      if (!event.target.closest('.subcategory-sort__wrap') && !event.target.classList.contains('.subcategory-sort__wrap') &&
+        !event.target.closest('.found-products') && !event.target.classList.contains('.found-products')) {
+
+        let subcategorySort = document.querySelectorAll('.subcategory-sort__wrap');
+
+        for (let elems of subcategorySort) {
+          if (elems.classList.contains('active')) {
+            elems.classList.remove('active');
+          }
+        }
+      }
+
+
      })
 
     let catalogViewBtn = document.querySelectorAll('.catalog-view__btn');
