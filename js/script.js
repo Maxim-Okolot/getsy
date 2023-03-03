@@ -246,6 +246,25 @@
     }
   }
 
+  window.addEventListener('click', (event) => {
+
+    for (let btn of btnOpen) {
+      if (btn.parentElement.classList.contains('active') && event.target === btn.parentElement) {
+        btn.parentElement.classList.remove('active');
+        document.querySelector('.header-location-confirm').classList.remove('hide');
+        document.body.classList.remove('fix');
+      } else {
+
+        if (btn.parentElement.classList.contains('open-auth') && event.target === btn.parentElement) {
+          btn.parentElement.classList.remove('open-auth');
+          document.querySelector('.authorization').classList.add('hide');
+          document.body.classList.remove('fix');
+        }
+      }
+    }
+
+  });
+
 
   let headerCatalogPreview = document.querySelector('.header-catalog-preview-wrap');
   let headerCatalogList = document.querySelector('.header-catalog-list');
@@ -851,8 +870,6 @@
           }
         }
       }
-
-
      })
 
     let catalogViewBtn = document.querySelectorAll('.catalog-view__btn');
