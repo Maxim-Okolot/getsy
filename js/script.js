@@ -301,14 +301,17 @@
 
 
   let headerCatalogPreview = document.querySelector('.header-catalog-preview-wrap');
-  let headerCatalogList = document.querySelector('.header-catalog-list');
+  let headerCatalogListItems = document.querySelectorAll('.header-catalog-list__item');
 
-  //скрываем слайдер при наведении на категории меню
-  headerCatalogList.addEventListener('mouseover', () => {
-    if (!headerCatalogPreview.classList.contains('focus')) {
-      headerCatalogPreview.classList.add('focus');
-    }
-  })
+  //скрываем слайдер при первом клике на категории меню
+  for (let item of headerCatalogListItems) {
+    item.addEventListener('click', () => {
+      if (!headerCatalogPreview.classList.contains('focus')) {
+        headerCatalogPreview.classList.add('focus');
+      }
+    })
+  }
+
 
 
   //открытие блока локации
