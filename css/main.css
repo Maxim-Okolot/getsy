@@ -210,18 +210,35 @@
   justify-content: center;
   align-items: center;
   transition: var(--normal);
+  border: 1px solid transparent;
+  position: relative;
 }
 
 .card-price__add-cart[data-cart="true"] .card-price__icon:first-child,
-.card-price__add-cart[data-cart="false"] .card-price__icon:last-child {
+.card-price__add-cart[data-cart="false"] .card-price__icon:last-child,
+.row-card-cost__btn[data-cart="true"] .card-price__icon:first-child,
+.row-card-cost__btn[data-cart="false"] .card-price__icon:last-child {
   opacity: 0;
   visibility: hidden;
-  position: absolute;
   z-index: -1;
 }
 
-.card-price__add-cart:hover {
+.card-price__add-cart[data-cart="true"], .row-card-cost__btn[data-cart="true"] {
+  background-color: var(--white);
+  border-color: var(--green-haze);
+}
+
+.card-price__add-cart[data-cart="true"] .card-price__icon, .row-card-cost__btn[data-cart="true"] .card-price__icon {
+  stroke: var(--green-haze);
+}
+
+.card-price__add-cart[data-cart="true"]:hover .card-price__icon, .row-card-cost__btn[data-cart="true"]:hover .card-price__icon {
+  stroke: var(--white);
+}
+
+.card-price__add-cart:hover, .row-card-cost__btn:hover {
   background-color: var(--deep-saffron);
+  border-color: var(--deep-saffron);
 }
 
 .card-info-price {
@@ -284,6 +301,10 @@
   opacity: 1;
   visibility: visible;
   z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* style catalog mini menu
@@ -1207,10 +1228,150 @@
   grid-gap: 20px;
 }
 
-.subcategory-products__item {
+.subcategory-products__item, .row-card__item {
   background-color: var(--white);
   border-radius: 10px;
   box-shadow: var(--lite-shadow);
+}
+
+.row-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  grid-gap: 0;
+}
+
+.row-card__item {
+  margin-bottom: 15px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 276px;
+  grid-gap: 15px;
+  align-items: center;
+}
+
+.row-card__link {
+  display: grid;
+  grid-template-columns: 93px 1fr;
+  grid-gap: 15px;
+  align-items: center;
+  height: 100%;
+  padding: 10px 0 11px 14px;
+}
+
+.row-card-cost-wrap {
+  background-color: #EAEAEA;
+  width: 100%;
+  height: 100%;
+  padding: 10px 13px 13px 20px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 17px;
+  grid-column-gap: 17px;
+  grid-row-gap: 5px;
+}
+
+.row-card-cost-wrap__title{
+  grid-column: 1/2;
+  font: 400 13px/106% var(--font);
+  color: var(--black);
+  min-height: 36px;
+}
+
+.row-card-cost-wrap .tags {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.row-card-cost > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.row-card__btn-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+.row-card-cost__btn {
+  width: 136px;
+  height: 30px;
+  background-color: var(--green-haze);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.row-card-cost__ald-cost {
+  font: 400 10px/12px var(--font);
+  color: var(--suva-grey);
+}
+
+.row-card-cost__current-cost {
+  font: 400 13px/106% var(--font);
+  color: var(--black);
+}
+
+.row-card__btn-wrap .card-preview__btn {
+  position: relative;
+  top: auto;
+  right: auto;
+}
+
+.row-card__btn-wrap .card-preview__btn:last-child {
+  margin-top: 13px;
+}
+
+.row-card-cost {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-card__img {
+  width: 93px;
+  height: 93px;
+  position: relative;
+  margin-right: 15px;
+}
+
+.row-card-info__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.row-card-info__item > div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  margin-bottom: 5px;
+}
+
+.row-card-info__item > div:last-child {
+  margin-bottom: 0;
+}
+
+.row-card-info__item > div span {
+  font: 400 12px/106% var(--font);
+  color: var(--black);
+}
+
+.row-card-info__item > div span:first-child {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .active-filter-wrap {

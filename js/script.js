@@ -246,6 +246,32 @@
     }
   }
 
+  let headerSearch = document.querySelector('.header-search');
+  let headerSearchInput = document.querySelector('.header-search__input');
+  let headerBottom = document.querySelector('.header-bottom');
+  let btnCloseSearch = document.querySelector('.header-search__close');
+
+  // Открытие формы поиска в header-e
+  if (headerSearch) {
+
+    // Открываем при фокусе поля ввода поиска
+    headerSearchInput.addEventListener('focus', () => {
+      headerSearch.classList.add('active');
+      headerBottom.classList.add('open-search');
+      document.body.classList.add('fix');
+    })
+
+    // Закрываем при клике на крестик
+    btnCloseSearch.addEventListener('click', () => {
+      headerSearch.classList.remove('active');
+      headerBottom.classList.remove('open-search');
+      document.body.classList.remove('fix');
+
+      // Чистим после ввода
+      headerSearchInput.value = '';
+    })
+  }
+
   window.addEventListener('click', (event) => {
 
     for (let btn of btnOpen) {
@@ -260,6 +286,14 @@
           document.querySelector('.authorization').classList.add('hide');
           document.body.classList.remove('fix');
         }
+      }
+    }
+
+
+    if (headerSearchInput.focus) {
+      if (headerSearch.classList.contains('active') && !event.target.closest('.header-search') || event.target.classList.contains('header-search')) {
+        headerSearch.classList.remove('active');
+        headerBottom.classList.remove('open-search');
       }
     }
 
@@ -367,32 +401,6 @@
     };
 
     listLocationObserver.observe(listLocation,  locationObserverConfig);
-  }
-
-  let headerSearch = document.querySelector('.header-search');
-  let headerSearchInput = document.querySelector('.header-search__input');
-  let headerBottom = document.querySelector('.header-bottom');
-  let btnCloseSearch = document.querySelector('.header-search__close');
-
-  // Открытие формы поиска в header-e
-  if (headerSearch) {
-
-    // Открываем при фокусе поля ввода поиска
-    headerSearchInput.addEventListener('focus', () => {
-      headerSearch.classList.add('active');
-      headerBottom.classList.add('open-search');
-      document.body.classList.add('fix');
-    })
-
-    // Закрываем при клике на крестик
-    btnCloseSearch.addEventListener('click', () => {
-      headerSearch.classList.remove('active');
-      headerBottom.classList.remove('open-search');
-      document.body.classList.remove('fix');
-
-      // Чистим после ввода
-      headerSearchInput.value = '';
-    })
   }
 
 
