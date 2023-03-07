@@ -68,7 +68,7 @@ section {
 
 .bg-img {
     width: 100%;
-    min-height: 100%;
+    max-height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -800,11 +800,10 @@ section {
     display: block;
 }
 
-
 .header-catalog-preview__title {
     font: 400 16px/19px var(--font);
     color: var(--dark-state-blue);
-    margin-bottom: 15px;
+    margin: 0 40px 15px 0;
 }
 
 .header-catalog-preview__bottom-menu {

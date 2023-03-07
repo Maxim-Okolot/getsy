@@ -233,12 +233,10 @@
         //закрываем или открываем окно по клику
         if (res && !headerUser.classList.contains('open-auth')) {
           btn.parentElement.classList.remove('active');
-          document.body.classList.remove('fix');
         } else {
 
           if (!headerUser.classList.contains('open-auth')) {
             btn.parentElement.classList.add('active');
-            document.body.classList.add('fix');
           }
 
         }
@@ -258,14 +256,12 @@
     headerSearchInput.addEventListener('focus', () => {
       headerSearch.classList.add('active');
       headerBottom.classList.add('open-search');
-      document.body.classList.add('fix');
     })
 
     // Закрываем при клике на крестик
     btnCloseSearch.addEventListener('click', () => {
       headerSearch.classList.remove('active');
       headerBottom.classList.remove('open-search');
-      document.body.classList.remove('fix');
 
       // Чистим после ввода
       headerSearchInput.value = '';
@@ -278,13 +274,11 @@
       if (btn.parentElement.classList.contains('active') && event.target === btn.parentElement) {
         btn.parentElement.classList.remove('active');
         document.querySelector('.header-location-confirm').classList.remove('hide');
-        document.body.classList.remove('fix');
       } else {
 
         if (btn.parentElement.classList.contains('open-auth') && event.target === btn.parentElement) {
           btn.parentElement.classList.remove('open-auth');
           document.querySelector('.authorization').classList.add('hide');
-          document.body.classList.remove('fix');
         }
       }
     }
@@ -332,7 +326,6 @@
     let closeLocation = () => {
       headerLocationConfirm.classList.remove('hide');
       headerLocation.classList.remove('active', 'change-location');
-      document.body.classList.remove('fix');
     }
 
 
@@ -484,7 +477,6 @@
       formAuth.dataset.statusForm = 'default';
       authorization.classList.remove('registration');
       authorization.classList.add('authorization');
-      document.body.classList.remove('fix');
 
       if (document.querySelector('.sms-error-text')) {
         document.querySelector('.sms-error-text').remove();
