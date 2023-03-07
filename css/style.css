@@ -758,6 +758,10 @@ section {
     width: 100%;
 }
 
+.banner-slider__img {
+    min-height: 100%;
+}
+
 .header-catalog-preview__banner-link {
     display: none;
 }
