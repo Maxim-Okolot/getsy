@@ -1969,27 +1969,6 @@
   stroke: var(--white);
 }
 
-/* style card
---------------------*/
-.card {
-
-}
-
-.card-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.card-header-preview {
-  width: calc(100% - 475px);
-  height: 522px;
-  background-color: var(--white);
-  border-radius: 10px;
-
-}
-
 /* style @media
 --------------------*/
 @media screen and (max-width: 1470px) {

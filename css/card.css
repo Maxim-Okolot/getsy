@@ -1,0 +1,111 @@
+@import "style.css";
+
+/* style card
+--------------------*/
+.card-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-header-preview {
+  width: calc(100% - 475px);
+  height: 522px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.card-info-nav {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 67px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 0 10px;
+}
+
+.card-info-nav__item {
+  border: 1px solid var(--alto);
+  margin-right: 20px;
+  cursor: pointer;
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-info-nav__item:last-child {
+  margin-right: 0;
+}
+
+.card-info-nav__item.active, .card-info-nav__item:hover {
+  background-color: var(--dark-state-blue);
+  color: var(--white);
+}
+
+.card-info-nav__num {
+  font: 500 14px/16px var(--font);
+  color: var(--white);
+  transition: var(--normal);
+  border-radius: 50%;
+  background-color: var(--dark-state-blue);
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.card-info-nav__item.active .card-info-nav__num, .card-info-nav__item:hover .card-info-nav__num {
+  background-color: var(--white);
+  color: var(--dark-state-blue);
+}
+
+.card-info-wrap {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-info-slider-wrap {
+  width: 452px;
+}
+
+.card-info-content {
+  width: calc(100% - 472px);
+  padding: 40px;
+  background-color: var(--white);
+  box-shadow: var(--lite-shadow);
+  border-radius: 10px;
+}
+
+.card-info-content__desc-wrap {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.card-info-content__desc-wrap:last-child {
+  margin-bottom: 0;
+}
+
+.card-info-content__desc-wrap > span {
+  font: 700 12px/106% var(--font);
+  color: var(--black);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.card-info-content__desc-wrap p {
+  font: 400 12px/106% var(--font);
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.card-info-content__desc_half {
+  max-width: 395px;
+}
