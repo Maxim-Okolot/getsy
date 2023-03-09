@@ -738,6 +738,73 @@
     <div class="card-header">
       <div class="card-header-preview">
 
+        <div class="card-slider-vertical swiper" thumbsSlider="">
+          <ul class="card-slider-vertical__list swiper-wrapper">
+            <li class="card-slider-vertical__item swiper-slide">
+              <img src="img/catalog/img-1.png" alt="" title="">
+            </li>
+            <li class="card-slider-vertical__item swiper-slide">
+              <img src="img/catalog/img-2.png" alt="" title="">
+            </li>
+            <li class="card-slider-vertical__item swiper-slide">
+              <img src="img/catalog/img-1.png" alt="" title="">
+            </li>
+            <li class="card-slider-vertical__item swiper-slide">
+              <img src="img/catalog/img-1.png" alt="" title="">
+            </li>
+            <li class="card-slider-vertical__item swiper-slide">
+              <img src="img/catalog/img-1.png" alt="" title="">
+            </li>
+            <li class="card-slider-vertical__item swiper-slide">
+              <img src="img/catalog/img-1.png" alt="" title="">
+            </li>
+          </ul>
+        </div>
+
+        <div class="card-slider swiper">
+          <ul class="card-slider__list swiper-wrapper">
+            <li class="card-slider__item swiper-slide">
+              <img src="img/catalog/img-1.png" alt="" title=""/>
+            </li>
+            <li class="card-slider__item swiper-slide">
+              <img src="img/catalog/img-2.png" alt="" title=""/>
+            </li>
+            <li class="card-slider__item swiper-slide">
+              <img src="img/catalog/img-1.png" alt="" title=""/>
+            </li>
+            <li class="card-slider__item swiper-slide">
+              <img src="img/catalog/img-1.png" alt="" title=""/>
+            </li>
+            <li class="card-slider__item swiper-slide">
+              <img src="img/catalog/img-1.png" alt="" title=""/>
+            </li>
+            <li class="card-slider__item swiper-slide">
+              <img src="img/catalog/img-1.png" alt="" title=""/>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card-header-nav-wrap">
+          <ul class="card-rating rating" data-rating="3">
+            <li class="rating__item"></li>
+            <li class="rating__item"></li>
+            <li class="rating__item"></li>
+            <li class="rating__item"></li>
+            <li class="rating__item"></li>
+          </ul>
+
+          <div class="card-header-nav">
+            <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+            </button>
+            <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+              <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+            </button>
+
+          </div>
+        </div>
       </div>
 
       <div class="card-header-info">
@@ -886,14 +953,19 @@
     <ul class="card-info-nav">
       <li class="card-info-nav__item btn active">Описание</li>
       <li class="card-info-nav__item btn">Характеристики</li>
-      <li class="card-info-nav__item btn">Отзывы <span class="card-info-nav__num">3</span></li>
+      <li class="card-info-nav__item btn">Отзывы
+        <div class=card-info-nav__num>
+        <span class="card-info-nav__num-hide"></span>
+        <span class="card-info-nav__num-text">3</span>
+      </div>
+      </li>
       <li class="card-info-nav__item btn">Аксессуары</li>
     </ul>
 
     <div class="card-info-wrap">
       <div class="card-info-content">
 
-        <div class="card-info-content__desc">
+        <div class="card-info-content__desc" style="display: none">
           <div class="card-info-content__desc-wrap">
             <p>Встречайте iPhone 14 с функцией распознавания аварий и батареей, которая обеспечит до 20 часов
               беспрерывного просмотра видео. И ещё более впечатляющими снимками при слабом освещении.</p>
@@ -929,6 +1001,473 @@
           </div>
 
         </div>
+
+        <div class="card-info-content__spec" style="display: none">
+          <div class="card-info-content__spec-wrap">
+            <h6 class="card-info-content__spec-title">Основные параметры</h6>
+
+            <ul class="card-info-content__spec-list">
+              <li>
+                <div>Производитель процессора</div>
+                <div>Intel</div>
+              </li>
+              <li>
+                <div>Модель процессора</div>
+                <div>Intel Core i5-10200H</div>
+              </li>
+              <li>
+                <div>Серия процессора</div>
+                <div>Intel Core i5Номер</div>
+              </li>
+              <li>
+                <div>Номер процессора</div>
+                <div>i5-10200H</div>
+              </li>
+              <li>
+                <div>Ядро процессора</div>
+                <div>Comet Lake H</div>
+              </li>
+              <li>
+                <div>Количество ядер процессора</div>
+                <div>4</div>
+              </li>
+              <li>
+                <div>Базовая частота процессора</div>
+                <div>2.4</div>
+              </li>
+              <li>
+                <div>Максимальная частота процессора</div>
+                <div>4.1</div>
+              </li>
+              <li>
+                <div>Количество потоков процессора</div>
+                <div>8</div>
+              </li>
+              <li>
+                <div>Интегрированный графический чип</div>
+                <div>Intel UHD Graphics (Comet Lake G1)</div>
+              </li>
+              <li>
+                <div>Микроархитектура</div>
+                <div>Comet LakeTDP45</div>
+              </li>
+              <li>
+                <div>Кэш-память</div>
+                <div>8 MB Intel® Smart CacheСокетBGA</div>
+              </li>
+            </ul>
+
+          </div>
+          <div class="card-info-content__spec-wrap">
+            <h6 class="card-info-content__spec-title">Накопители информации</h6>
+
+              <ul class="card-info-content__spec-list">
+                <li>
+                  <div>Твердотельный накопитель (SSD)</div>
+                  <div>Да</div>
+                </li>
+                <li>
+                  <div>Объём твердотельного накопителя(SSD)</div>
+                  <div>215</div>
+                </li>
+                <li>
+                  <div>Конфигурация SSD</div>
+                  <div>Твердотельный накопитель M.2 2280, PCIe Gen 3 x4 NVMe, 512 Гбайт</div>
+                </li>
+              </ul>
+
+          </div>
+        </div>
+
+        <div class="card-info-content__access">
+          <ul class="row-card">
+            <li class="row-card__item">
+              <a href="#" class="row-card__link">
+                <div class="row-card__img">
+                  <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title="">
+                </div>
+
+                <ul class="row-card-info">
+                  <li class="row-card-info__item">
+                    <div>
+                      <span>Тип</span>
+                      <span>увлажнительль</span>
+                    </div>
+                    <div>
+                      <span>Производительность</span>
+                      <span>600 мл/ч</span>
+                    </div>
+                    <div>
+                      <span>Обслуживаемая площадь</span>
+                      <span>30 кв.м</span>
+                    </div>
+                    <div>
+                      <span>Уровень шума</span>
+                      <span>6-42 дБ</span>
+                    </div>
+                    <div>
+                      <span>Объем бака для воды</span>
+                      <span>4</span>
+                    </div>
+                  </li>
+                </ul>
+              </a>
+
+              <div class="row-card-cost-wrap">
+                <ul class="tags">
+                  <li class="tags__item" data-type="new">Новинка</li>
+                  <li class="tags__item" data-type="credit">Кредит</li>
+                  <li class="tags__item" data-type="action">Акция</li>
+                </ul>
+
+                <div class="row-card__btn-wrap">
+                  <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+                  </button>
+                  <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+                  </button>
+                </div>
+
+                <a href="#" class="row-card-cost-wrap__title">Чехол COMMO Shield Case для iPhone 14 Pro Max</a>
+
+                <div class="row-card-cost">
+                  <div>
+                    <span class="row-card-cost__ald-cost">51 000 ₽</span>
+                    <span class="row-card-cost__current-cost">95 012 999 ₽</span>
+                  </div>
+                  <a href="#" class="row-card-cost__btn btn" data-cart="false">
+                    <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                    <svg class="card-price__icon"><use xlink:href="img/sprite.svg#in-cart"></use></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="row-card__item">
+              <a href="#" class="row-card__link">
+                <div class="row-card__img">
+                  <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title="">
+                </div>
+
+                <ul class="row-card-info">
+                  <li class="row-card-info__item">
+                    <div>
+                      <span>Тип</span>
+                      <span>увлажнительль</span>
+                    </div>
+                    <div>
+                      <span>Производительность</span>
+                      <span>600 мл/ч</span>
+                    </div>
+                    <div>
+                      <span>Обслуживаемая площадь</span>
+                      <span>30 кв.м</span>
+                    </div>
+                    <div>
+                      <span>Уровень шума</span>
+                      <span>6-42 дБ</span>
+                    </div>
+                    <div>
+                      <span>Объем бака для воды</span>
+                      <span>4</span>
+                    </div>
+                  </li>
+                </ul>
+              </a>
+
+              <div class="row-card-cost-wrap">
+                <ul class="tags">
+                  <li class="tags__item" data-type="new">Новинка</li>
+                  <li class="tags__item" data-type="credit">Кредит</li>
+                  <li class="tags__item" data-type="action">Акция</li>
+                </ul>
+
+                <div class="row-card__btn-wrap">
+                  <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+                  </button>
+                  <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+                  </button>
+                </div>
+
+                <a href="#" class="row-card-cost-wrap__title">Чехол COMMO Shield Case для iPhone 14 Pro Max</a>
+
+                <div class="row-card-cost">
+                  <div>
+                    <span class="row-card-cost__ald-cost">51 000 ₽</span>
+                    <span class="row-card-cost__current-cost">95 012 999 ₽</span>
+                  </div>
+                  <a href="#" class="row-card-cost__btn btn" data-cart="false">
+                    <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                    <svg class="card-price__icon"><use xlink:href="img/sprite.svg#in-cart"></use></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="row-card__item">
+              <a href="#" class="row-card__link">
+                <div class="row-card__img">
+                  <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title="">
+                </div>
+
+                <ul class="row-card-info">
+                  <li class="row-card-info__item">
+                    <div>
+                      <span>Тип</span>
+                      <span>увлажнительль</span>
+                    </div>
+                    <div>
+                      <span>Производительность</span>
+                      <span>600 мл/ч</span>
+                    </div>
+                    <div>
+                      <span>Обслуживаемая площадь</span>
+                      <span>30 кв.м</span>
+                    </div>
+                    <div>
+                      <span>Уровень шума</span>
+                      <span>6-42 дБ</span>
+                    </div>
+                    <div>
+                      <span>Объем бака для воды</span>
+                      <span>4</span>
+                    </div>
+                  </li>
+                </ul>
+              </a>
+
+              <div class="row-card-cost-wrap">
+                <ul class="tags">
+                  <li class="tags__item" data-type="new">Новинка</li>
+                  <li class="tags__item" data-type="credit">Кредит</li>
+                  <li class="tags__item" data-type="action">Акция</li>
+                </ul>
+
+                <div class="row-card__btn-wrap">
+                  <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+                  </button>
+                  <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+                  </button>
+                </div>
+
+                <a href="#" class="row-card-cost-wrap__title">Чехол COMMO Shield Case для iPhone 14 Pro Max</a>
+
+                <div class="row-card-cost">
+                  <div>
+                    <span class="row-card-cost__ald-cost">51 000 ₽</span>
+                    <span class="row-card-cost__current-cost">95 012 999 ₽</span>
+                  </div>
+                  <a href="#" class="row-card-cost__btn btn" data-cart="false">
+                    <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                    <svg class="card-price__icon"><use xlink:href="img/sprite.svg#in-cart"></use></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="row-card__item">
+              <a href="#" class="row-card__link">
+                <div class="row-card__img">
+                  <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title="">
+                </div>
+
+                <ul class="row-card-info">
+                  <li class="row-card-info__item">
+                    <div>
+                      <span>Тип</span>
+                      <span>увлажнительль</span>
+                    </div>
+                    <div>
+                      <span>Производительность</span>
+                      <span>600 мл/ч</span>
+                    </div>
+                    <div>
+                      <span>Обслуживаемая площадь</span>
+                      <span>30 кв.м</span>
+                    </div>
+                    <div>
+                      <span>Уровень шума</span>
+                      <span>6-42 дБ</span>
+                    </div>
+                    <div>
+                      <span>Объем бака для воды</span>
+                      <span>4</span>
+                    </div>
+                  </li>
+                </ul>
+              </a>
+
+              <div class="row-card-cost-wrap">
+                <ul class="tags">
+                  <li class="tags__item" data-type="new">Новинка</li>
+                  <li class="tags__item" data-type="credit">Кредит</li>
+                  <li class="tags__item" data-type="action">Акция</li>
+                </ul>
+
+                <div class="row-card__btn-wrap">
+                  <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+                  </button>
+                  <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+                  </button>
+                </div>
+
+                <a href="#" class="row-card-cost-wrap__title">Чехол COMMO Shield Case для iPhone 14 Pro Max</a>
+
+                <div class="row-card-cost">
+                  <div>
+                    <span class="row-card-cost__ald-cost">51 000 ₽</span>
+                    <span class="row-card-cost__current-cost">95 012 999 ₽</span>
+                  </div>
+                  <a href="#" class="row-card-cost__btn btn" data-cart="false">
+                    <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                    <svg class="card-price__icon"><use xlink:href="img/sprite.svg#in-cart"></use></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="row-card__item">
+              <a href="#" class="row-card__link">
+                <div class="row-card__img">
+                  <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title="">
+                </div>
+
+                <ul class="row-card-info">
+                  <li class="row-card-info__item">
+                    <div>
+                      <span>Тип</span>
+                      <span>увлажнительль</span>
+                    </div>
+                    <div>
+                      <span>Производительность</span>
+                      <span>600 мл/ч</span>
+                    </div>
+                    <div>
+                      <span>Обслуживаемая площадь</span>
+                      <span>30 кв.м</span>
+                    </div>
+                    <div>
+                      <span>Уровень шума</span>
+                      <span>6-42 дБ</span>
+                    </div>
+                    <div>
+                      <span>Объем бака для воды</span>
+                      <span>4</span>
+                    </div>
+                  </li>
+                </ul>
+              </a>
+
+              <div class="row-card-cost-wrap">
+                <ul class="tags">
+                  <li class="tags__item" data-type="new">Новинка</li>
+                  <li class="tags__item" data-type="credit">Кредит</li>
+                  <li class="tags__item" data-type="action">Акция</li>
+                </ul>
+
+                <div class="row-card__btn-wrap">
+                  <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+                  </button>
+                  <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+                  </button>
+                </div>
+
+                <a href="#" class="row-card-cost-wrap__title">Чехол COMMO Shield Case для iPhone 14 Pro Max</a>
+
+                <div class="row-card-cost">
+                  <div>
+                    <span class="row-card-cost__ald-cost">51 000 ₽</span>
+                    <span class="row-card-cost__current-cost">95 012 999 ₽</span>
+                  </div>
+                  <a href="#" class="row-card-cost__btn btn" data-cart="false">
+                    <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                    <svg class="card-price__icon"><use xlink:href="img/sprite.svg#in-cart"></use></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="row-card__item">
+              <a href="#" class="row-card__link">
+                <div class="row-card__img">
+                  <img src="img/catalog/img-1.png" class="bg-img" loading="lazy" alt="" title="">
+                </div>
+
+                <ul class="row-card-info">
+                  <li class="row-card-info__item">
+                    <div>
+                      <span>Тип</span>
+                      <span>увлажнительль</span>
+                    </div>
+                    <div>
+                      <span>Производительность</span>
+                      <span>600 мл/ч</span>
+                    </div>
+                    <div>
+                      <span>Обслуживаемая площадь</span>
+                      <span>30 кв.м</span>
+                    </div>
+                    <div>
+                      <span>Уровень шума</span>
+                      <span>6-42 дБ</span>
+                    </div>
+                    <div>
+                      <span>Объем бака для воды</span>
+                      <span>4</span>
+                    </div>
+                  </li>
+                </ul>
+              </a>
+
+              <div class="row-card-cost-wrap">
+                <ul class="tags">
+                  <li class="tags__item" data-type="new">Новинка</li>
+                  <li class="tags__item" data-type="credit">Кредит</li>
+                  <li class="tags__item" data-type="action">Акция</li>
+                </ul>
+
+                <div class="row-card__btn-wrap">
+                  <button type="button" class="card-preview__btn btn-favorites" title="В избранное">
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites"></use></svg>
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#favorites-active"></use></svg>
+                  </button>
+                  <button type="button" class="card-preview__btn btn-comparison" title="В избранное">
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg>
+                    <svg class="card-preview__btn-icon"><use xlink:href="img/sprite.svg#comparison-active"></use></svg>
+                  </button>
+                </div>
+
+                <a href="#" class="row-card-cost-wrap__title">Чехол COMMO Shield Case для iPhone 14 Pro Max</a>
+
+                <div class="row-card-cost">
+                  <div>
+                    <span class="row-card-cost__ald-cost">51 000 ₽</span>
+                    <span class="row-card-cost__current-cost">95 012 999 ₽</span>
+                  </div>
+                  <a href="#" class="row-card-cost__btn btn" data-cart="false">
+                    <svg class="card-price__icon"><use xlink:href="img/sprite.svg#cart"></use></svg>
+                    <svg class="card-price__icon"><use xlink:href="img/sprite.svg#in-cart"></use></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
 
 
       </div>

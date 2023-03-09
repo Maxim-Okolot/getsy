@@ -13,5 +13,20 @@ for (slider of sliders) {
       prevEl: slider.parentElement.querySelector('.slider-prev'),
     }
   });
+
+  let thumbsSlider = new Swiper(".card-slider-vertical", {
+    direction: "vertical",
+    spaceBetween: 7,
+    slidesPerView: 6,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+
+  var sliderCard = new Swiper(".card-slider", {
+    slidesPerView: 1,
+    thumbs: {
+      swiper: thumbsSlider,
+    },
+  });
 }
 
