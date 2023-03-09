@@ -362,3 +362,53 @@
   margin-bottom: 20px;
   display: inline-block;
 }
+
+.user-select__label {
+  margin-right: 10px;
+}
+
+.user-select {
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 19px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.user-select__label:last-child {
+  margin: 0;
+}
+
+.user-select__text {
+  font: 400 16px/19px var(--font);
+  border: 1px solid var(--alto);
+  cursor: pointer;
+  background-color: var(--white);
+  display: block;
+}
+
+.user-select__radio:checked + .user-select__text {
+  background-color: var(--dark-state-blue);
+  color: var(--white);
+}
+
+.select__output, .select-menu__item {
+  max-width: 100%;
+  width: 100%;
+}
+
+.select {
+  max-width: 512px;
+}
+
+.select__icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%) rotate(-90deg);
+  width: 5px;
+  height: 10px;
+  stroke: var(--dark-state-blue);
+  stroke-width: 2px;
+}
+

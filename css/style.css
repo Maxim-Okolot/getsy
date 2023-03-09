@@ -1644,8 +1644,6 @@ section {
     justify-content: flex-start;
 }
 
-
-
 .air-datepicker-nav--action[data-action="prev"] {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -1659,6 +1657,21 @@ section {
 .air-datepicker-cell.-day-.-current- {
     background-color: #f5f5f6;
     font-weight: 700;
+    color: var(--black);
+}
+
+.air-datepicker-cell.-day-.-current-.-selected- {
+    background-color: var(--adp-cell-background-color-selected);
+    color: var(--white);
+}
+
+.air-datepicker-nav--title, .air-datepicker-nav--title i {
+    font: 700 16px/106% var(--font);
+    color: var(--black);
+}
+
+.air-datepicker-nav--action:hover path {
+    stroke: var(--black);
 }
 
 

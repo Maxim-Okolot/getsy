@@ -835,13 +835,35 @@
 
     <form class="order-reg-wrapper" id="form-order">
       <div class="order-reg-wrap">
-        <div style="position: relative">
-          <input type="text" id="calendar" style="width: 300px; height: 35px; background: #0B9619">
+
+        <div class="user-select">
+          <label class="user-select__label">
+            <input type="radio" class="user-select__radio" name="user-select" checked value="">
+            <span class="user-select__text btn">Физическое лицо</span>
+          </label>
+          <label class="user-select__label">
+            <input type="radio" class="user-select__radio" name="user-select" value="">
+            <span class="user-select__text btn">Юридическое лицо</span>
+          </label>
         </div>
+
+
       </div>
 
       <h3 class="order-reg__title">Выберите населенный пункт</h3>
       <div class="order-reg-wrap">
+
+        <div class="select">
+          <svg class="select__icon"><use xlink:href="img/sprite.svg#arrow-thin"></use></svg>
+          <output class="select__output">Москва</output>
+
+          <ul class="select-menu">
+            <li class="select-menu__item">По рейтингу</li>
+            <li class="select-menu__item">По возрастанию цены</li>
+            <li class="select-menu__item">По убыванию цены</li>
+          </ul>
+
+        </div>
 
       </div>
 
