@@ -738,7 +738,8 @@
 
 .form-feedback__placeholder {
   position: absolute;
-  font: 400 16px/19px var(--suva-grey);
+  font: 400 16px/19px var(--font);
+  color: var(--suva-grey);
   left: 15px;
   top: 50%;
 }
