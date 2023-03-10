@@ -1080,10 +1080,55 @@
         </div>
 
         <div class="card-info-content__feedback card-info-box dpl-none">
+          <div class="feedback-nav">
+            <div class="feedback-nav-sort">
+              <button type="button" class="feedback-nav-sort__btn btn active">Новые</button>
+              <button type="button" class="feedback-nav-sort__btn btn">Низкая оценка </button>
+              <button type="button" class="feedback-nav-sort__btn btn">Высокая оценка</button>
+            </div>
+
+            <button class="feedback-nav__bnt-auth btn">Войти и оставить отзыв</button>
+          </div>
+
+          <form class="card-info-form-feedback">
+            <div class="card-info-form-feedback__wrap">
+              <h5 class="card-info-form-feedback__title">Оставить отзыв</h5>
+
+              <div class="evaluation-feedback">
+                <span class="evaluation-feedback__title">Ваша оценка</span>
+                <ul class="evaluation-feedback__list">
+                  <li class="evaluation-feedback__item"></li>
+                  <li class="evaluation-feedback__item"></li>
+                  <li class="evaluation-feedback__item"></li>
+                  <li class="evaluation-feedback__item"></li>
+                  <li class="evaluation-feedback__item"></li>
+                </ul>
+              </div>
+
+              <label class="form-feedback__input-wrap">
+                <input type="text" name="form-feedback-adv" class="form-feedback__input input-focus">
+                <span class="form-feedback__placeholder">Достоинства</span>
+              </label>
+
+              <label class="form-feedback__input-wrap">
+                <input type="text" name="form-feedback-dis" class="form-feedback__input input-focus">
+                <span class="form-feedback__placeholder">Недостатки</span>
+              </label>
+
+              <label class="form-feedback__input-wrap">
+                <textarea class="form-feedback__textarea input-focus" name=""></textarea>
+                <span class="form-feedback__placeholder">Комментарий</span>
+              </label>
+
+              <input type="submit" class="form-feedback__submit btn" value="Отправить">
+            </div>
+          </form>
+
           <div class="feedback-wrap">
-            <div>
-              <span>Александр Т.</span>
-              <time>12 января, 2023</time>
+
+            <div class="feedback-wrap-header">
+              <span class="feedback-wrap-header__author">Александр Т.</span>
+              <time class="feedback-wrap-header__date">12 января, 2023</time>
               <ul class="rating" data-rating="3">
                 <li class="rating__item"></li>
                 <li class="rating__item"></li>
@@ -1093,24 +1138,70 @@
               </ul>
             </div>
 
-            <div>
-              <span>Достоинства</span>
-              <p>олго ждал когда появится зелёный на площадке, дождался, но</p>
-              <span>Недостатки</span>
+            <div class="feedback-wrap-content">
+              <span>Достоинства:</span>
+              <p>Долго ждал когда появится зелёный на площадке, дождался, но</p>
+              <span>Недостатки:</span>
               <p>Телефон паль, через 20 минут после включения выключился и ничто его не реанимировало. 65тыс выкинул</p>
-              <span>Телефон паль, через 20 минут после включения выключился и ничто его не реанимировало. 65тыс выкинул.
-                Телефон паль, через 20 минут после включения выключился и ничто его не реанимировало. 65тыс выкинул</span>
+              <span>Комментарий:</span>
+              <p>Телефон паль, через 20 минут после включения выключился и ничто его не реанимировало. 65тыс выкинул.
+                Телефон паль, через 20 минут после включения выключился и ничто его не реанимировало. 65тыс выкинул</p>
             </div>
 
-            <div>
-              <button type="button">Читать полностью</button>
-
-              <div>
-                <button type="button">Скрыть комментарии</button>
-                <a href="#">Комментировать</a>
-              </div>
-            </div>
           </div>
+          <div class="feedback-wrap">
+
+            <div class="feedback-wrap-header">
+              <span class="feedback-wrap-header__author">Александр Т.</span>
+              <time class="feedback-wrap-header__date">12 января, 2023</time>
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+            </div>
+
+            <div class="feedback-wrap-content">
+              <span>Достоинства:</span>
+              <p>Долго ждал когда появится зелёный на площадке, дождался, но</p>
+              <span>Недостатки:</span>
+              <p>Телефон паль, через 20 минут после включения выключился и ничто его не реанимировало. 65тыс выкинул</p>
+              <span>Комментарий:</span>
+              <p>Телефон паль, через 20 минут после включения выключился и ничто его не реанимировало. 65тыс выкинул.
+                Телефон паль, через 20 минут после включения выключился и ничто его не реанимировало. 65тыс выкинул</p>
+            </div>
+
+          </div>
+          <div class="feedback-wrap">
+
+            <div class="feedback-wrap-header">
+              <span class="feedback-wrap-header__author">Александр Т.</span>
+              <time class="feedback-wrap-header__date">12 января, 2023</time>
+              <ul class="rating" data-rating="3">
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+                <li class="rating__item"></li>
+              </ul>
+            </div>
+
+            <div class="feedback-wrap-content">
+              <span>Достоинства:</span>
+              <p>Долго ждал когда появится зелёный на площадке, дождался, но</p>
+              <span>Недостатки:</span>
+              <p>Телефон паль, через 20 минут после включения выключился и ничто его не реанимировало. 65тыс выкинул</p>
+              <span>Комментарий:</span>
+              <p>Телефон паль, через 20 минут после включения выключился и ничто его не реанимировало. 65тыс выкинул.
+                Телефон паль, через 20 минут после включения выключился и ничто его не реанимировало. 65тыс выкинул</p>
+            </div>
+
+          </div>
+
+          <button type="button" class="feedback-btn-view btn">Показать еще <span>+2</span></button>
+
         </div>
 
         <div class="card-info-content__access card-info-box dpl-none">

@@ -49,3 +49,37 @@ for (let i = 0; i < cardInfoNavItems.length; i++) {
     }
   })
 }
+
+let evaluationFeedbackItems = document.querySelectorAll('.evaluation-feedback__item');
+
+for (let item of evaluationFeedbackItems) {
+  item.addEventListener('click', () => {
+
+    if (item.classList.contains('active')) {
+      item.classList.toggle('active');
+    } else {
+      for (let el of evaluationFeedbackItems) {
+        el.classList.remove('active');
+      }
+
+      item.classList.add('active');
+    }
+  })
+}
+
+
+let feedbackNavSortBtn = document.querySelectorAll('.feedback-nav-sort__btn');
+
+for (let btn of feedbackNavSortBtn) {
+  btn.addEventListener('click', () => {
+    if (btn.classList.contains('active')) {
+      btn.classList.toggle('active');
+    } else {
+      for (let el of feedbackNavSortBtn) {
+        el.classList.remove('active');
+      }
+
+      btn.classList.add('active');
+    }
+  })
+}

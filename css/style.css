@@ -1307,7 +1307,8 @@ section {
     width: 100%;
 }
 
-.form-authorization__placeholder, .registration-from__placeholder, .form-sms-auth__placeholder {
+.form-authorization__placeholder, .registration-from__placeholder, .form-sms-auth__placeholder,
+.form-feedback__placeholder {
     color: var(--suva-grey);
     position: absolute;
     left: 16px;
