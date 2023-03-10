@@ -551,6 +551,11 @@
   margin-bottom: 12px;
 }
 
+.card-info-content__spec-wrap:last-child {
+  border: 0;
+  padding-bottom: 0;
+}
+
 .card-info-content__spec-title {
   font: 400 12px/14px var(--font);
   color: var(--suva-grey);
@@ -577,4 +582,12 @@
 
 .card-info-content__access .row-card {
   background-color: transparent;
+}
+
+.feedback-wrap {
+  margin-top: 12px;
+  padding: 15px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: var(--lite-shadow);
 }
